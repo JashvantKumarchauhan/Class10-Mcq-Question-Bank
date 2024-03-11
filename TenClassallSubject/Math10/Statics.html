@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz  chapter Static </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Statics MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. ऐसे आँकड़ों को जिसकी सत्यता का उत्तरदायित्व अनवेशक पर हों, कहलाता है –",
+        "options": ["गौण आँकड़ा", "प्राथमिक आँकड़ा", "वर्गीकृत आँकड़ा", "अवर्गीकृत आँकड़ा"],
+        "answer": "गौण आँकड़ा"
+    },
+    {
+        "question": "2. ऐसे आँकडों को जिसकी सत्यता का उत्तरदायित्व अनवेशक पर न हों, कहलाता है –",
+        "options": ["गौण आँकड़ा", "प्राथमिक आँकड़ा", "वर्गीकृत आँकड़ा", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "3. किसी आँकड़े के अधिकतम मान और न्यूनतम मान के अंतर को कहा जाता है-",
+        "options": ["परिसर", "वर्ग-अंतराल", "मध्यमान", "वर्ग-चिन्ह"],
+        "answer": "वर्ग-अंतराल"
+    },
+    {
+        "question": "4. आँकड़े 24, 15, 22, 13, 9, 10 तथा 30 का परिसर होगा –",
+        "options": ["22", "21", "24", "9"],
+        "answer": "22"
+    },
+    {
+        "question": "5. वर्ग अंतराल 10 – 15 का परिसर निम्नलिखित में से कौन है ?",
+        "options": ["15", "5", "10", "5.5"],
+        "answer": "5"
+    },
+    {
+        "question": "6. किसी वर्ग-अंतराल के ऊपरी और निचली वर्ग सीमा के मध्य-बिंदु को कहते हैं –",
+        "options": ["परिसर", "वर्ग आमाप", "वर्ग-चिंह", "बारंबारता"],
+        "answer": "वर्ग आमाप"
+    },
+    {
+        "question": "7. वर्ग-अंतराल के मध्य-बिंदु को कहते हैं –",
+        "options": ["वर्ग विस्तार", "परिसर", "माध्य.", "वर्ग-चिन्ह"],
+        "answer": "माध्य."
+    },
+    {
+        "question": "8. वर्ग-अंतराल 25 – 35 का वर्ग-चिंह क्या है ?",
+        "options": ["25", "35", "60", "30"],
+        "answer": "60"
+    },
+    {
+        "question": "9. संचयी बारंबारता वक्र का दूसरा नाम क्या है ?",
+        "options": ["तोरण", "दण्डालेख", "आयतचित्र", "बारंबारता"],
+        "answer": "तोरण"
+    },
+    {
+        "question": "10. तोरण का दूसरा नाम क्या है ?",
+        "options": ["दण्डालेख", "आयतचित्र", "संचयी बारंबारता वक्र", "चित्रालेख"],
+        "answer": "दण्डालेख"
+    },
+    {
+        "question": "11. तोरण खींचने के लिए वर्ग-अंतरालों का होना चाहिए –",
+        "options": ["अपवर्जी", "समावेशिक", "अपवर्जी एवं समावेशिक दोनों", "इनमें से कोई नहीं"],
+        "answer": "अपवर्जी एवं समावेशिक दोनों"
+    },
+    {
+        "question": "12. ‘कम के लिए’ तथा ‘अधिक के लिए’ तोरण के प्रतिच्छेदन बिंदु का भुज प्रदान करता है –",
+        "options": ["माध", "माध्यक", "बहुलक", "इनमें से कोई नहीं"],
+        "answer": "माध्यक"
+    },
+    {
+        "question": "13. ‘से कम’ तोरण खींचने के लिए बिंदुओं के भुज होते है –",
+        "options": ["वर्ग-अंतरालों की उच्च सीमाएँ", "वर्ग-अंतरालों की निम्न सीमाएँ", "वर्ग-अंतरालों के वर्ग-चिन्ह", "इनमें से कोई नहीं"],
+        "answer": "वर्ग-अंतरालों की निम्न सीमाएँ"
+    },
+    {
+        "question": "14. ‘से अधिक’ तोरण खींचने के लिए बिंदुओं के भुज होते हैं –",
+        "options": ["वर्ग-अंतरालों की उच्च सीमाएँ", "वर्ग-अंतरालों की निम्न सीमाएँ", "वर्ग-अंतरालों के वर्ग-चिंह", "इनमें से कोई नहीं"],
+        "answer": "वर्ग-अंतरालों की उच्च सीमाएँ"
+    },
+    {
+        "question": "15. केन्द्रीय प्रवृत्ति निकालने का सबसे सही पैमाना इनमें से कौन हैं –",
+        "options": ["बहुलक", "माध्य", "माध्यिका", "इनमें से कोई नहीं"],
+        "answer": "माध्य"
+    },
+    {
+        "question": "16. निम्नलिखित में से कौन केन्द्रीय प्रवृत्ति की माप नहीं है ?",
+        "options": ["माध्य", "मानक विचलन", "माध्यक", "बहुलक"],
+        "answer": "माध्य"
+    },
+    {
+        "question": "17. एक संचयी बारंबारता की रचना का उपयोग निम्न में से किसके लिए किया जाता है ?",
+        "options": ["माध्य", "माध्यक", "बहुलक", "इनमें से कोई नहीं"],
+        "answer": "बहुलक"
+    },
+    {
+        "question": "18. किसी भी बारंबारता बंटन के लिए माध्य से पद-विचलनों का बीजगणितीय योग होता है –",
+        "options": ["0", "1", "नकारात्मक", "एक शून्येतर संख्या"],
+        "answer": "1"
+    },
+    {
+        "question": "19. समूहित आँकड़ों का माध्य ज्ञात करने के लिए सूत्र,  में, d कल्पित माध्य a से विचलन है।",
+        "options": ["वर्ग की निम्न सीमा का", "वर्ग की ऊपरी सीमा का", "वर्ग-चिंह का", "वर्गों की बारंबारता का"],
+        "answer": "वर्ग-चिंह का"
+    },
+    {
+        "question": "20. पद विचलन विधि द्वारा किस केन्द्रीय प्रवृत्ति का मान निकाला जाता है ?",
+        "options": ["माध्य", "माध्यक", "बहुलक", "तोरण"],
+        "answer": "माध्य"
+    },
+   
+    {
+        "question": "22. यदि प्रेक्षणों का माध्य A है और प्रत्येक प्रेक्षण को k से गणा किया जाता है, तब नया माध्य होगा –",
+        "options": ["kA", "A", "A/k", "k"],
+        "answer": "kA"
+    },
+    {
+        "question": "23. इनमें से कौन आलेख द्वारा निर्धारित नहीं किया जा सकता है ?",
+        "options": ["माध्य", "माध्यक", "बहुलक", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "24. संख्याएँ 1, 2, 3, 4, 5, ……. , n का माध्य है –",
+        "options": ["n/2", "n²", "", ""],
+        "answer": "n/2"
+    },
+    {
+        "question": "25. 4, 3, 7, 0, 0, 6, 8 का माध्य होगा –",
+        "options": ["3", "2", "5", "4"],
+        "answer": "4"
+    },
+    {
+        "question": "26. प्रथम पाँच प्राकृत संख्याओं का माध्य होगा –",
+        "options": ["2", "4", "3", "5"],
+        "answer": "3"
+    },
+    {
+        "question": "27. प्रथम पाँच पूर्ण संख्याओं का माध्य होगा –",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+    },
+    {
+        "question": "28. प्रथम पाँच सम संख्याओं का माध्य है –",
+        "options": ["4", "5", "6", "10"],
+        "answer": "5"
+    },
+    {
+        "question": "29. प्रथम पाँच विषम संख्याओं का माध्य होगा –",
+        "options": ["5", "7", "9", "3"],
+        "answer": "5"
+    },
+    {
+        "question": "30. यदि चर मानों 4, 3, 2,1 की संगत बारंबारताएँ 1, 2, 3, 4 हों, तो इनका माध्य है –",
+        "options": ["4", "3", "2", "1"],
+        "answer": "3"
+    },
+    {
+        "question": "31. यदि x 3, 4,5 का माध्य 4 है, तो x का मान होगा –",
+        "options": ["0", "4", "3", "5"],
+        "answer": "3"
+    },
+    {
+        "question": "32. यदि 6,8,9, x और 13 का माध्य 10 हो. तो x का मान होगा –",
+        "options": ["12", "13", "14", "15"],
+        "answer": "14"
+    },
+    {
+        "question": "33. यदि 6,7, x-2, x, 17, 20 का माध्य 16 हो. तो x का मान होगा –",
+        "options": ["15", "24", "18", "20"],
+        "answer": "18"
+    },
+    {
+        "question": "34. किसी आँकड़े के प्रेक्षणोंx₁,x₂,x₃….. xn का माध्य x है। यदि प्रत्येक प्रेक्षण को क से गुणा किया जाए, तो उनका नया माध्य होगा –",
+        "options": ["xk", "x", "kx", "k"],
+        "answer": "xk"
+    },
+    {
+        "question": "35. किसी आँकड़े के प्रेक्षणों x₁, x₂, x₃…..xn का माध्य x है। यदि प्रत्येक प्रेक्षण को k से गुणा किया जाए, तो उनका नया माध्य होगा –",
+        "options": ["xk", "x", "kx", "k"],
+        "answer": "xk"
+    },
+    {
+        "question": "36. 20 संख्याओं का समांतर माध्य 5 है। यदि इनमें से 8 संख्याओं का समांतर माध्य 8 हो, तो शेष संख्याओं का समांतर माध्य क्या है –",
+        "options": ["8", "3", "5", "4"],
+        "answer": "4"
+    },
+    {
+        "question": "37. 40 संख्या का समांतर माध्य 65 है। यदि इन 40 मानों में से प्रत्येक में 5 की वृद्धि कर दी जाए, तो नए मानों का समांतर माध्य है –",
+        "options": ["60", "140", "210", "70"],
+        "answer": "70"
+    },
+    {
+        "question": "38. 11 परिणामों का माध्य 30 है। यदि प्रथम 6 परिणामों का माध्य 28 है और अंतिम 6 परिणामों का माध्य 32 हो. तो 6ठी परिणाम है –",
+        "options": ["15", "20", "25", "30"],
+        "answer": "20"
+    },
+    {
+        "question": "39. यदि आँकड़े 11, 12, x, 13, y, 18, 19 का माध्य 13 हो, तो –",
+        "options": ["x + y = 18", "x – y = 18", "x + y = 21", "x – y = 21"],
+        "answer": "x + y = 21"
+    },
+    {
+        "question": "40. संख्याएँ 3, 5, 7 और 9 की बारंबारताएँ क्रमश: x-2, x + 2, x – 3 और x + 3 हैं। यदि समांतर माध्य 6.5 हो. तो x का मान होगा –",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4"
+    },
+    {
+        "question": "41. किससे माध्यिका आलेखीय ढंग से ज्ञात किया जा सकता है ?",
+        "options": ["बारंबारता वक्र", "आयतचित्र", "तोरण", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "42. 7, 3, 5, 8, 6, 10, 9, 12 की माध्यिका क्या है ?",
+        "options": ["8", "7", "6", "7.5"],
+        "answer": "7.5"
+    },
+    {
+        "question": "43. 2, 6, 4, 8, 10, 12 का माध्यक होगा –",
+        "options": ["6", "7", "8", "4"],
+        "answer": "6"
+    },
+    {
+        "question": "44. 5, 3, 8, 2, 4 का माध्यक होगा –",
+        "options": ["2", "3", "4", "8"],
+        "answer": "4"
+    },
+    {
+        "question": "45. 2, 3, 4, 5, 6 का माध्यक है –",
+        "options": ["3", "4", "5", "4.5"],
+        "answer": "4.5"
+    },
+    {
+        "question": "46. प्रथम दस विषम संख्याओं की माध्यिका होगी –",
+        "options": ["10", "11", "9", "13"],
+        "answer": "10"
+    },
+    {
+        "question": "47. प्रथम सात सम संख्याओं की माध्यिका होगी –",
+        "options": ["4", "6", "7", "8"],
+        "answer": "6"
+    },
+    {
+        "question": "48. निम्नलिखित बंटन की माध्यिका क्या है ?",
+        "options": ["3", "4", "4.5", "6"],
+        "answer": "4.5"
+    },
+    {
+        "question": "49. निम्नलिखित आँकड़े को बढ़ते क्रम में लिखा गया है। 24, 27, 28, 31, 34, x, 37, 40, 42, 45; यदि माध्यिका 35 हो, तो x का मान है –",
+        "options": ["35.5", "34.5", "36", "35"],
+        "answer": "35"
+    },
+    {
+        "question": "50. बहुलक है –",
+        "options": ["कम से कम बारंबारता वाला चरमान", "अधिकतम बारंबारता वाला चरमान", "माध्यतम मान", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "51. बहुलक प्राप्त करने के लिए वर्ग-अंतराल कैसा होना चाहिए ?",
+        "options": ["समान", "असमान", "बड़ा", "इनमें से कोई नहीं"],
+        "answer": "असमान"
+    },
+    {
+        "question": "52. सूत्र से बहुलक प्राप्त करने के लिए वर्गो की लम्बाई होनी चाहिए –",
+        "options": ["समान", "असमान", "काफी अधिक", "इनमें से कोई नहीं"],
+        "answer": "समान"
+    },
+    {
+        "question": "53. किसी बारंबारता वितरण का बहुलक आलेख द्वारा निम्न में से किससे निर्धारित किया जा सकता है ?",
+        "options": ["बारंबारता बहुभुज", "तोरण", "आयतचित्र", "बारंबारता वक्र"],
+        "answer": "बारंबारता वक्र"
+    },
+    {
+        "question": "54. किसी वितरण में अधिकतम बारंबारता वाला वर्ग कहलाता है –",
+        "options": ["माध्यक वर्ग", "उच्च वर्ग", "बहुलक वर्ग", "इनमें से कोई नहीं"],
+        "answer": "बहुलक वर्ग"
+    },
+    {
+        "question": "55. अधिकतम बारंबारता वाला चरमान कहलाता है –",
+        "options": ["माध्यक", "माध्य", "बहुलक", "बहुलक वर्ग"],
+        "answer": "बहुलक"
+    },
+    {
+        "question": "56. किसी वितरण के माध्य, माध्यक और बहुलक के बीच निम्न में से कौन-सा संबंध सत्य है ?",
+        "options": ["माध्य – बहुलक = 3x (माध्य-माध्य क)", "माध्य – बहुलक = 2x (माध्य-माध्य क)", "बहुलक = 2x माध्य क -3x माध्य", "इनमें से कोई नहीं"],
+        "answer": "बहुलक = 2x माध्य क -3x माध्य"
+    },
+    {
+        "question": "57. सूत्र से बहुलक प्राप्त करने के लिए वर्गों को होना चाहिए –",
+        "options": ["अतिव्यापी", "अनतिव्यापी", "खुले सिरे का", "इनमें से कोई नहीं"],
+        "answer": "अनतिव्यापी"
+    },
+    {
+        "question": "58. 3, 5, 4, 3, 2, 3, 1, 3 का बहुलक है –",
+        "options": ["1", "5", "4", "3"],
+        "answer": "3"
+    },
+    {
+        "question": "59. 7, 8, 9, 7, 8, 9, 9, 3, 5, 4 का बहुलक है –",
+        "options": ["8", "7", "3", "9"],
+        "answer": "7"
+    },
+    {
+        "question": "60. यदि किसी आँकड़े का माध्य 8 तथा माध्यक 8 है, तो बहुलक होगा-",
+        "options": ["8", "7.5", "8.5", "इनमें से कोई नहीं"],
+        "answer": "7.5"
+    },
+    {
+        "question": "61. यदि किसी आँकड़े के कुल पदों का समांतर माध्य 5 तथा माध्यिका 6 हो, तो बहुलक होगा –",
+        "options": ["7", "8", "9", "12"],
+        "answer": "9"
+    },
+    {
+        "question": "62. किसी आँकड़े का अंकगणितीय माध्य एवं बहुलक क्रमशः 17 एवं 20 है, तो उसकी माध्यिका होगी –",
+        "options": ["17", "18", "19", "20"],
+        "answer": "18"
+    },
+    {
+        "question": "63. किसी बंटन का माध्यक और बहुलक क्रमशः 25.1 और 26.1 है, तो उसका समांतर माध्य होगा –",
+        "options": ["24.6", "25.1", "26.1", "25.6"],
+        "answer": "25.6"
+    }
+            
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

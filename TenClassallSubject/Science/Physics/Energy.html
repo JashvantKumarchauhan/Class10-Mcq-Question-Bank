@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Energy MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+    "question": "1. मंद प्रकाश में किसकी शिथिलता से पुतली पूर्ण रूप से फैल जाती है।",
+    "options": ["कॉर्निया", "परितारिका", "एरिस", "इनमें से कोई नहीं"],
+    "answer": "एरिस"
+},   
+{
+            "question": "2. जैव गैस संयंत्र में शेष बची स्लरी को बाहर निकाले जाते हैं जिसका उपयोग होता है –",
+            "options": ["ईंधन के रूप में", "खाद के रूप में", "नाइट्रोजन और फॉस्फोरस निकालने में", "उपला बनाने के रूप में"],
+            "answer": "खाद के रूप में"
+        },
+        {
+            "question": "3. जल विधुत संयंत्र किस ऊर्जा को विधुत ऊर्जा में रूपांतरित करता है ?",
+            "options": ["तापीय ऊर्जा", "नाभिकीय ऊर्जा", "सौर ऊर्जा", "स्थितिज ऊर्जा"],
+            "answer": "तापीय ऊर्जा"
+        },
+        {
+            "question": "4. तापीय विधुत संयंत्र में ईंधन के दहन द्वारा—",
+            "options": ["प्रकाश ऊर्जा उत्पन्न की जाती है", "ऊष्मीय ऊर्जा उत्पन्न की जाती है", "यांत्रिक ऊर्जा उत्पन्न की जाती है", "गतिज ऊर्जा उत्पन्न की जाती है।"],
+            "answer": "ऊष्मीय ऊर्जा उत्पन्न की जाती है"
+        },
+        {
+            "question": "5. डेनमार्क में कुल ऊर्जा खपत का कितना प्रतिशत पवन चक्कियों से प्राप्त होता है-",
+            "options": ["10%", "20%", "30%", "25%"],
+            "answer": "20%"
+        },
+        {
+            "question": "6. औद्योगीकृत देश अपनी कुल ऊर्जा का कितना प्रतिशत नाभिकीय विधुत संयंत्रों से पूर्ति, करते है।",
+            "options": ["30 %", "20 %", "40 %", "60 %"],
+            "answer": "40%"
+        },
+        {
+            "question": "7. भूतापीय ऊर्जा पर आधारित विधुत संयंत्र निम्न में से किन स्थानों पर कार्य कर रहे हैं ?",
+            "options": ["भारत और चीन में", "रूस और इंग्लैण्ड में", "अरब और बर्जिस्तान मे", "न्यूजीलैंड तथा संयुक्त राज्य अमेरिका में"],
+            "answer": "न्यूजीलैंड तथा संयुक्त राज्य अमेरिका में"
+        },
+        {
+            "question": "8. पृथ्वी के किसी क्षेत्र में प्रतिदिन प्राप्त होने वाली सौर ऊर्जा का औसतन कितना परिमाण प्राप्त है ?",
+            "options": ["5 A 8 kWh/m2", "4 से 7 kWh/m2", "10 से 15 kWh/m2", "15 से 20 kWh/m2"],
+            "answer": "15 से 20 kWh/m2"
+        },
+        {
+            "question": "9. नरौरा नाभिकीय विधुत संयंत्र किस राज्य में स्थित है ?",
+            "options": ["राजस्थान", "महाराष्ट्र", "उत्तर प्रदेश", "गजरात"],
+            "answer": "महाराष्ट्र"
+        },
+        {
+            "question": "10. शारीरिक कार्यों को करने के लिए किस प्रकार की ऊर्जा का उपयोग किया जाता है ?",
+            "options": ["रासायनिक ऊर्जा", "विधुत ऊर्जा", "पेशीय ऊर्जा", "सौर ऊर्जा"],
+            "answer": "पेशीय ऊर्जा"
+        },
+        {
+            "question": "11. सौर कुकर के लिए कौन-सा दर्पण सर्वाधिक उपयुक्त होता है ?",
+            "options": ["समतल दर्पण", "उत्तल दर्पण", "अवतल दर्पण", "इनमें सभी"],
+            "answer": "अवतल दर्पण"
+        },
+        {
+            "question": "12. सौर ऊर्जा का मान सभी प्रायोगिक प्रयोजनों के लिए स्थिर माना जाता है जिसे कहा जाता है-",
+            "options": ["सौर ऊष्मांक", "सौर स्थिरांक", "ऊष्मा स्थिरांक", "इनमें से कोई नहीं"],
+            "answer": "सौर स्थिरांक"
+        },
+        {
+            "question": "13. सौर ऊर्जा प्रकृति में निम्नांकित को प्रभावित करती है-",
+            "options": ["पवनों", "तूफानों", "वर्षा तथा हिमपात", "इनमें से सभी"],
+            "answer": "इनमें से सभी"
+        },
+        {
+            "question": "14. सौर कुकर में किस प्रभाव का उपयोग होता है ?",
+            "options": ["ग्रीन हाउस", "ग्लोबल वार्मिंग", "तापीय", "इनमें से कोई नहीं"],
+            "answer": "तापीय"
+        },
+        {
+            "question": "15. वैसे ऊर्जा स्त्रोत जिनका पुनर्जनन हो सकता है, उन्हें ऊर्जा का किस प्रकार का स्त्रोत कहते हैं ?",
+            "options": ["नवीकरणीय स्रोत", "अनवीकरणीय स्रोत", "ऊर्जा का कोई स्त्रोत नहीं", "इनमें से कोई नहीं"],
+            "answer": "नवीकरणीय स्रोत"
+        },
+        {
+            "question": "16. ऊर्जा के अनवीकरणीय स्रोत है—",
+            "options": ["पवन", "कोयला", "जल", "सूर्य"],
+            "answer": "कोयला"
+        },
+        {
+            "question": "17. सूर्य के ऊर्जा का स्त्रोत है-",
+            "options": ["नाभिकीय संलयन", "नाभिकीय विखण्डन", "‘A’ और ‘B’", "इनमें से सभी"],
+            "answer": "‘A’ और ‘B’"
+        },
+        {
+            "question": "18. पृथ्वी पर ऊर्जा का सबसे विशाल स्रोत है-",
+            "options": ["लकड़ी", "कोयला", "सूर्य", "चन्द्रमा"],
+            "answer": "सूर्य"
+        },
+        {
+            "question": "19. निम्नलिखित में से कौन जैव मात्रा ऊर्जा स्रोत का उदाहरण नहीं है ?",
+            "options": ["लकड़ी", "गोबर गैस", "नाभिकीय ऊर्जा", "कोयला"],
+            "answer": "कोयला"
+        },
+        {
+            "question": "20. उत्तम ऊर्जा का स्रोत, इनमें से कौन नहीं है ?",
+            "options": ["सरलता से सुलभ हो", "सस्ता हो", "प्रज्वलन ताप उच्च हो", "काफी धुआँ न उत्पन्न करे"],
+            "answer": "काफी धुआँ न उत्पन्न करे"
+        },
+        {
+            "question": "21. पवनचक्कियाँ बिजली उत्पन्न करने के लिए किस तरह की ऊर्जा का उपयोग करती हैं?",
+            "options": ["तापीय ऊर्जा", "वायवीय ऊर्जा", "जलीय ऊर्जा", "आकाशीय ऊर्जा"],
+            "answer": "वायवीय ऊर्जा"
+        },
+        {
+            "question": "22. भारतीय अर्थव्यवस्था में ऊर्जा के क्षेत्र में जिस योजना का कारण आर्थिक स्थिति में सुधार होता है वह कौन-सी है?",
+            "options": ["विकल्प ऊर्जा स्रोत योजना", "ऊर्जा राष्ट्रीय नीति", "विश्व ऊर्जा स्थिति", "ऊर्जा विकास योजना"],
+            "answer": "विकल्प ऊर्जा स्रोत योजना"
+        },
+        {
+            "question": "23. भारत में विद्युत क्षेत्र के लिए निम्नलिखित में से कौन-कौन सा स्त्रोत सबसे अधिक है?",
+            "options": ["ऊर्जा विकास योजना", "विकल्प ऊर्जा स्रोत योजना", "ऊर्जा राष्ट्रीय नीति", "विश्व ऊर्जा स्थिति"],
+            "answer": "ऊर्जा विकास योजना"
+        },
+        {
+            "question": "24. भारत सरकार ने विभिन्न स्थानों पर सौर ऊर्जा संयंत्र स्थापित करने के लिए कितनी राशि स्वीकृत की है?",
+            "options": ["1,000 करोड़ रुपए", "2,000 करोड़ रुपए", "3,000 करोड़ रुपए", "4,000 करोड़ रुपए"],
+            "answer": "4,000 करोड़ रुपए"
+        },
+        {
+            "question": "25. भारतीय सड़क परिवहन में दर के अनुसार कितनी प्रतिशत ऊर्जा का सेवन होता है?",
+            "options": ["20%", "30%", "40%", "50%"],
+            "answer": "20%"
+        },
+        {
+            "question": "26. भारत में रोजगार के क्षेत्र में विद्युत ऊर्जा के उपयोग को बढ़ावा देने के लिए किस योजना की शुरुआत की गई है?",
+            "options": ["ऊर्जा विकास योजना", "सौर उत्पाद योजना", "दीप ऊर्जा योजना", "ऊर्जा क्षमता योजना"],
+            "answer": "ऊर्जा क्षमता योजना"
+        },
+        {
+            "question": "27. सौर ऊर्जा का सबसे बड़ा अनुकूल योजना कौन-सी है?",
+            "options": ["सौर उत्पाद योजना", "सौर ग्राम योजना", "सौर उद्योग योजना", "सौर उर्जा संगठन"],
+            "answer": "सौर ग्राम योजना"
+        },
+        {
+            "question": "28. भारतीय नौसेना के लिए निम्नलिखित में से कौन-कौन सा ऊर्जा स्रोत सबसे अधिक उपयोग किया जाता है?",
+            "options": ["जलीय ऊर्जा", "वायवीय ऊर्जा", "ऊर्जा विकास योजना", "अन्य स्रोत"],
+            "answer": "जलीय ऊर्जा"
+        },
+        {
+            "question": "29. नवाचार के क्षेत्र में निम्नलिखित में से कौन-कौन से ऊर्जा स्रोत सबसे अधिक उपयोग होते हैं?",
+            "options": ["सौर ऊर्जा", "पवन ऊर्जा", "अच्छा और कुशल उपयोग", "दोनों A और B"],
+            "answer": "दोनों A और B"
+        },
+        {
+            "question": "30. भारत में सरकार ने नवाचार के क्षेत्र में विकसन के लिए कितनी राशि स्वीकृत की है?",
+            "options": ["2,500 करोड़ रुपए", "5,000 करोड़ रुपए", "7,500 करोड़ रुपए", "10,000 करोड़ रुपए"],
+            "answer": "5,000 करोड़ रुपए"
+        },
+        {
+            "question": "31. भारत में विद्युत क्षेत्र में ऊर्जा आत्मनिर्भरता के लिए किस योजना की शुरुआत की गई है?",
+            "options": ["ऊर्जा विकास योजना", "विकल्प ऊर्जा स्रोत योजना", "ऊर्जा राष्ट्रीय नीति", "विश्व ऊर्जा स्थिति"],
+            "answer": "ऊर्जा विकास योजना"
+        },
+        {
+            "question": "32. सौर ऊर्जा को किस प्रकार के स्त्रोत के रूप में बदला जा सकता है?",
+            "options": ["विकल्प ऊर्जा स्रोत", "अच्छा और कुशल उपयोग", "नवीकरणीय स्रोत", "ऊर्जा विकास योजना"],
+            "answer": "नवीकरणीय स्रोत"
+        },
+        {
+            "question": "33. विद्युत क्षेत्र में भारत की ऊर्जा स्वतंत्रता के लिए किस योजना की शुरुआत की गई है?",
+            "options": ["ऊर्जा विकास योजना", "विकल्प ऊर्जा स्रोत योजना", "ऊर्जा राष्ट्रीय नीति", "विश्व ऊर्जा स्थिति"],
+            "answer": "ऊर्जा विकास योजना"
+        },
+        {
+            "question": "34. भारत सरकार ने समुद्री ऊर्जा के क्षेत्र में किस योजना को मंजूरी दी है?",
+            "options": ["ऊर्जा विकास योजना", "समुद्री ऊर्जा योजना", "ऊर्जा राष्ट्रीय नीति", "विश्व ऊर्जा स्थिति"],
+            "answer": "समुद्री ऊर्जा योजना"
+        },
+        {
+            "question": "35. नेत्रा सौर ऊर्जा योजना का उद्देश्य क्या है?",
+            "options": ["सौर ऊर्जा को बढ़ावा देना", "दुनिया में सबसे बड़ा सौर ऊर्जा परियोजना बनाना", "ऊर्जा उत्पादन में वृद्धि करना", "निवेश को बढ़ावा देना"],
+            "answer": "सौर ऊर्जा को बढ़ावा देना"
+        },
+        {
+            "question": "36. सौर ऊर्जा योजना के अंतर्गत किस राज्य के लिए सबसे बड़ा सौर ऊर्जा परियोजना है?",
+            "options": ["उत्तर प्रदेश", "महाराष्ट्र", "कर्णाटक", "गुजरात"],
+            "answer": "महाराष्ट्र"
+        },
+        {
+            "question": "37. भारत में विद्युत व्यापार में किसका सबसे अधिक उपयोग होता है?",
+            "options": ["इंडस्ट्रीज", "गृहों", "उद्योगों", "कृषि"],
+            "answer": "इंडस्ट्रीज"
+        },
+        {
+            "question": "38. भारत में किस शहर में विश्व की सबसे बड़ी सौर ऊर्जा स्थली स्थित है?",
+            "options": ["दिल्ली", "बेंगलुरु", "जयपुर", "जबलपुर"],
+            "answer": "जयपुर"
+        },
+        {
+            "question": "39. भारत में न्यूक्लियर ऊर्जा के विकास के लिए किस योजना की शुरुआत की गई है?",
+            "options": ["ऊर्जा विकास योजना", "विकल्प ऊर्जा स्रोत योजना", "ऊर्जा राष्ट्रीय नीति", "नवाचार योजना"],
+            "answer": "नवाचार योजना"
+        },{
+"question": "40. विधुत संयंत्र केवल तभी प्रचालित होते हैं जब महासागर के पृष्ठ पर जल का ताप तथा 2 km तक की गहराई पर जल के ताप में अंतर –",
+"options": ["20° C का हो", "30 ° C का हो", "40° C का हो", "50° C का हो"],
+"answer": "30 ° C का हो"
+},
+{
+"question": "41. महासागरों में ऊर्जा उपलब्धता के रूप में हैं –",
+"options": ["सागरीय तापीय ऊर्जा", "ज्वारीय ऊर्जा", "तरंग ऊर्जा", "उपर्युक्त सभी"],
+"answer": "उपर्युक्त सभी"
+},
+{
+"question": "42. पृथ्वी को निम्न स्रोतों से सूर्य द्वारा कौन-सी प्रमुख ऊर्जा उपलब्ध है ?",
+"options": ["प्रकाश ऊर्जा", "ऊष्मा ऊर्जा", "प्रकाश ऊर्जा और ऊष्मा ऊर्जा दोनों", "इनमें से कोई नहीं"],
+"answer": "प्रकाश ऊर्जा और ऊष्मा ऊर्जा दोनों"
+},
+{
+"question": "43. ईंधन को जलाने के लिए प्रारंभ में कुछ ऊष्मा देनी पड़ती है। इस ऊष्मा को क्या कहते हैं ?",
+"options": ["निवेश ऊर्जा", "सामान्य ऊर्जा", "स्थितिज ऊर्जा", "इनमें से कोई नहीं"],
+"answer": "निवेश ऊर्जा"
+},
+{
+"question": "44. भोजन से हमें मिलती है –",
+"options": ["जैविक प्रक्रमों के लिए ऊर्जा", "शारीरिक कार्यकलापों के लिए ऊर्जा", "जैविक प्रक्रमों के लिए ऊर्जा और शारीरिक कार्यकलापों के लिए ऊर्जा दोनों", "इनमें से कोई नहीं"],
+"answer": "जैविक प्रक्रमों के लिए ऊर्जा और शारीरिक कार्यकलापों के लिए ऊर्जा दोनों"
+},
+{
+"question": "45. वाहनों में ईंधन के रूप में आवश्यक है –",
+"options": ["पेट्रोल", "प्राकृतिक गैस", "पेट्रोल और प्राकृतिक गैस दोनों", "इनमें से कोई नहीं"],
+"answer": "पेट्रोल और प्राकृतिक गैस दोनों"
+},
+{
+"question": "46. पवन चक्की की घूर्णी गति से किस ऊर्जा को प्राप्त किया जाता है ?",
+"options": ["स्थितिज ऊर्जा", "गतिज ऊर्जा", "विधुत ऊर्जा", "प्रकाश ऊर्जा"],
+"answer": "विधुत ऊर्जा"
+},
+{
+"question": "47. जब बहुत अधिक संख्या में सौर सेलों को संयोजित करते हैं तो यह व्यवस्था क्या कहलाती है ?",
+"options": ["सौर पैनल", "सौर कुकर", "सौर ऊर्जा", "इनमें से कोई नहीं"],
+"answer": "सौर पैनल"
+},
+{
+"question": "48. किसी भारी परमाणु के नाभिक को निम्न ऊर्जा न्यूट्रॉन से बमबारी कराई जाती है तो काफी ऊष्मा उत्पन्न होती है, जिससे नाभिक से क्या होता है ?",
+"options": ["जलन", "गर्म होना", "पिघलना", "चमकना"],
+"answer": "पिघलना"
+},
+{
+"question": "49. तेल की किस प्रजाति का उपयोग सड़े हुए और खुदरा त्यागी के लिए किया जाता है ?",
+"options": ["अदुल्ला तेल", "विषैला तेल", "सजीव तेल", "इनमें से कोई नहीं"],
+"answer": "सजीव तेल"
+}
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

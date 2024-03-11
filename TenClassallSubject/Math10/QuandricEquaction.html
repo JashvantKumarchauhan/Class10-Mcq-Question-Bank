@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz  chapter quandractic equection</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th  pair of linear equations consisting of two fours  MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+            {
+                question: "1. समीकरण युग्म 2x + 3y = 5, 4x + 6y = 9",
+                options: ["असंगत है", "इनका अद्वितीय हल है", "इनका अनेक हल है", "इनमें से कोई नहीं"],
+                answer: "असंगत है"
+            },
+            {
+                question: "2. समीकरण युग्म 2r – 3s = 8; 4r – 6s = 9",
+                options: ["असंगत है", "इनका अनेक हल है", "इनका अद्वितीय हल है", "इनमें से कोई नहीं"],
+                answer: "असंगत है"
+            },
+            {
+                question: "3. समीकरण युग्म 5x – 3y – 11 = 0; 6y – 10x + 22 = 0",
+                options: ["असंगत है", "संगत है", "इनका अद्वितीय हल है", "इनमें से कोई नहीं"],
+                answer: "संगत है"
+            },
+            {
+                question: "4. समीकरण युग्म x + 2y + 5 = 0; -3x – 6y + 15 = 0 के हर है –",
+                options: ["एक अद्वितीय हल", "पूर्णतया दो हल", "अनंत हल", "कोई हल नहीं"],
+                answer: "कोई हल नहीं"
+            },
+            {
+                question: "5. यदि भाग ऐल्गोरिथ्म a =bq + r में a = 73, b = 9,q = 8, तो r का मान होगा- ",
+                options: ["असंगत है", "इनका अनेक हल है", "इनका अद्वितीय हल है", "इनमें से कोई नहीं"],
+                answer: "इनका अनेक हल है"
+            },
+
+            {
+                question: "6.समीकरण युग्म 2x + y = 6; 4x – 2y = 4 का",
+                options: ["कोई हल नहीं है", "दो हल है", "अद्वितीय हल है", "अपरिमित हल है"],
+                answer: "अद्वितीय हल है"
+            },
+
+            {
+                question: "7.समीकरण युग्म 2x – 5y + 4 = 0; 2x + y – 8 = 0",
+                options: ["असंगत है", "इनका अद्वितीय हल है", "इनका अनेक हल है", "इनमें से कोई नहीं"],
+                answer: "इनका अद्वितीय हल है"
+            },
+
+            {
+                question: "8.वह समीकरण निकाय (युग्म) जिसका कोई हल न हो कहलाता है –",
+                options: ["असंगत या विरोधी","संगत या अविरोधी","आश्रित","संपाती"],
+                answer: "असंगत या विरोधी"
+            },
+            {
+                question: "9.वह समीकरण युग्म जिसका एक और केवल एक हल (अद्वितीय हल) होता है, क्या कहलाता है ?",
+                options: ["विरोधी (असंगत)","अविरोधी (संगत)","समांतर","प्रतिच्छेदी"],
+                answer: "अविरोधी (संगत)"
+            },
+            {
+                question: "10. वह समीकरण युग्म जिसका अनेक हल हो, कहलाता है –",
+                options: ["विरोधी (असंगत)","आश्रित (संपाती)","समांतर","प्रतिच्छेदी"],
+                answer: "आश्रित (संपाती)"
+            },
+            {
+                question: "11.वह समीकरण युग्म जिसका कोई हल होता है, कहलाता है –",
+                options: ["प्रतिच्छेदी","संपाती","संगत (अविरोधी)","असंगत (विरोधी)"],
+                answer: "संगत (अविरोधी)"
+            },
+            {
+                question: "12.विरोधी (असंगत) समीकरण युग्म के हलों की संख्या होती है-",
+                options: ["1","2","0","इनमें से कोई नहीं"],
+                answer: "0"
+            },
+            {
+                question: "13.अविरोधी (संगत) समीकरण युग्म के हलों की संख्या होती है –",
+                options: ["केवल एक","अनंत","केवल दो","【A】 एवं 【B】 दोनों"],
+                answer: "【A】 एवं 【B】 दोनों"
+            },
+            {
+                question: "14.दो चरों वाले एक रैखिक समीकरण के हलों की संख्या कितनी है –",
+                options: ["परिमित","अपरिमित","【A】 एवं 【B】 दोनों"," इनमें से कोई नहीं"],
+                answer: "अपरिमित"
+            },
+            {
+                question: "15.एक चरों वाले एक रैखिक समीकरण के हलों की संख्या कितनी है –",
+                options: ["अद्वितीय (केवल एक)","अपरिमित","दो","इनमें से कोई नहीं"],
+                answer: "अद्वितीय (केवल एक)"
+            },
+            {
+                question: "16.यदि किसी समीकरण युग्म का अद्वितीय हल है, तो समीकरणों से संबद्ध रेखाएँ होंगे-",
+                options: ["संपाती","प्रतिच्छेदी","समांतर","इनमें से कोई नहीं"],
+                answer: "प्रतिच्छेदी"
+            },
+            {
+                question: "17.. यदि किसी समीकरण युग्म का अपरिमित रूप से अनेक हल हों, तो समीकरणों से सम्बद्ध रेखाएँ होंगे –",
+                options:["संपाती","प्रतिच्छेदी","समांतर","इनमें से कोई नहीं"],
+                answer: "संपाती"
+            },
+            {
+                question: "18.यदि समीकरण युग्म का कोई हल न हों, तो समीकरणों से सम्बद्ध रेखाएँ होंगे-",
+                options:["संपाती","प्रतिच्छेदी","समांतर","इनमें से कोई नहीं"],
+                answer: "समांतर"
+            },
+            {
+                question: "19.k के किस मान के लिए समीकरण युग्म x – 2y – 3 = 0; 3x + ky – 1 = 0 का एक अद्वितीय हल है ?",
+                options: [" k = 2","k ≠ 2","k ≠ 3","k = 3"],
+                answer: "k ≠ 3"
+            },
+            {
+                question: "20. k के किस मान के लिए समीकरण युग्म 2x + 3Y – 5 = 0; 4x + ky = 0 को अपरिमित रूप से अनेक हल होंगे ?",
+                options: ["1","3","6","0"],
+                answer: "6"
+            },
+            {
+                question: "21.a का मान जिसके लिए समीकरण निकाय 10x + 5y = 4 – 5; 20x + 10y – a = 0 के अनगिनत हल होंगे है –",
+                options: ["10","-10","5","20"],
+                answer: "10"
+            },
+            {
+                question: "22.k के किस मान के लिए समीकरण निकाय x + 2y – 1 = 0; 5x + ky + 7 = 0 का कोई हल नहीं होगा ?",
+                options: ["10","6","3","4"],
+                answer: "10"
+            },
+            {
+                question: "23.k के किस मान के लिए समीकरण युग्म x + 2y = 3; 5x + ky = 7 का कोई हल नहीं है ?",
+                options: ["k = 10","k ≠ 0","k = -7/3","इनमें से कोई नहीं"],
+                answer: "k = 10"
+            },
+            {
+                question: "24.a का मान जिसके लिए समीकरण निकाय ax + 10y = 0; 2x + 5y = 0 का एक शून्येतर हल है, होगा –",
+                options: ["4","-4","2","-2"],
+                answer: "4"
+            },
+            {
+                question: "25.समीकरण युग्म 3x – y + 8 = 0 तथा 6x – ky = -16 संपाती रेखाएँ प्रदर्शित करती हैं, तो k का मान होगा –",
+                options: ["½","-½","2","-2"],
+                answer:  "2"
+            },
+            {
+                question: "26. k के किस मान के लिए समीकरण युग्म x + 2y = 7 तथा 2x + ky = 14 संपाती होगा ?",
+                options: ["3","2","1","4"],
+                answer: "4"
+            },
+            {
+                question: "27.यदि रेखाएँ 3x + 2ky = 2 तथा 2x + 5y + 1 = 0 समांतर रेखाएँ हैं, तब k का मान है – ",
+                options: ["-5/4","2/5","15/4","3/2"],
+                answer: "15/4"
+            },
+            {
+                question: "28.दो एक घातीय समीकरणों के लेखाचित्र यदि प्रतिच्छेदी हो. तो हलों की संख्या कितनी होगी ?",
+                options: ["1","0","अनेक","इनमें से कोई नहीं"],
+                answer: "1"
+            },
+            {
+                question: "29.दो एक घातीय समीकरणों के लेखाचित्र यदि समांतर हों, तो हलों की संख्या कितनी होगी ?",
+                options: ["अनेक"," 0","1","केवल 2"],
+                answer: "0"
+            },
+            {
+                question: "30.दो एक घातीय समीकरणों के लेखाचित्र यदि संपाती (आश्रित) हों, तो हलों की संख्या कितनी होगी ?",
+                options: ["1","0","अनेक","इनमें से कोई नहीं"],
+                answer: "अनेक"
+            },
+            {
+                question: "दो चरों में रैखिक समीकरण युग्म का हल इनमें से कौन होता है ?",
+                options: ["दो रेखाएँ","एक रेखा","एक बिंदु","इनमें से कोई नहीं"],
+                answer: "एक बिंदु"
+            },
+            {
+                question: "32. रैखिक समीकरण का आलेख किस प्रकार का होता है ?",
+                options: ["सरल रेखा","वक्र रेखा","बिन्दु","इनमें से कोई नहीं"],
+                answer: "सरल रेखा"
+            },
+            {
+                question: "33. रैखिक समीकरण x = 5 का आलेख होगा –",
+                options: ["y-अक्ष के समांतर","x-अक्ष के समांतर","x-अक्ष के संपाती","आश्रित"],
+                answer: "y-अक्ष के समांतर"
+            },
+            {
+                question: "34.समीकरण x = -3 का आलेख निम्नलिखित में से कैसा होगा ?",
+                options: ["y-अक्ष के समांतर","x-अक्ष के समांतर","x-अक्ष के संपाती","आश्रित"],
+                answer: "x-अक्ष के समांतर"
+            },
+            {
+                question: "35. y – 3 = 0 का आलेख होगा –",
+                options: ["x-अक्ष के संपाती","y-अक्ष के संपाती","x-अक्ष के समांतर","y-अक्ष के समांतर"],
+                answer: "x-अक्ष के समांतर"
+            },
+            {
+                question: "36.x = 0 का आलेख होगा ?",
+                options: ["x-अक्ष के संपाती","y-अक्ष के संपाती","x-अक्ष के समांतर","y-अक्ष के समांतर"],
+                answer: "y-अक्ष के संपाती"
+            },
+            {
+                question: "37.y = 0 का आलेख होगा –",
+                options:  ["x-अक्ष के संपाती","y-अक्ष के संपाती","x-अक्ष के समांतर","y-अक्ष के समांतर"],
+                answer: "x-अक्ष के संपाती"
+            },
+            {
+                question: "38.आलेख द्वारा समीकरण युग्म 6x – 3y + 10 = 0; 2x – y + 9 = 0 दो रेखाएँ निरूपित करती हैं, जो है –",
+                options: ["प्रतिच्छेदी","संपाती","समांतर","इनमें से कोई नहीं"],
+                answer: "समांतर"
+            },
+            {
+                question: "39.समीकरण युग्म x = a तथा y = b आलेख द्वारा निरूपित करत हैं रेखाएँ जो हैं –",
+                options: ["समांतर","(b, a) पर प्रतिच्छेदित","संपाती","(a, b) पर प्रतिच्छेदित"],
+                answer: "(a, b) पर प्रतिच्छेदित"
+            },
+            {
+                question: "40.समीकरण युग्म 2x + 3y = 11 और 2x – 4y = -24 के हल हैं –",
+                options:  ["x = -3, y = 1","x = 2, y = 4","x = -2, y = -5","x =  -2, y  = 5"],
+                answer: "x =  -2, y  = 5"
+            },
+            {
+                question: "41.यदि 3x + 2y = 13 तथा 3x – 2y = 5 हो, तो x + y का मान होगा –",
+                options: ["5","3","7","11"],
+                answer: "5"
+            },
+            {
+                question: "42. रैखिक समीकरण युग्म x + y = 14; x – y = 4 का हल है –",
+                options: ["x = 9, y = 3","x = 9, y = 5","x =5, y = 9","x = 3, y = 1"],
+                answer: "x =5, y = 9"
+            },
+            {
+                question: "43.x = a, y = b समीकरण युग्म x – y = 2 तथा x + y = 4 के हल हैं, तब a तथा b का मान होगा –",
+                options: ["3 तथा 5","5 तथा 3 तथा 3","3 तथा 1 ","-1 तथा –3"],
+                answer: "3 तथा 1 "
+            },
+            {
+                question: "44.यदि (6,k) समीकरण 3x + y – 22 = 0 का हल है, तो k का मान होगा –",
+                options: ["-4","4","3","-3"],
+                answer: "4"
+            },
+           
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

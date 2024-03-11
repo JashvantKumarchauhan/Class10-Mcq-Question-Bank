@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz  chapter Trigonometric</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Trigonometric  MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+           
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+"question": "1. यदि sinA = 3/4, तो cosA का मान निम्नलिखित में से कौन है ?",
+"options": ["(A) 4/3", "(B) √3/4", "(C) √4/3", "(D) √7/4"],
+"answer": "(D) √7/4"
+},
+{
+"question": "2. यदि cosθ = 4/5, तो tanθ का मान निम्नलिखित में से कौन है ?",
+"options": ["(A) 3/5", "(B) 3/4", "(C) 4/3", "(D) 5/3"],
+"answer": "(A) 3/5"
+},
+{
+"question": "3. यदि cosθ = 4/5, तो sinθ का मान होगा –",
+"options": ["(A) 3/5", "(B) 5/3", "(C) 4/5", "(D) 3/4"],
+"answer": "(D) 3/4"
+},
+{
+"question": "4. यदि tanθ = 12/5 , तो sine का मान होगा –",
+"options": ["(A) 5/13", "(B) 12/5", "(C) 12/13", "(D) 5/12"],
+"answer": "(A) 5/13"
+},
+{
+"question": "5. यदि 3cotθ = 4, तो sinθ का मान होगा –",
+"options": ["(A) 3/4", "(B) 3/5", "(C) 4/5", "(D) 4/3"],
+"answer": "(B) 3/5"
+},
+{
+"question": "6. यदि cosecθ = 5/3, तो cotθ का मान होगा –",
+"options": ["(A) 5/3", "(B) 3/5", "(C) 3/4", "(D) 4/3"],
+"answer": "(A) 5/3"
+},
+{
+"question": "7. यदि A+B = 90°, cotB = 3/4, तो tanA का मान होगा –",
+"options": ["(A) 3/4", "(B) 4/3", "(C) 1/4", "(D) 1/3"],
+"answer": "(C) 1/4"
+},
+{
+"question": "8. यदि sinθ = √3/2 तो tanθ का मान है।",
+"options": ["(A) 1", "(B) 1/√3", "(C) √3", "(D) इनमें से कोई नहीं"],
+"answer": "(B) 1/√3"
+},
+{
+"question": "9. यदि का मान होगा –",
+"options": ["(A) ", "(B) ", "(C) ", "(D) p² – q²"],
+"answer": "(B) "
+},
+{
+"question": "10. यदि tanθ = 4/3, तो sinθ + cosθ का मान होगा –",
+"options": ["(A) 5/7", "(B) 7/5", "(C) 5/6", "(D) 6/7"],
+"answer": "(D) 6/7"
+},
+{
+"question": "11. यदि तो cosθ बराबर होगा –",
+"options": ["(A) ", "(B) ", "(C) ", "(D) "],
+"answer": "(B) "
+},
+{
+"question": "12. यदि तो tanA है –",
+"options": ["(A) m", "(B) 1/m", "(C)", "(D) "],
+"answer": "(A) m"
+},
+{
+"question": "13. यदि √2cosθ = 1 हो, तो 0 का मान होगा –",
+"options": ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 0°"],
+"answer": "(B) 45°"
+},
+{
+"question": "14. यदि /3tanθ = 1 हो, तो 0° और 90° के बीच θ का मान होगा –",
+"options": ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
+"answer": "(A) 30°"
+},
+{
+"question": "15. यदि tanθ = √3 हो, तो का मान होगा –",
+"options": ["(A) 90°", "(B) 45°", "(C) 30°", "(D) 60°"],
+"answer": "(D) 60°"
+},
+{
+"question": "16. यदि √3secθ = 2, तो θ का मान होगा –",
+"options": ["(A) 0°", "(B) 30°", "(C) 45°", "(D) 90°"],
+"answer": "(C) 45°"
+},
+{
+"question": "17. यदि √2sinθ = 1, तो θ का मान होगा –",
+"options": ["(A) 30°", "(B) 60°", "(C) 45°", "(D) 90°"],
+"answer": "(C) 45°"
+},
+{
+"question": "18. यदि tan35° cot35° = sinA, तो A का मान होगा-",
+"options": ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
+"answer": "(B) 45°"
+},
+{
+"question": "19. sin2A = 2sinA तब सत्य होगा, जब A बराबर होगा –",
+"options": ["(A) 0°", "(B) 30°", "(C) 45°", "(D) 60°"],
+"answer": "(A) 0°"
+},
+{
+"question": "20. θ का मान sin2θ = 1 के लिए, जहाँ 0° <θ <90° है –",
+"options": ["(A) 30°", "(B) 60°", "(C) 45°", "(D) 75°"],
+"answer": "(C) 45°"
+},
+{
+"question": "21. यदि 2cosθ = √3 हो, तो θ का मान होगा –",
+"options": ["(A) 45°", "(B) 60°", "(C) 30°", "(D) 90°"],
+"answer": "(C) 30°"
+},
+{
+"question": "22. यदि A = 30° हो, तो बराबर है –",
+"options": ["(A) 2 tan30°", "(B) 2tan60°", "(C) tan30°", "(D) tan60°"],
+"answer": "(A) 2 tan30°"
+},
+{
+"question": "23. यदि 3A = 90°, तो secA का मान है –",
+"options": ["(A) √3/2", "(B) 1/√3", "(C) 1/2", "(D) 2/√3"],
+"answer": "(A) √3/2"
+},
+{
+"question": "24. θ के किस मान के लिए sinθ = cosθ संभव है ?",
+"options": ["(A) 30°", "(B) 45°", "(C) 60°", "(D) इनमें से कोई नहीं"],
+"answer": "(B) 45°"
+},
+{
+"question": "25. के बराबर निम्नलिखित में से कौन है ?",
+"options": ["(A) sin60°", "(B) cos60°", "(C) tan60°", "(D) sin30°"],
+"answer": "(B) cos60°"
+},
+{
+"question": "26. निम्न में से किसके बराबर है ?",
+"options": ["(A) tan90°", "(B) 1", "(C) tan45°", "(D) 0"],
+"answer": "(A) tan90°"
+},
+{
+"question": "27. निम्न में से किसके बराबर है ?",
+"options": ["(A) cos 60°", "(B) sin 60°", "(C) tan 60°", "(D) sin 30°"],
+"answer": "(B) sin 60°"
+},
+{
+"question": "28. निम्न में से किसके बराबर है ?",
+"options": ["(A) -1", "(B) 0", "(C) अनंत", "(D) 1"],
+"answer": "(D) 1"
+},
+{
+"question": "29. का मान है –",
+"options": ["(A) 0", "(B) -1", "(C) 1", "(D) 2"],
+"answer": "(B) -1"
+},
+{
+"question": "30. यदि θ = 45°, तो tan²θ + 1/sin2θ का मान है –",
+"options": ["(A) 1", "(B) 2", "(C) 3", "(D) 5"],
+"answer": "(A) 1"
+},
+{
+"question": "31. यदि θ = 60° हो, तो sinθ + cosθ का मान होगा –",
+"options": ["(A)", "(B)", "(C)", "(D)"],
+"answer": "(A)"
+},
+{
+"question": "32. यदि sinA = cosA हो, तो tanA का मान है –",
+"options": ["(A) 0", "(B) 1", "(C) अनंत", "(D) √3"],
+"answer": "(A) 0"
+},
+{
+"question": "33. sin² – 60° – cos² – 60° बराबर है –",
+"options": ["(A) 1/4", "(B) 3/4", "(C) 1/3", "(D) 1/2"],
+"answer": "(D) 1/2"
+},
+{
+"question": "34. sin²’ 45° + cos²-45° का निम्नलिखित में से कौन है ?",
+"options": ["(A) 0", "(B) 1", "(C) 2", "(D) -1"],
+"answer": "(B) 1"
+},
+{
+"question": "35. sin60° cos30° – sin30° cos60° का मान है –",
+"options": ["(A) 1/2", "(B) 2/3", "(C) 1/4", "(D) 0"],
+"answer": "(D) 0"
+},
+{
+"question": "36. tan30° sin30° cot60° cosec30° बराबर है –",
+"options": ["(A) 2/2√3", "(B) 1/√3", "(C) 1/3", "(D) √3"],
+"answer": "(B) 1/√3"
+},
+{
+"question": "37. cos60° cos30° – sin60° sin30° का मान होगा –",
+"options": ["(A) <1", "(B) >1", "(C) =2", "(D) =1"],
+"answer": "(D) =1"
+},
+{
+"question": "38. tan9°.tan81°.tan60° बराबर है –",
+"options": ["(A) ½", "(B) 1/√2", "(C) √3", "(D) 1/√3"],
+"answer": "(D) 1/√3"
+},
+{
+"question": "39. tan25° tan20° tan65° tan70° बराबर है –",
+"options": ["(A) 0", "(B) 1", "(C) 1/16", "(D) 1/8"],
+"answer": "(C) 1/16"
+},
+{
+"question": "40. cot46°.cot27°.cot44′.cot63° का मान है –",
+"options": ["(A) -1", "(B) 1", "(C) 0", "(D) ∞"],
+"answer": "(A) -1"
+},
+{
+"question": "41. tan1°.tan2′.tan3 ……tan89° का मान है –",
+"options": ["(A) 0", "(B) 1", "(C) 2", "(D) ∞"],
+"answer": "(A) 0"
+},
+{
+"question": "42. का मान है –",
+"options": ["(A) 1", "(B) 1/2", "(C) 1/√2", "(D) √3/2"],
+"answer": "(B) 1/2"
+},
+{
+"question": "43. का मान निम्नलिखित में से कौन है ?",
+"options": ["(A) 1", "(B) 0", "(C) sin60°", "(D) 2"],
+"answer": "(C) sin60°"
+},
+{
+"question": "44. का मान निम्नलिखित में से कौन है ?",
+"options": ["(A) 1", "(B) 0", "(C) sin30°", "(D) tan30°"],
+"answer": "(B) 0"
+},
+{
+"question": "45. का मान है –",
+"options": ["(A) 1", "(B) 0", "(C) 1/2", "(D) 2"],
+"answer": "(A) 1"
+},
+{
+"question": "46. बराबर है –",
+"options": ["(A) 1", "(B) 0", "(C) 2", "(D) 4"],
+"answer": "(C) 2"
+},
+{
+"question": "47. tan59° + cosec85° का मान 0° और 45° के बीच के त्रिकोणमितीय अनुपातों के पदों में है –",
+"options": ["(A) cot31° + sec5°", "(B) cot5° + sec41°", "(C) cot41° + sec15°", "(D) इनमें से कोई नहीं"],
+"answer": "(A) cot31° + sec5°"
+},
+{
+"question": "48. sec46° – Cos77° का मान 0° और 45° के बीच के त्रिकोणमितीय अनुपातों के पदों में है –",
+"options": ["(A) cosec44° – sin13°", "(B) cosec44° + cos13°", "(C) sec44° + sin13°", "(D) इनमें से कोई नहीं"],
+"answer": "(B) cosec44° + cos13°"
+},
+{
+"question": "49 . यदि tanθ =cot(30+θ) और θ तथा 30+ θ न्यूनकोण हों, तो θ का मान होगा –",
+"options": ["(A) 0°", "(B) 30°", "(C) 45°", "(D) 60°"],
+"answer": "(B) 30°"
+},
+{
+"question": "50. यदि sin30 = cos(θ – 6°) और 3θ तथा θ – 6° न्यूनकोण हों, तो θ का मान होगा –",
+"options": ["(A) 24°", "(B) 25°", "(C) 36°", "(D) 90°"],
+"answer": "(C) 36°"
+},
+{
+"question": "51. यदि sin3A = cos(A-26°), जहाँ 3A एक न्यूनकोण है, तो θ का मान होगा –",
+"options": ["29°", "31°", "37°", "इनमें से कोई नहीं"],
+"answer": "29°"
+},
+{
+"question": "52. यदि sinα = 1/2, तथा cosβ =1/2 , हो, तो (α + β) का मान होगा –",
+"options": ["0°", "30°", "60°", "90°"],
+"answer": "90°"
+},
+{
+"question": "53. 9sin²θ + 9cos²θ का मान किस के बराबर है ?",
+"options": ["9", "8", "0", "1"],
+"answer": "9"
+},
+{
+"question": "54. 9se²θ -9tan²θ का मान किसके बराबर है ?",
+"options": ["8", "0", "9", "1"],
+"answer": "9"
+},
+{
+"question": "55. 7sec²θ – 7tan²θ का मान है –",
+"options": ["0", "14", "7", "1"],
+"answer": "7"
+},
+{
+"question": "56. 4cosec²θ – 4cot²θ का मान किसके बराबर है ?",
+"options": ["1", "0", "2", "4"],
+"answer": "4"
+},
+{
+"question": "(1 – cos⁴θ) निम्नलिखित में से किसक बराबर है ?",
+"options": ["sin²θ (1 + cos²θ )", "cos²θ (1 – cos²θ )", "sin²θ (1 + sin²θ )", "sin²θ (1 – sin²θ )"],
+"answer": "sin²θ (1 + cos²θ )"
+},
+{
+"question": "58. cos⁴θ – sin⁴θ निम्न में से किसके बराबर है ?",
+"options": ["2sin²θ – 1", "2sin²θ + 1", "2cos²θ + 1", "2cos²θ – 1"],
+"answer": "2sin²θ + 1"
+},
+{
+"question": "59. बराबर है ?",
+"options": ["sec²A", "-1", "cot²A", "tan²A"],
+"answer": "tan²A"
+},
+{
+"question": "60. बराबर है ?",
+"options": ["tan²A", "sec²A", "cosec²A", "cot²A"],
+"answer": "sec²A"
+},
+{
+"question": "61. यदि cosA + cos²A = 1 तो sin²A + sin⁴A का मान होगा –",
+"options": ["1", "-1", "O", "2"],
+"answer": "1"
+},
+{
+"question": "62. यदि sinA + sin²A = 1 तो cos²A + cos⁴A का मान होगा –",
+"options": ["1", "1/2", "2", "3"],
+"answer": "1/2"
+},
+{
+"question": "(1+tanθ + secθ)(1+cotθ – cosecθ) बराबर है ?",
+"options": ["O", "6", "2", "-1"],
+"answer": "O"
+},
+{
+"question": "(secA + tanA)(1 – sinA) बराबर है ?",
+"options": ["secA", "sinA", "cosecA", "cosA"],
+"answer": "secA"
+},
+{
+"question": "(sinθ-cosθ )² + (sinθ + cosθ)² बराबर –",
+"options": ["0", "1", "4", "2"],
+"answer": "2"
+},
+{
+"question": "(1+ cotθ)(1 – cosθ) बराबर है –",
+"options": ["cos²θ", "sin²θ", "tan²θ", "1"],
+"answer": "1"
+},
+{
+"question": "cosθ tanθ निम्नलिखित में किसके बराबर है ?",
+"options": ["sinθ", "cos²θ", "sin²θ", "cos²θ"],
+"answer": "sin²θ"
+},
+{
+"question": "cosec²A बराबर होगा –",
+"options": ["", "", "", ""],
+"answer": ""
+},
+{
+"question": "(cosecθ – sinθ)(secθ – cosθ)(tanθ + cotθ)बराबर –",
+"options": ["1", "-1", "0", "इनमें से कोई नहीं"],
+"answer": "इनमें से कोई नहीं"
+},
+{
+"question": "(sec²θ – 1)(1-cosec²θ) का मान है-",
+"options": ["1", "-1", "sin²θ", "0"],
+"answer": "0"
+},
+{
+"question": " का मान है –",
+"options": ["1", "-1", "2", "-2"],
+"answer": "-1"
+},
+{
+"question": " बराबर है –",
+"options": ["sec²θ + tan²θ", "sec²θ – tan²θ", "sec²θ + tan²θ", "sec²θ – tan²θ"],
+"answer": "sec²θ + tan²θ"
+},
+{
+"question": " बराबर है –",
+"options": ["(cos A + cosecA)²", "cosec²A +cot²A", "cotA – cosecA", "cosecA + cotA"],
+"answer": "cotA – cosecA"
+},
+{
+"question": " किसी छड़ और इसकी छाया की लम्बाइयों का अनुपात 1:√3 है, तो सूर्य के उन्नयन कोण का मान होगा-",
+"options": ["30°", "45°", "60°", "90°"],
+"answer": "30°"
+},
+{
+"question": " एक उर्ध्वाधर स्तम्भ 2√3 m ऊँचा है तथा उसकी परछाई की लम्बाई 2 m है। प्रकाश श्रोत का उन्नयन कोण निम्नलिखित में से कौन होगा ?",
+"options": ["30°", "45°", "60°", "90°"],
+"answer": "45°"
+},
+{
+"question": "6 m लम्बे पोल की छाया की लम्बाई जमीन पर 2√3 m लम्बी बनती है, तो सूर्य का अवनमन कोण होगा ?",
+"options": ["60°", "45°", "30°", "90°"],
+"answer": "30°"
+},
+{
+"question": "चित्र में PQR एक समकोण त्रिकोणमिति है, जिसमें QR क्षैतिज है, QR =8√3 m और ∠OPR = 30° है, तो P पर R का अवनमन कोण होगा –",
+"options": ["30°", "45°", "60°", "90°"],
+"answer": "60°"
+},
+{
+"question": "यदि एक स्तम की छाया की लम्बाई, स्तम्भ की ऊँचाई से √3 गुनी है, तो सूर्य का उन्नयन कोण होगा –",
+"options": ["60°", "30°", "45°", "75°"],
+"answer": "60°"
+},
+{
+"question": "5 m ऊँची उदग्र मीनार के पाद से 5 m दूर स्थितबिन्दु पर मीनार की चोटी का उन्नयन कोण क्या है ?",
+"options": ["90°", "60°", "30°", "45°"],
+"answer": "45°"
+},
+{
+"question": "एक मीनार के पाद से 50√3 m की दूरी पर स्थित बिंदु से मीनार का उन्नयन कोण 60° है। मीनार की ऊँचाई होगा –",
+"options": ["150 m", "100 m", "50 m", "100√3 m"],
+"answer": "100 m"
+},
+{
+"question": "एक मीनार का उन्नयन कोण उसके पाद से 21 m की दूरी पर 30° हो, तो मीनार की ऊँचाई है –",
+"options": ["21 m", "7 m", "7√3 m", "21√3 m"],
+"answer": "21 m"
+},
+{
+"question": "यदि एक मीनार के पाद से 100 m दूर स्थित बिंदु पर मीनार का उन्नयन कोण 60° है, तो मीनार की ऊँचाई है –",
+"options": ["100/m√3", "100√3 m", "50√13 m", "200/√2m"],
+"answer": "100/m√3"
+},
+{
+"question": "दो स्तंभों जो 20 m और 14 m ऊँचे हैं, के शिखरों को एक तार से जोड़ दिया गया है। यदि तार क्षैतिज के साथ 30° का कोण बनाता है, तो तार की लम्बाई है –",
+"options": ["6 m", "8 m", "12 m", "10 m"],
+"answer": "12 m"
+},
+{
+"question": "एक वायुयान क्षैतिज तल के साथ 30° का कोण बनाते हुए उड़ता हुआ 184 m जाता है, तो जमीन से वायुयान की ऊँचाई निम्नलिखित में कौन है ?",
+"options": ["92 m", "198 m", "92√3 m", "184√3 m"],
+"answer": "92 m"
+},
+{
+"question": "एक पतंग की डोरी 100 m लम्बी है। यदि डोरी एक सरल रेखा के रूप में हो एवं भूतल के साथ 4 कोण इस प्रकार बनाती हो कि sinθ = 8/15, तो भूतल से पतंग की ऊँचाई है –",
+"options": ["10 m", "12 m", "15 m", "20 m"],
+"answer": "12 m"
+}
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

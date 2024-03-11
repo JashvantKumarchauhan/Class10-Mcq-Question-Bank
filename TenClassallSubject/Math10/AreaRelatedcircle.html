@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Related Circle </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Area Related Circle MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. यदि एक वृत्त का परिमाप और क्षेत्रफल संख्यात्मक रूप से बराबर है, तो उस वृत्त की त्रिज्या है –",
+        "options": ["2 मात्रक", "π मात्रक", "4 मात्रक", "7 मात्रक"],
+        "answer": "π मात्रक"
+    },
+    {
+        "question": "2. यदि एक वृत्त का परिमाप और क्षेत्रफल संख्यात्मक रूप से बराबर है, तो उस वृत्त का व्यास है –",
+        "options": ["4 मात्रक", "2 मात्रक", "π मात्रक", "7 मात्रक"],
+        "answer": "2 मात्रक"
+    },
+    {
+        "question": "3. त्रिज्या R वाले वृत्त के उस त्रिज्यखण्ड का क्षेत्रफल जिसका कोण Pr है, निम्नलिखित है –",
+        "options": [],
+        "answer": "0"
+    },
+    {
+        "question": "4. 6 cm त्रिज्या वाले एक वृत्त के एक त्रिज्यखण्ड का क्षेत्रफल क्या होगा जिसका कोण 60° है ?",
+        "options": [],
+        "answer": "9√3 cm²"
+    },
+    {
+        "question": "5. वृत्त के उस त्रिज्यखण्ड का क्षेत्रफल जिसकी त्रिज्या 14 cm और त्रिज्यखण्ड का कोण 90° है, होगा –",
+        "options": ["7π cm²", "49π cm²", "14π cm²", "196π cm²"],
+        "answer": "49π cm²"
+    },
+    {
+        "question": "6. यदि R₁, और R₂, त्रिज्याओं वाले दो वृत्तों की परिधियों का योग त्रिज्या R वाले एक वृत्त की परिधि के बराबर हो, तो –",
+        "options": ["R₁, + R₂, = R", "R₁, + R₂, > R", "R₁, + R₂, < R", "इनमें से कोई नहीं"],
+        "answer": "R₁, + R₂, = R"
+    },
+    {
+        "question": "7. दो वृत्तों की त्रिज्याएँ क्रमशः 19 cm और 9 cm है। उस वृत्त की त्रिज्या क्या होगी जिसकी परिधि इन दोनों वृत्तों की परिधियों के योग के बराबर है –",
+        "options": ["28 cm", "10 cm", "18 cm", "19 cm"],
+        "answer": "28 cm"
+    },
+    {
+        "question": "8. यदि R₁, और R₂ त्रिज्याओं वाले दो वनों के क्षेत्रफलों का योग त्रिज्या R वाले वृत्त के क्षेत्रफल के बराबर है, तो –",
+        "options": ["R₁, + R₂, = R", "R₁² + R₂² = R²", "R₁, +R₂ < R", "R₁²+R₂², < R²"],
+        "answer": "R₁² + R₂² = R²"
+    },
+    {
+        "question": "9. दो वृत्तों की त्रिज्याएँ क्रमशः 8 cm और 6 cm हैं। उस वृत्त, जिसका क्षेत्रफल इन दोनों वृत्तों के क्षेत्रफलों का योग है, का त्रिज्या है –",
+        "options": ["20 cm", "10 cm", "5 cm", "15 cm"],
+        "answer": "10 cm"
+    },
+    {
+        "question": "10. a भुजा वाले किसी वर्ग की परिमिति और उसी के बराबर त्रिज्या वाले किसी वृत्त की परिधि का अनुपात है-",
+        "options": ["2:π", "π:2", "4:π", "π:4"],
+        "answer": "2:π"
+    },
+    {
+        "question": "11. 3 cm त्रिज्या वाले एक वृत्त का क्षेत्रफल है –",
+        "options": ["28.29 cm²", "27 cm²", "28 cm²", "27.29 cm²"],
+        "answer": "28.29 cm²"
+    },
+    {
+        "question": "12. बराबर परिधि के एक वर्ग और एक वृत्त के क्षेत्रफल का अनुपात होगा –",
+        "options": ["4:π", "π:4", "2:π", "π:2"],
+        "answer": "4:π"
+    },
+    {
+        "question": "13. दो वृत्तों की त्रिज्याओं का अनुपात a : b है, तो उनके क्षेत्रफलों का अनुपात होगा –",
+        "options": ["a : b", "a²: b²", "b : a", "√a: √b"],
+        "answer": "a²: b²"
+    },
+    {
+        "question": "14. दो वृत्तों की त्रिज्याओं का अनुपात 1: 3 है, तो उनके क्षेत्रफलों का अनुपात होगा –",
+        "options": ["1 : 9", "2 : 9", "3 : 9", "2 : 3"],
+        "answer": "1 : 9"
+    },
+    {
+        "question": "15. किसी वृत्त की परिधि एवं व्यास का अनुपात होता है –",
+        "options": ["1 : π", "π : 1", "2 : 1", "1 : 2"],
+        "answer": "1 : π"
+    },
+    {
+        "question": "16. किसी वृत्त की परिधि और क्षेत्रफल का अनुपात है –",
+        "options": ["r : 1", "1 : r", "r : 2", "2 : r"],
+        "answer": "r : 2"
+    },
+    {
+        "question": "17. यदि किसी वृत्त की त्रिज्या k गुनी कर दिया जाए तो पुराने और नए वृत्तों के क्षेत्रफलों का अनुपात होगा –",
+        "options": ["1 : k²", "1 : k³", "1 : k", "k² : 1"],
+        "answer": "1 : k²"
+    },
+    {
+        "question": "18. यदि किसी वृत्त की त्रिज्या k गुनी कर दिया जाए तो नए और पुराने वृत्तों के क्षेत्रफलों का अनुपात होगा –",
+        "options": ["1 : K²", "1 : k³", "1 : k", "k²: 1"],
+        "answer": "1 : k²"
+    },
+    {
+        "question": "19. 8 cm त्रिज्या वाले एक वृत्त के अन्तर्गत खींचे जा सकने वाले वर्ग का क्षेत्रफल है –",
+        "options": ["256 cm²", "128 cm²", "64√2 cm²", "64 cm²"],
+        "answer": "256 cm²"
+    },
+    {
+        "question": "20. एक वृत्त का क्षेत्रफल 440 cm है। इसके अन्तर्गत खींचे गए वर्ग का क्षेत्रफल है –",
+        "options": ["64 cm²", "49 cm²", "280 cm²", "इनमें से कोई नहीं"],
+        "answer": "49 cm²"
+    },
+    {
+        "question": "21. 3 cm त्रिज्या वाले वृत्त का क्षेत्रफल है –",
+        "options": ["28.29 cm²", "27 cm²", "28 cm²", "27.29 cm²"],
+        "answer": "28.29 cm²"
+    },
+    {
+        "question": "22.7 cm त्रिज्या वाले वृत्त का क्षेत्रफल निम्न में से कौन है ?",
+        "options": ["11 cm²", "77 cm²", "22 cm²", "77/2 cm²"],
+        "answer": "77 cm²"
+    },
+    {
+        "question": "23. एक पहिए का व्यास 4 m है, तो वह 400 चक्करों में कितनी दूरी तय करेगी ?",
+        "options": ["1600 m", "800 m", "1600π m", "800π m"],
+        "answer": "800π m"
+    },
+    {
+        "question": "24. यदि किसी पहिए की त्रिज्या 21/22 , m हो. तो उसके द्वारा एक चक्कर में तय की गई दूरी होगी-",
+        "options": ["3 m", "6 m", "8 m", "4 m"],
+        "answer": "6 m"
+    },
+    {
+        "question": "25. यदि एक अर्द्धवृत्तीय कोणमापक का व्यास 14 cm है, तो इसका परिमाप होगा –",
+        "options": ["36 cm", "35 cm", "26 cm", "28 cm"],
+        "answer": "36 cm"
+    },
+    {
+        "question": "26. त्रिज्या 3 cm तथा केन्द्रीय कोण 60° के त्रिज्यखण्ड का परिमाप है-",
+        "options": ["(π + 6) cm", "(π + 3) cm", "(π + 12) cm", "(2π + 6) cm"],
+        "answer": "(π + 6) cm"
+    },
+    {
+        "question": "27. दो संकेन्द्रीय वृत्तों के व्यास क्रमश: 4 cm तथा 6 cm हैं। उनके बीच के भाग का क्षेत्रफल निम्नलिखित में से कौन है ?",
+        "options": ["4π cm²", "5π cm²", "π cm²", "2π cm²"],
+        "answer": "4π cm²"
+    },
+    {
+        "question": "28. यदि 10 cm त्रिज्या वाले वृत्त के अन्दर से 5 cm त्रिज्या वाला एक वृत्त काटकर हटा लिया जाए, तो बचे भाग का क्षेत्रफल होगा –",
+        "options": ["10π cm²", "25π cm²", "50π cm²", "75π cm²"],
+        "answer": "50π cm²"
+    },
+    {
+        "question": "29. किसी वलय की बाहरी और भीतरी त्रिज्याएँ क्रमश: 20 cm और 15 cm है। वलय का क्षेत्रफल होगा –",
+        "options": ["175π cm²", "150π cm²", "125π cm²", "275π cm²"],
+        "answer": "150π cm²"
+    },
+    {
+        "question": "30. किसी वलय को भीतरी त्रिज्या 10 cm और चौड़ाई 5 cm है, तो वलय का क्षेत्रफल होगा –",
+        "options": ["100π cm²", "125π cm²", "150π cm²", "175π cm²"],
+        "answer": "150π cm²"
+    },
+    {
+        "question": "31. 7 cm त्रिज्या वाले वृत्त के चतुर्थाश का परिमाप है –",
+        "options": ["35 cm", "25 cm", "20 cm", "45 cm"],
+        "answer": "35 cm"
+    },
+    {
+        "question": "32. 14 cm त्रिज्या वाले वृत्त के चतुर्थाश का परिमाप है –",
+        "options": ["28 cm", "35 cm", "50 cm", "75 cm"],
+        "answer": "28 cm"
+    },
+    {
+        "question": "33. किसी वृत्त की परिधि 22 cm है। उसके चतुर्थाश का क्षेत्रफल निम्नलिखित में से कौन है ?",
+        "options": ["77/8 cm²", "77/4 cm²", "154 cm²", "77 cm²"],
+        "answer": "77 cm²"
+    },
+    {
+        "question": "34. किसी वृत्त की परिधि 44 cm है, तो उसके चतुर्थाश का क्षेत्रफल होगा –",
+        "options": ["35.5 cm²", "38.5 cm²", "77/4 cm²", "77/8 cm²"],
+        "answer": "38.5 cm²"
+    },
+    {
+        "question": "35. किसी वृत्त का क्षेत्रफल 49π cm² है, तो उसका व्यास होगा –",
+        "options": ["21 cm", "49 cm", "14 cm", "7 cm"],
+        "answer": "14 cm"
+    },
+    {
+        "question": "36.समीकरण युग्म 2x + 3y = 11 और 2x – 4y = -24 के हल हैं –",
+        "options": ["x = -3, y = 1", "x = 2, y = 4", "x = -2, y = -5", "x =  -2, y  = 5"],
+        "answer": "x =  -2, y  = 5"
+    },
+    {
+      "question": "37. दो वृत्तों की त्रिज्याएँ 2 : 3 के अनुपात में है, तो उनकी परिधियों का अनुपात है –",
+      "options": ["4 : 9", "3 : 2", "2 : 3", "1 : 3"],
+      "answer": "C"
+    },
+    {
+      "question": "38. दो वृत्तों की परिधियाँ 2 : 3 के अनुपात में है, तो उनकी त्रिज्याओं का अनुपात है –",
+      "options": ["4 : 9", "3 : 2", "2 :3", "1 : 3"],
+      "answer": "A"
+    },
+    {
+      "question": "39. यदि किसी वृत्त की त्रिज्या k गुनी कर दी जाए, तो उसका क्षेत्रफल कितना गुना हो जाएगा ?",
+      "options": ["k² गुना", "3k² गुना", "4k² गुना", "2k² गुना"],
+      "answer": "C"
+    },
+    {
+      "question": "40. यदि किसी वृत्त की त्रिज्या k गुनी कर दी जाए. तो उसकी परिधि …………. गुनी हो जाएगी।",
+      "options": ["πk", "πk²", "k", "k²"],
+      "answer": "A"
+    },
+    {
+      "question": "41. यदि किसी वृत्त की त्रिज्या आधी कर दी जाए, तो पुराने तथा नए वृत्तों के परिधियों का अनुपात होगा –",
+      "options": ["2 : 1", "1 : 2", "4 : 1", "1 : 4"],
+      "answer": "B"
+    },
+    {
+      "question": "42. यदि किसी वृत्त की त्रिज्या दुगूनी कर दी जाए, तो पुराने एवं नए वृत्तों के क्षेत्रफलों का अनुपात क्या होगा ?",
+      "options": ["1 : 2", "1 : 4", "4 : 1", "2 : 1"],
+      "answer": "B"
+    },
+    {
+      "question": "43. त्रिज्या r वाले अर्द्ध वृत्त की परिमिति होती है –",
+      "options": ["πr", "πr + 2r", "2πr", "πr²"],
+      "answer": "C"
+    },
+    {
+      "question": "44. एक अर्द्ध वृत्त का व्यास 14 cm है, तो इसका परिमाप होगा –",
+      "options": ["36 cm", "77 cm", "72 cm", "28 cm"],
+      "answer": "A"
+    },
+    {
+      "question": "45. एक वृत की परिधि 88 cm है। वृत्त का क्षेत्रफल होगा –",
+      "options": ["616 cm²", "154 cm²", "308 cm²", "इनमें से कोई नहीं"],
+      "answer": "D"
+    },
+    {
+      "question": "46. एक वृत्त की परिधि 22 cm है। वृत्त का क्षेत्रफल होगा –",
+      "options": ["38.5 cm²", "37.5 cm²", "38 cm²", "39 cm²"],
+      "answer": "B"
+    },
+    {
+      "question": "47. यदि किसी वृत्त की परिधि 2π से बढ़ाकर 6π कर दी जाए. तो इसका क्षेत्रफल हो जाता है –",
+      "options": ["तीन गुना", "दो गुना", "चार गुना", "इनमें से कोई नहीं"],
+      "answer": "A"
+    },
+    {
+      "question": "48. किसी वृत्त की त्रिज्या 10% घटा दी जाए, तो उसका क्षेत्रफल घटा जाएगा –",
+      "options": ["10%", "19%", "20%", "36%"],
+      "answer": "B"
+    },
+    {
+      "question": "49. एक वृत्त का क्षेत्रफल 220 cm² है। इस वृत्त के अन्दर अन्तरित वर्ग का क्षेत्रफल होगा-",
+      "options": ["70 cm²", "49 cm²", "150 cm²", "140 cm²"],
+      "answer": "A"
+    },
+    {
+      "question": "50. किसी r त्रिज्या वाले अर्द्धवत्त के अन्दर खींचे गए अधिकतम वर्ग का क्षेत्रफल वाले त्रिभुज का क्षेत्रफल होगा",
+      "options": ["2r²", "r²", "πr²", "r³"],
+      "answer": "A"
+    },
+    {
+      "question": "51. भुजा 6 cm वाले एक वर्ग के अन्तर्गत खींचे जा सकने वाले वृत्त का क्षेत्रफल है –",
+      "options": ["36 π cm²", "18π cm²", "12ππ cm²", "9π cm²"],
+      "answer": "C"
+    },
+    {
+      "question": "52. दो वृनीय क्षेत्रों के क्षेत्रफलों का अनुपात 16 : 49 है। यदि बड़े वृत्त की त्रिज्या 14 cm है, तो छोटे वृत्त की त्रिज्या क्या है ?",
+      "options": ["6 cm", "8 cm", "3 cm", "4 cm"],
+      "answer": "D"
+    },
+    {
+      "question": "53. किसी अर्द्ध वृत्ताकार क्षेत्र का क्षेत्रफल 19.25 m² है, तो उसका व्यास. निम्नलिखित में कौन है ?",
+      "options": ["7 m", "5.7 m", "7.5 m", "8 m"],
+      "answer": "A"
+    },
+    {
+      "question": "54. किसी अर्द्ध वृत्त क्षेत्र का परिमाप18/7 m है, तो उसका व्यास निम्नलिखित में कौन है ?",
+      "options": ["3 m", "2 m", "1 m", "1.5 m"],
+      "answer": "B"
+    },
+    {
+      "question": "55. किसी वृत्त में केन्द्रीय कोण 90° वाला एक त्रिज्यखंड़ काट लिया जाए, तो वृत्त और कटे हुए भाग के क्षेत्रफलों का अनुपात है –",
+      "options": ["4 : 1", "1 : 4", "3 : 1", "1 : 3"],
+      "answer": "B"
+    },
+    {
+      "question": "56. घड़ी के घंटे की सूई द्वारा एक घंटे में तय किया गया कोण है –",
+      "options": ["30°", "60°", "45°", "90°"],
+      "answer": "D"
+    }
+           
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

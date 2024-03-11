@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz chapter real number</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Real Number MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+            {
+                question: "1. निम्नलिखित में कौन-सी अभाज्य संख्या है ?",
+                options: ["7", "9", "12", "6"],
+                answer: "7"
+            },
+            {
+                question: "2. यदि a और b अभाज्य संख्या है, तो ल० स० (a, b)होगा ",
+                options: ["a", "b", "ab", "a/b"],
+                answer: "ab"
+            },
+            {
+                question: "3. संख्या 2.13 113 1113 11113…है ",
+                options: ["पूर्णांक संख्या", "परिमेय संख्या", "अपरिमेय संख्या", "इनमें से कोई नहीं"],
+                answer: "अपरिमेय संख्या"
+            },
+            {
+                question: "4. वस्तुनिष्ठ प्रश्न यदि भाग एल्गोरिथ्म a = bq + r में a = 72, b = 9, q = 8 तो r का मान होगा ?",
+                options: ["8", "7", "0", "9"],
+                answer: "0"
+            },
+            {
+                question: "5. यदि भाग ऐल्गोरिथ्म a =bq + r में a = 73, b = 9,q = 8, तो r का मान होगा- ",
+                options: ["8", "7", "1", "9"],
+                answer: "1"
+            },
+
+            {
+                question: "6. a = bq + r में H.C.F. (a, b) = LCM (……..)",
+                options: ["b,r", " q,r", "a,q", "b,q"],
+                answer: "b,r"
+            },
+
+            {
+                question: "7.किसी धनात्मक पूर्णाक a तथा b के लिए HCF(a, b) x LCM(a, b) निम्न में से किसके बराबर होगा ?",
+                options: ["b/a","a x b","a/b"," a + b"],
+                answer: "a x b"
+            },
+
+            {
+                question: "8.दो संख्याओं का म०स० 25 और ल०स० 50 है, तो इन संख्याओं का गुणनफल है –",
+                options: ["1050"," 1150","1250"," 1350"],
+                answer: "1250"
+            },
+            {
+                question: "9. युक्लिड एल्गोरिथ्म प्रयोग करने के जिस क्रम में जब शेषफल शून्य आता है, तब उस चरण का भाजक कहलाता है –",
+                options: ["म०स०"," ल०स०"," भाज्य","  भाजक"],
+                answer: "म०स०"
+            },
+            {
+                question: "10. युक्लिड विभाजन एल्गोरिथ्म दो धनात्मक पूर्णांकों के निम्न में से किसे परिकलित करने की तकनीक है ?",
+                options: ["म०स०"," ल०स०"," भाज्य","  भाजक"],
+                answer: "म०स०"
+            },
+            {
+                question: "11. 1 कौन-सी संख्या है ? ",
+                options: [" अभाज्य","  सह-अभाज्य"," भाज्य"," इनमें से कोई नहीं"],
+                answer: "इनमें से कोई नहीं"
+            },
+            {
+                question: "12.  a और b सह-अभाज्य संख्या कहलाते हैं, यदि – ",
+                options: ["(a, b) का म०स० = 0","(a, b) का ल०स० = 1"," (a, b) का म०स० = 1","(a, b) का ल०स० = 0"],
+                answer: "(a, b) का म०स० = 1"
+            },
+            {
+                question: "13.निम्न में से कौन-सा युग्म सह अभाज्य है ?",
+                options: ["(9,16)","(15,20)","(21,84)","(13,52)"],
+                answer: "(9,16)"
+            },
+            {
+                question: "14.दो धनात्मक पूर्णाक a और b के लिए यदि a = bq + r  तो –",
+                options: ["0 < r < b","1 < r  < b","0 < r  ≤ b","0 ≤  r < b"],
+                answer: "0 ≤  r < b"
+            },
+            {
+                question: "15.यदि दो धनात्मक पूर्णांक a तथा b जहाँ a = x²y² तथा b = xy² के रूप में है जहाँ x तथा । अभाज्य संख्याएँ हैं, तब (a, b) का H.C.F. होगा – ",
+                options: ["xy","xy²"," x²y²"," x³y⁴"],
+                answer: "xy²"
+            },
+            {
+                question: "16.यदि x = 2³ x 3 x 5², y = 2² x 3³, तब H.C.F. (x, y) होगा –",
+                options: ["6","4","12","30"],
+                answer: "12"
+            },
+            {
+                question: "17.दो क्रमागत सम संख्याओं का म०स० होगा-",
+                options: ["1","2","3","4"],
+                answer: "2"
+            },
+            {
+                question: "18. दो क्रमागत विषम संख्याओं का म०स० निम्नलिखित में से कौन हैं ?",
+                options: ["1","2","3","4"],
+                answer: "1"
+            },
+            {
+                question: "19. सबसे छोटी भाज्य संख्या तथा सबसे छोटी अभाज्य संख्या का H.C.F. है –",
+                options: ["1","2","3","4"],
+                answer: "2"
+            },
+            {
+                question: "20.निम्न में से किस गणितज्ञ ने “The book of games of choice” पुस्तक लिखी है ? ",
+                options: ["जे० कार्डन"," जेम्स बर्नूली 7"," ए०डी० मोइबरे"," ए०डी० मोइबरे"],
+                answer: "जे० कार्डन"
+            },
+            {
+                question: "21.शब्द “एल्गोरिथ्म” किस गणितज्ञ के नाम से लिया गया है ?",
+                options: ["अल-ख्वारिजमी","आर्यभट्ट"," पाइथागोरस","थेल्स"],
+                answer: "अल-ख्वारिजमी"
+            },
+            {
+                question: "22.“हिसाब अल-जबर वा अलमुकाबला” किस गणितज्ञ द्वारा लिखी पुस्तक है ?",
+                options: ["कार्लफ्रेड्रिक गॉस"," अल-ख्वारिजमी"," थेल्स"," पाइथागोरस"],
+                answer: " अल-ख्वारिजमी"
+            },
+            {
+                question: "23.“गणितों का राजकुमार” प्रायः निम्नलिखित में से किस गणितज्ञयों को कहा जाता है",
+                options: ["यूक्लि","कार्लफैड्रिक गॉस","आर्किमिडीज","न्यूटन"],
+                answer: "कार्लफैड्रिक गॉस"
+            },
+            {
+                question: "24.डिसक्वीशंस अरिथिमेटिकी किस गणितज्ञ की कृति है ?",
+                options: ["यूक्लि","कार्लफैड्रिक गॉस","आर्किमिडीज","न्यूटन"],
+                answer: "2"
+            },
+            {
+                question: "25.किसी पूर्णाक m के लिए, प्रत्येक समपूर्णांक का रूप है –",
+                options: ["m","m+1","2m","2m+1"],
+                answer:  "2m"
+            },
+            {
+                question: "26. किसी पूर्णाक के लिए, प्रत्येक विषम पूर्णांक का रूप है –",
+                options: ["q","2q+1","q+1","2q"],
+                answer: "2q+1"
+            },
+            {
+                question: "27. (n-1), 8 से विभाज्य है, यदि n = ……..",
+                options: ["एक पूर्णांक","एक प्राकृत संख्या","एक विषम संख्या","एक सम संख्या"],
+                answer: "एक विषम संख्या"
+            },
+            {
+                question: "28. 625 के अभाज्य गुणनखंड के 5 का घात होगा –",
+                options: ["5","4","3","2"],
+                answer: "4"
+            },
+            {
+                question: "29. 3825 के अभाज्य गुणनखंड में 3 का घात होगा –",
+                options: [" 12","15","23","75"],
+                answer: "23"
+            },
+            {
+                question: "30.निम्न में से कौन अभाज्य है ?",
+                options: ["1","2","3","4"],
+                answer: "2"
+            },
+            {
+                question: "31. 306 और 54 का HCF है –",
+                options: ["18","20","32","24"],
+                answer: "18"
+            },
+            {
+                question: "32. 12, 15 और 21 का ल०स० निम्न में से कौन है ?",
+                options: ["420","400","320","480"],
+                answer: "2"
+            },
+            {
+                question: "33. 8, 9, 25 का ल०स० है –",
+                options: ["1600","2000","1800","1400"],
+                answer: "1800"
+            },
+            {
+                question: "34. LCM (91, 26) = 182 है, तो HCF (91, 26) होगा –",
+                options: ["13","26","91","39"],
+                answer: "13"
+            },
+            {
+                question: "35. यदि LCM (72, 126) = 504 है, तो HCF (72, 126) होगा –",
+                options: ["16","18","24","14"],
+                answer: "18"
+            },
+            {
+                question: "36.निम्नलिखित में से कौन परिमेय संख्या है ?",
+                options: ["√5","2√5/√5","3√5","√5"],
+                answer: "2√5/√5"
+            },
+            {
+                question: "37. निम्नलिखित में से कौन परिमेय संख्या है ?",
+                options: ["√81","√40/2","√5"," π"],
+                answer: "√81"
+            },
+            {
+                question: "38.निम्न में से कौन परिमेय संख्या नहीं है ?",
+                options: ["√81","√64"," π","√25"],
+                answer: " π"
+            },
+            {
+                question: "39. π या π/2 या 3π  या π + 2 या π -3 है –",
+                options: ["परिमेय संख्या","अपरिमेय संख्या","【A】 एवं 【B】 दोनों","इनमें से कोई नहीं"],
+                answer: "अपरिमेय संख्या"
+            },
+            {
+                question: "40. 3 + √3 या 3 – √3 या 3√3 या √3/3 या 3√3/3 है –",
+                options:  ["परिमेय संख्या","अपरिमेय संख्या","【A】 एवं 【B】 दोनों","इनमें से कोई नहीं"],
+                answer: "अपरिमेय संख्या"
+            },
+            {
+                question: "41. दो परिमेय संख्याओं के बीच परिमेय संख्या होती है –",
+                options: ["1","100","2","अनंत"],
+                answer: "अनंत"
+            },
+            {
+                question: "42.परिमेय संख्याओं का दशमलव प्रसार होता है –",
+                options: ["सांत या असांत","सांत या असांत आवर्ती","असांत","सांत"],
+                answer: "सांत या असांत आवर्ती"
+            },
+            {
+                question: "43.अपरिमेय संख्याओं का दशमलव प्रसार होता है –",
+                options: ["असांत अनावर्ती","सांत अनवार्ती","असांत आवर्ती"," सांत आवर्ती"],
+                answer: "असांत आवर्ती"
+            },
+            {
+                question: "44.परिमेय संख्या p/q में q का अभाज्य गुणनखंड 2m या 5n या 2m x 5n, जहाँ m तथा n कोई धनात्मक पूर्णांक हो, तो p/q का दसमलव प्रसार होगा –",
+                options: [" सांत","असांत","आवर्ती","अनावर्ती"],
+                answer: "सांत"
+            },
+            {
+                question: "45. निम्न में से किस भिन्न का दशमलव प्रसार सांत होगा –",
+                options: ["9/15","27/13","15/9","13/27"],
+                answer: "9/15"
+            },
+            {
+                question: "46.निम्न में से किस भिन्न का दशमलव प्रसार असांत होगा –",
+                options: ["8/25"," 71/25","7/8","5/21"],
+                answer: "5/21"
+            },
+            {
+                question: "47. संख्या 0.211211121111 ……….. है –",
+                options: ["असांत आवर्ती","सांत दशमलव","असांत अनावर्ती"," इनमें से कोई नहीं"],
+                answer: "असांत अनावर्ती"
+            },
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Circle MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+          
+        </div>
+    </div>
+    <div class="container">
+      <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Created By </h4>
+                </div>
+               <div>
+                <h4>Name Jashvant Kumar</h4>
+                  <h4>Mobile No. 7541975939</h4>
+
+               </div>
+               <div>
+                <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+              </div>
+              <div>
+              </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+              <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+         
+           
+
+              </div>
+                  
+                 
+               
+               
+                </div>
+              
+         
+              
+             
+        
+                
+              </div>
+                  
+            </div>
+        </div>
+    </footer>
+     
+    </div>
+
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+      "question": "1. 5cm त्रिज्या वाले वृत्त के बिंदु P पर स्पर्श रेखा PQ केन्द्र O दोकर जाने वाली रेखा से बिंदु Q पर इस प्रकार मिलती है कि OQ = 12 cm है, तो PQ की लम्बाई है",
+      "options": ["12 cm", "13 cm", "8.5 cm", "√119 cm"],
+      "answer": "8.5 cm"
+    },
+    {
+      "question": "2. 6cm त्रिज्या वाले वृत्त के केन्द्र से 8 cm दूर स्थित एक बिंदु से वृत्त पर खींची गई स्पर्श रेखा की लम्बाई होगी",
+      "options": ["√7 cm", "3√7 cm", "2/√7 cm", "11 cm"],
+      "answer": "3√7 cm"
+    },
+    {
+      "question": "3 एक बिंदु Q से एक वृत्त पर स्पर्श रेखा की लम्बाई 24 cm है तथा Q की केन्द्र से दूरी 25 cm है। वृत्त की त्रिज्या है",
+      "options": ["7 cm", "12 cm", "15 cm", "24.5 cm"],
+      "answer": "15 cm"
+    },
+    {
+      "question": "4. एक बिंदु A से, जो एक वृत्त के केन्द्र से 5 cm दूरी पर है, वृत्त पर स्पर्श रेखा की लम्बाई 4 cm है। वृत्त की त्रिज्या की लम्बाई होगी",
+      "options": ["3 cm", "4 cm", "5 cm", "2 cm"],
+      "answer": "3 cm"
+    },
+    {
+      "question": "5. 7 cm त्रिज्या वाले वृत्त के बिंदु P से 24 cm लम्बी स्पर्श रेखा PT खींची जाती है। यदि O वृत्त का केन्द्र है, तो OT की लम्बाई है",
+      "options": ["28 cm", "25 cm", "30 cm", "31 cm"],
+      "answer": "28 cm"
+    },
+    {
+      "question": "6. 3 cm त्रिज्या वाले वृत्त के केन्द्र से बाहर किसी बिंदु A से खींची गई स्पर्श रेखा की लम्बाई 4 cm है, तो केन्द्र से बिंदु A की दूरी हैं",
+      "options": ["7 cm", "√7 cm", "5 cm", "25 cm"],
+      "answer": "5 cm"
+    },
+    {
+      "question": "7. दो संकेन्द्रीय वृत्तों की त्रिज्याएँ क्रमशः 5 cm और 3 cm है। बड़े वृत्त की उस जीवा की लम्बाई क्या होगी जो छोटे वृत्त को स्पर्श करती है ?",
+      "options": ["4 cm", "8 cm", "5 cm", "3 cm"],
+      "answer": "8 cm"
+    },
+    {
+      "question": "8. दो संकेन्द्रीय वृत्तों की त्रिज्याएँ क्रमशः 10 cm और 6 cm है। बड़े वृत्त की उस जीवा की लम्बाई जो छोटे वृत्त को स्पर्श करे, निम्नलिखित में कौन है ?",
+      "options": ["15 cm", "16 cm", "20 cm", "12 cm"],
+      "answer": "20 cm"
+    },
+    {
+      "question": "9. यदि एक बिंदु P से O केन्द्र वाले वृत्त पर PA और PB स्पर्श रेखाएँ 80° के कोण पर झुकी हो, तो ∠POA बराबर है",
+      "options": ["50°", "60°", "70°", "80°"],
+      "answer": "80°"
+    },
+    {
+      "question": "10. यदि AP और AQ केन्द्र O वाले किसी वृत्त पर दो स्पर्श रेखाएँ इस प्रकार हैं कि ∠POQ = 110°, तो ∠PAQ बराबर हैं",
+      "options": ["75°", "65°", "70°", "45°"],
+      "answer": "65°"
+    },
+    {
+      "question": "11. दिए गए चित्र में PA और PB, O केन्द्र, वाले वृत्त की स्पर्श रेखाएँ हैं। यदि ∠APO = 30° , तो ∠AOB बराबर है",
+      "options": ["60°", "75°", "90°", "120°"],
+      "answer": "90°"
+    },
+    {
+      "question": "12. दिए गए चित्र में, ∠AOB = 125° तो ∠ATB बराबर है",
+      "options": ["55°", "110°", "75°", "85°"],
+      "answer": "55°"
+    },
+    {
+      "question": "13. दिए गए आकृति में PA और PB वृत्त को स्पर्श रेखाएँ हैं। यदि ∠APO = 30°, तो ∠AOP = ?",
+      "options": ["90°", "75°", "60°", "120°"],
+      "answer": "60°"
+    },
+    {
+      "question": "14. यदि A, B, C तीन असरेख बिंदु हैं, तो इन तीनों बिन्दुओं से होकर अधिक से अधिक कितने वृत्त खींचे जा सकते हैं ?",
+      "options": ["एक", "दो", "तीन", "अनेक"],
+      "answer": "एक"
+    },
+    {
+      "question": "15. एक वृत्त पर A, B, C और D चार बिंदु हैं। निम्न में से सही कथन कौन है ?",
+      "options": ["A, B, D एक रेखीय है", "A, B, C एक रेखीय है।", "A, B, C नैकरेखीय है", "B, C, D एक रेखीय है"],
+      "answer": "A, B, D एक रेखीय है"
+    },
+    {
+      "question": "16. दिए गए चित्र में AABC की भुजाएँ अंतः वृत्त को P, Q, R पर स्पर्श करती है। यदि AP = 4 cm, BP = 6 cm, AC = 12 cm, BC = x cm तो x = …………..",
+      "options": ["10 cm", "6 cm", "14 cm", "18 cm"],
+      "answer": "14 cm"
+    },
+    {
+      "question": "17. यदि चतुर्भुज ABCD की चारों भुजाएँ एक वृत्त की स्पर्श रेखाएँ हैं, तो-",
+      "options": ["AC + AD = BD + CD", "AB + CD = BC + AD", "AB + CD = AC + BC", "AC + AD = BC + DB"],
+      "answer": "AB + CD = BC + AD"
+    },
+    {
+      "question": "18. आकृति में यदि एक वृत्त के बिंदु Q पर एक स्पर्श रेखा POR है तथा वृत्त का केन्द्र 0 है। जीवा AB, स्पर्श रेखा PQR के समांतर है तथा ∠BQR = 70° है, तो ∠AQB का मान होगा",
+      "options": ["20°", "35°", "40°", "45°"],
+      "answer": "40°"
+    },
+    {
+      "question": "19. आकृति में, ∠BPQ = 60°, ∠PR = 45° तो ∠PQR बराबर है",
+      "options": ["45°", "75°", "60°", "90°"],
+      "answer": "45°"
+    },
+    {
+      "question": "20. एक वृत्त की जीवा AB तथा AOC व्यास इस प्रकार है कि ∠ACB = 50° है। यदि वृत्त के बिंदु A से AT एक स्पर्श रेखा है, तो ∠BAT का मान होगा",
+      "options": ["65°", "60°", "50°", "40°"],
+      "answer": "65°"
+    },
+    {
+      "question": "21. एक वृत्त की जीवा की लम्बाई वृत्त की त्रिज्या के बराबर है, तो जीवा द्वारा केन्द्र पर बना कोण निम्न में से किसके बराबर है",
+      "options": ["90°", "30°", "60°", "120°"],
+      "answer": "90°"
+    },
+    {
+      "question": "22. आकृति में, केन्द्र O के वृत्त की स्पर्श रेखा AT इस प्रकार है कि OT = 4 cm तथा∠OTA = 30° तो AT का मान है –",
+      "options": ["4 cm", "2 cm", "2√3 cm", "4√3 cm"],
+      "answer": "4 cm"
+    },
+    {
+      "question": "23. यदि 3 cm त्रिज्या के वृत्त पर दो स्पर्श रेखाएँ परस्पर 60° पर झुके हों, तो प्रत्येक स्पर्श रेखा की लम्बाई है",
+      "options": ["3/2 √3 cm", "6 cm", "√3 cm", "3√3 cm"],
+      "answer": "3/2 √3 cm"
+    },
+    {
+      "question": "24. 3 cm त्रिज्या वाले वृत्त की दो समांतर स्पर्श रेखाएँ खींची गई हैं जो परस्पर 90° के कोण झुकती हैं, तो प्रत्येक स्पर्श रेखा की लम्बाई है-",
+      "options": ["2 cm", "3 cm", "4 cm", "1 cm"],
+      "answer": "2 cm"
+    },
+    {
+      "question": "25. आकृति में यदि PA = 11 cm, PD = 7 cm तो DE की लम्बाई है-",
+      "options": ["1 cm", "2 cm", "3 cm", "4 cm"],
+      "answer": "1 cm"
+    },
+    {
+      "question": "26. O केन्द्र वाले वृत्त के किसी बाह्य बिंदु P से PA और PB दो स्पर्श रेखाएँ खींची गई है। यदि CD, वृत्त के E बिंदु पर स्पर्श रेखा हो और PA = 14 cm, तो APCD का परिमाप होगा-",
+      "options": ["28 cm", "42 cm", "21 cm", "इनमें कोई नहीं"],
+      "answer": "28 cm"
+    },
+    {
+      "question": "27. दो वृत्त जो एक दूसरे को C बिन्दु पर स्पर्श करती है, की दो उभयनिष्ठ स्पर्श रेखाएँ AB और CD हैं। यदि D, AB पर इस प्रकार है कि CD = 6 cm, तो AB = ?",
+      "options": ["4 cm", "6 cm", "12 cm", "8 cm"],
+      "answer": "6 cm"
+    },
+    {
+      "question": "28. यदि दो वृत्त एक दूसरे को अन्तः स्पर्श करती है, तो उभयनिष्ठ स्पर्श रेखाओं की संख्या होती है –",
+      "options": ["2", "1", "3", "अनेक"],
+      "answer": "1"
+    },
+    {
+      "question": "29. बाह्यतः स्पर्श करने वाले दो वृत्तों की उभयनिष्ठ स्पर्श रेखाओं की संख्या होती है –",
+      "options": ["एक", "दो", "तीन", "चार"],
+      "answer": "एक"
+    },
+    {
+      "question": "30. दो प्रतिच्छेदी वृत्तों की उभयनिष्ठ स्पर्श रेखाओं की संख्या होती है –",
+      "options": ["1", "2", "3", "अनेक"],
+      "answer": "1"
+    },
+    {
+      "question": "31. दो संकेन्द्रीय वृत्तों पर कितनी उभयनिष्ठ स्पर्श रेखाएँ खींची जा सकती हैं ?",
+      "options": ["1", "2", "3", "एक भी नहीं"],
+      "answer": "2"
+    },
+    {
+      "question": "32. वृत्त के व्यास के छोड़ बिंदुओं पर खींची गई स्पर्श रेखाएँ होती हैं –",
+      "options": ["समान", "असमान", "समांतर", "इनमें से कोई नहीं"],
+      "answer": "समान"
+    },
+    {
+      "question": "33. वृत्त के तीन छोड़ बिंदुओं पर खींची गई स्पर्श रेखाएँ होती हैं –",
+      "options": ["समान", "असमान", "समांतर", "इनमें से कोई नहीं"],
+      "answer": "समांतर"
+    },
+    {
+        "question": "34. किसी बाह्य-बिंदु से वृत्त पर कितनी स्पर्श रेखाएँ खींची जा सकती है ?",
+        "options": ["दो", "तीन", "एक", "एक भी नहीं"],
+        "answer": "एक"
+    },
+    {
+        "question": "35. वृत्त के किसी एक बिंदु से कितनी स्पर्श रेखाएँ खींची जा सकती है ?",
+        "options": ["एक", "दो", "तीन", "अनेक"],
+        "answer": "एक"
+    },
+    {
+        "question": "36. एक वृत्त की कितनी स्पर्श रेखाएँ हो सकती हैं ?",
+        "options": ["एक", "दो", "तीन", "अनेक"],
+        "answer": "अनेक"
+    },
+    {
+        "question": "37. एक वृत्त को ………….. समांतर स्पर्श रेखाएँ हो सकती है।",
+        "options": ["एक", "दो", "चार", "अनेक"],
+        "answer": "अनेक"
+    },
+    {
+        "question": "38. वत्त में समांतर स्पर्श रेखा युग्मों की संख्या हो सकती है –",
+        "options": ["1", "0", "4", "अनगिनत"],
+        "answer": "0"
+    },
+    {
+        "question": "39. वत्त के केन्द्र पर बना कोण होता है –",
+        "options": ["0°", "180°", "90°", "360°"],
+        "answer": "360°"
+    },
+    {
+        "question": "40. अर्द्ध वृत्त का कोण होता है –",
+        "options": ["समकोण (90°)", "60°", "180°", "0°"],
+        "answer": "समकोण (90°)"
+    },
+    {
+        "question": "41. वृत्त की कोई स्पर्श रेखा स्पर्श-बिंदु से होकर जाने वाली त्रिज्या के साथ कितने समकोण का कोण बनाता है ?",
+        "options": ["एक समकोण", "दो समकोण", "तीन समकोण", "इनमें से कोई नहीं"],
+        "answer": "एक समकोण"
+    },
+    {
+        "question": "42. वृत्त को एक जीवा उसकी त्रिज्या के बराबर है। इस जीवा द्वारा दीर्घ वृत्तखंड की परिधि पर बनाए गए कोण की माप होगी –",
+        "options": ["60°", "30°", "120°", "90°"],
+        "answer": "60°"
+    },
+    {
+        "question": "43. किसी वृत्त की जीवा AB की लम्बाई वृत्त की त्रिज्या OA के , बराबर है, तो ΔAOB किस प्रकार का त्रिभुज होगा ?",
+        "options": ["समकोण त्रिभुज", "समबाहु त्रिभुज", "समद्विबाहु त्रिभुज", "विषमबाहु त्रिभुज"],
+        "answer": "समबाहु त्रिभुज"
+    },
+    {
+        "question": "44. वृत्त की सबसे बड़ी जीवा होती है –",
+        "options": ["चाप", "व्यास", "चापकर्ण", "इनमें से कोई नहीं"],
+        "answer": "चाप"
+    },
+    {
+        "question": "45. वृत्त के केन्द्र से समदूरस्थ जीवाएँ आपस में ………… होते हैं।",
+        "options": ["समान", "असमान", "एवं", "इनमें से कोई नहीं"],
+        "answer": "समान"
+    },
+    {
+        "question": "46. वृत्त को स्पर्श रेखा वृत्त को जिस बिंदु पर स्पर्श करती है, उसे ……….. कहते हैं।",
+        "options": ["स्पर्श बिंदु", "प्रतिच्छेद बिंद", "छेदक", "इनमें से कोई नहीं"],
+        "answer": "स्पर्श बिंदु"
+    },
+    {
+        "question": "47. वृत्त के दो बिंदुओं पर प्रतिच्छेद करने वाली रेखा को ………. कहते हैं।",
+        "options": ["स्पर्श रेखा", "जीवा (छेदक रेखा)", "त्रिज्या", "इनमें से कोई नहीं"],
+        "answer": "जीवा (छेदक रेखा)"
+    },
+    {
+        "question": "48. वृत्त को एक बिंदु पर प्रतिच्छेद करने वाली रेखा को वृत्त का ………………. कहते हैं।",
+        "options": ["छेदक रेखा", "व्यास", "जीवा", "स्पर्श रेखा"],
+        "answer": "स्पर्श रेखा"
+    },
+    {
+        "question": "49. यदि समांतर चतुर्भुज की सभी भुजाएँ एक वृत्त को स्पर्श करे, तो वह चतुर्भुज होगा –",
+        "options": ["वर्ग", "आयत", "चक्रीय चतुर्भुज", "समचतुर्भुज"],
+        "answer": "वर्ग"
+    },
+    {
+        "question": "50. यदि एक चक्रीय चतुर्भुज के विकर्ण उसके शीर्षों से जाने वाले वृत्त के व्यास हों, तो वह चतुर्भुज होगा –",
+        "options": ["वर्ग", "आयत", "सम-चतुर्भुज", "समलंब चतुर्भुज"],
+        "answer": "समलंब चतुर्भुज"
+    },
+    {
+        "question": "51. यदि किसी समलंब चतुर्भुज की असमांतर भुजाएँ बराबर हों, तो वह चतुर्भुज होगा –",
+        "options": ["चक्रीय चतुर्भुज", "आयत", "समांतर चतुर्भुज", "समचतुर्भुज"],
+        "answer": "समांतर चतुर्भुज"
+    },
+    {
+        "question": "52. चक्रीय समांतर चतुर्भुज होता है एक –",
+        "options": ["समचतुर्भुज", "वर्ग", "आयत", "समांतर चतुर्भुज"],
+        "answer": "समांतर चतुर्भुज"
+    },
+    {
+        "question": "53. चक्रीय चतुर्भुज के कोणों के समद्विभाजकों से बना चतुर्भुज होता है-",
+        "options": ["चक्रीय चतुर्भुज", "आयत", "वर्ग", "समचतुर्भुज"],
+        "answer": "चक्रीय चतुर्भुज"
+    },
+    {
+        "question": "54. किसी चक्रीय चतुर्भुज की एक भुजा बढ़ाने से बने बहिष्कोण एवं अभिमुख अन्त:कोण में क्या सम्बन्ध है ?",
+        "options": ["एक-दूसरे के बराबर", "संपूरक", "बहिष्कोण, अभिमुख अंत: कोण से बड़ा होता है", "इनमें से कोई नहीं"],
+        "answer": "संपूरक"
+    },
+    {
+        "question": "55. चक्रीय चतुर्भुज के चारों कोणों का योगफल होता है –",
+        "options": ["180°", "540°", "360°", "इनमें से सभी"],
+        "answer": "360°"
+    },
+    {
+        "question": "56. चक्रीय चतुर्भुज के सम्मुख कोणों का योगफल होता है –",
+        "options": ["360°", "180°", "90°", "160°"],
+        "answer": "360°"
+    },
+    {
+        "question": "57. किसी चक्रीय चतुर्भुज के एक कोण का मान 70° है, तो उसके सम्मुख कोण का मान क्या होगा ?",
+        "options": ["120°", "124°", "56°", "110°"],
+        "answer": "110°"
+    },
+    {
+        "question": "58. यदि किसी चतुर्भुज के दो सम्मुख कोणों की माप क्रमशः 60° एवं 120° है, तो वह किस प्रकार का चतुर्भुज होगा ?",
+        "options": ["आयत", "समचतुर्भुज", "चक्रीय चतुर्भुज", "वर्ग"],
+        "answer": "समचतुर्भुज"
+    }
+            
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th AP  MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            <h1 class="text-warning">Answers</h1>
+            <h5 class="text-info">-25, 89, 41,  अनुक्रम, धनात्मक, सार्व अंतर, पदांतर,  l = a + (n-1)d, 22वाँ</h5>
+            <h5 class="text-info">1,  p+q-r, 132, 449, 28, 55, x=-2,y=5, 700, 2, 15</h5>
+            <h5 class="text-info">420, 420, 2475, 41583, 210, 950, 245, 13, एवं दोनों, 600</h5>
+            <h5 class="text-info">885, शून्य, p-q, प्रथम और अंतिम पदों का योग, 9:19, 40</h5>
+            <h5 class="text-info"></h5>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                  <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                  <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                  <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+     
+
+        
+    {
+      "question": "1. निम्नलिखित में से कौन समांतर श्रेढ़ी में है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+    },
+    {
+      "question": "2. निम्नलिखित में से कौन A.P. में है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "A"
+    },
+    {
+      "question": "3. निम्नलिखित में से कौन समांतर श्रेढ़ी (A.P.) में नहीं है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "question": "4. निम्नलिखित में से कौन समांतर श्रेढ़ी (A.P.) में नहीं है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "question": "5. समांतर श्रेढ़ी 4, 9, 14, 19, ……… का सार्व अंतर है –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "A"
+    },
+    {
+      "question": "6. √2, √8, √18, √32,…… यदि A.P. में है तो इसका पदान्तर क्या है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "C"
+    },
+    {
+      "question": "7. यदि किसी A.P. का nवाँ पद 5-3n हो, तो इसका पदांतर –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+    },
+    {
+      "question": "8. यदि x + 2, 3x और 4x + 1 समांतर श्रेढ़ी में हो तो x का मान क्या होगा ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "A"
+    },
+    {
+      "question": "9. यदि 2/3 , a और 2 किसी समांतर श्रेढ़ी के तीन क्रमागत पद हैं, तो a का मान होगा ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "C"
+    },
+    {
+      "question": "10. समांतर श्रेढ़ी में यदि d = -4,n = 7, an, = 4 हो, तो a का मान होगा –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+    },
+    {
+      "question": "11. समांतर श्रेढ़ी में यदि a = 3.5, d = 0,n = 101 हो, तो an, का , कमान होगा –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "question": "12. A.P. 10, 7, 4, ………. का 30वाँ पद है –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "A"
+    },
+    {
+      "question": "13. A.P. -3, -1/2, 2 ……… का 11वाँ पद है –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "question": "14. समांतर श्रेढ़ी के प्रथम दो पद -3 तथा 4 हैं, तो श्रेढ़ी का 21वाँ पद होगा –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "C"
+    },
+    {
+      "question": "15. समांतर श्रेढ़ी के प्रथम दो पद 5 तथा 9 है, तो श्रेढ़ी का 13वाँ पद होगा –",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "question": "16. A.P. 3, 8, 13, 18 का कौन-सा पद 78 है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+    },
+    {
+      "question": "17. A.P. 21, 18, 15, ……… का कौन-सा पद –81 है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+    },
+    {
+      "question": "18. समांतर श्रेढ़ी 7, 13, 19, ……….., 205 में कितने पद हैं ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "C"
+    },
+    {
+      "question": "19. समांतर श्रेढ़ी -10,-6,-2, 2, ……… में 25वाँ पद कितना है ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "C"
+    },
+    {
+      "question": "20. समांतर श्रेढ़ी -5, -3, -1, 1, ……… में कितने पद हैं ?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "D"
+    }, {
+        "question": "21. A.P. 17, 14, 11, ……, -40 का अंत से 6ठा पद है –",
+        "options": ["-29", "-25", "-23", "20"],
+        "answer": "-25"
+    },
+    {
+        "question": "22. यदि A.P. का 7वाँ और 13वाँ पद क्रमशः 34 और 64 हों, तो 18वाँ पद क्या होगा ?",
+        "options": ["67", "88", "90", "89"],
+        "answer": "89"
+    },
+    {
+        "question": "23. किसी A.P का 6ठा एवं 12वाँ पद क्रमशः 13 और 25 है, तो इसका 20वाँ पद है –",
+        "options": ["39", "41", "37", "43"],
+        "answer": "41"
+    },
+    {
+        "question": "24.यदि दो संख्याओं a और b का माध्य A हो, तो A होगा –",
+        "options": [],
+        "answer": ""
+    },
+    {
+        "question": "25. यदि a, b, c समांतर श्रेढ़ी में हो, तो b = ?",
+        "options": [],
+        "answer": ""
+    },
+    {
+        "question": "26. किसी A.P. के पहले और दूसरे पदों (दो क्रमागत पदों) का अंतर कहलाता है –",
+        "options": ["सार्व-अंतर", "nवाँ पद", "अनुक्रम", "इनमें से कोई नहीं"],
+        "answer": "अनुक्रम"
+    },
+    {
+        "question": "27. किसी A.P. का सार्व-अंतर होता है –",
+        "options": ["धनात्मक", "ऋणात्मक", "शून्य", "इनमें से कोई नहीं"],
+        "answer": "धनात्मक"
+    },
+    {
+        "question": "28. किसी समांतर श्रेढ़ी में दो क्रमिक (क्रमागत) पदों का ……… बराबर होता है।",
+        "options": ["सार्व अंतर", "अंतर", "योगफल", "इनमें से कोई नहीं"],
+        "answer": "सार्व अंतर"
+    },
+    {
+        "question": "29. यदि समांतर श्रेढ़ी का nवाँ पद tn द्वारा सुचित हो, तो tn, – tn-1 = ….. सुचित होता है।",
+        "options": ["अंतर", "सार्व अंतर", "(n-1) वाँ पद", "इनमें से कोई नहीं"],
+        "answer": "सार्व अंतर"
+    },
+    {
+        "question": "30. यदि किसी अनुक्रम के पद किसी नियम के तहत लिखे जाते हैं, तो उसे ………………. कहते हैं।",
+        "options": ["श्रेढ़ी", "सार्व-अंतर", "समांत श्रेढ़ी", "पदांतर"],
+        "answer": "पदांतर"
+    },
+    {
+        "question": "31. यदि किसी A.P. में प्रथम पद a, सार्व-अंतर d, अंतिम पद ! तथा पदों की संख्या n हो, तो ………",
+        "options": ["l = a + (n-1)d", "1+a = (n-1)d", "1 = a+(n+1)d", "1+ a = (n+1)d"],
+        "answer": "l = a + (n-1)d"
+    },
+    {
+        "question": "32. समांतर श्रेढ़ी 21, 18, 15, ……. का कौन-सा पद शून्य है ?",
+        "options": ["7वाँ", "8वाँ", "22वाँ", "15वाँ"],
+        "answer": "22वाँ"
+    },
+    {
+        "question": "33. A.P.-11,-8,-5, …. का प्रथम धनात्मक पद निम्नलिखित में से कौन है ?",
+        "options": ["1", "-2", "2", "3"],
+        "answer": "1"
+    },
+    {
+        "question": "34. यदि किसी समांतर श्रेढ़ी का pवाँ पद q एवं qवाँ पद p हो, तो rवाँ पद है –",
+        "options": ["p+q-r", "p-q+r", "q-p-r", "p+q+r"],
+        "answer": "p+q-r"
+    },
+    {
+        "question": "35. यदि समांतर श्रेढ़ी के प्रथम, द्वितीय एवं अंतिम पद क्रमशः a, b और c है, तो पदों की संख्या होगी –",
+        "options": [],
+        "answer": ""
+    },
+    {
+        "question": "36. तीन अंकों वाली कितनी संख्याएँ 7 से विभाज्य है ?",
+        "options": ["120", "128", "132", "102"],
+        "answer": "132"
+    },
+    {
+        "question": "37. 101 और 999 के बीच कितनी सम संख्याएँ हैं ?",
+        "options": ["501", "250", "449", "358"],
+        "answer": "449"
+    },
+    {
+        "question": "38. 1 और 200 के बीच कितनी संख्याएँ 7 के अपवर्त्य हैं ?",
+        "options": ["28", "30", "20", "25"],
+        "answer": "28"
+    },
+    {
+        "question": "39. 10 और 250 के बीच 4 के कितने गुणज हैं ?",
+        "options": ["50", "60", "55", "25"],
+        "answer": "55"
+    },
+    {
+        "question": "40.समीकरण युग्म 2x + 3y = 11 और 2x – 4y = -24 के हल हैं –",
+        "options": ["x = -3, y = 1", "x = 2, y = 4", "x = -2, y = -5", "x = -2, y = 5"],
+        "answer": "x = -2, y = 5"
+    },
+    {
+        "question": "41. एक A.P. के 15 पदों का योग क्या है जिसके प्रथम और अंतिम पद क्रमशः 5 और 75 है ?",
+        "options": ["500", "600", "700", "550"],
+        "answer": "700"
+    },
+    {
+        "question": "42. किसी A.P. के n पदों का योग 3n²- +n और सार्व अंतर 6 हो, तो इसका प्रथम पद है –",
+        "options": ["2", "3", "0", "4"],
+        "answer": "2"
+    },
+    {
+        "question": "43. nपदों वाले A.P. का योग n² + 2n+1 है, तो उसका 6ठा पद है –",
+        "options": ["14", "13", "15", "16"],
+        "answer": "15"
+    },
+    {
+        "question": "44. प्रथम 20 विषम प्राकृत संख्याओं का योग है –",
+        "options": ["281", "285", "400", "421"],
+        "answer": "420"
+    },
+    {
+        "question": "45. प्रथम 20 सम प्राकृत संख्याओं का योग है –",
+        "options": ["390", "400", "410", "420"],
+        "answer": "420"
+    },
+    {
+        "question": "46. दो अंकों की सभी विषम संख्याओं का योग है –",
+        "options": ["3512", "2090", "2475", "4265"],
+        "answer": "2475"
+    },
+    {
+        "question": "48. 1 और 500 के बीच 3 के अपवर्त्य संख्याओं का योग है –",
+        "options": ["42496", "41583", "40090", "35255"],
+        "answer": "41583"
+    },
+    {
+        "question": "49. प्रथम 20 प्राकृत संख्याओं का योग है –",
+        "options": ["110", "170", "190", "210"],
+        "answer": "210"
+    },
+    {
+        "question": "50. समांतर श्रेढ़ी 5,8, 11, 14,……… के प्रथम 24 पदों का योग है –",
+        "options": ["946", "948", "940", "950"],
+        "answer": "950"
+    },
+    {
+        "question": "51. समांतर श्रेढ़ी 2, 7, 12, …….. के प्रथम 10 पदों का योग है –",
+        "options": ["235", "265", "245", "145"],
+        "answer": "245"
+    },
+    {
+        "question": "52. 636 योग प्राप्त करने के लिए A.P.9, 17, 25,……… के कितने पद लेने होंगे ?",
+        "options": ["9", "13", "11", "12"],
+        "answer": "13"
+    },
+    {
+        "question": "53. 513 योग प्राप्त करने के लिए A.P. 54, 51, 48,……. के कितने पद लेने होंगे ?",
+        "options": ["17", "18", "19", "एवं दोनों"],
+        "answer": "एवं दोनों"
+    },
+    {
+        "question": "54. यदि समांतर श्रेढ़ी का nवाँ पद 2n+5 हो, तो प्रथम 20 पदों का योग होगा –",
+        "options": ["250", "415", "520", "600"],
+        "answer": "600"
+    },
+    {
+        "question": "55. यदि किसी A.P. का nवाँ पद 7-3n है, तो उसके प्रथम 25 पदों का योग होगा –",
+        "options": ["800", "-800", "-885", "885"],
+        "answer": "885"
+    },
+    {
+        "question": "56. यदि किसी A.P. के p पदों का योग q है और q पदों का योग p है, तो p+q पदों का योग होगा –",
+        "options": ["p+q", "p-q", "शून्य", "-(p+q)"],
+        "answer": "शून्य"
+    },
+    {
+        "question": "57. यदि किसी A.P. के प्रथम p पदों का योग उसके प्रथम q पदों के योग के बराबर है, तो उसके (p+q) पदों का योग होगा-",
+        "options": ["शून्य", "1", "p+q", "p-q"],
+        "answer": "p-q"
+    },
+    {
+        "question": "58. एक समांतर श्रेढ़ी में प्रारंभ और अंत से बराबर दूरी पर के पदों का योग बराबर है –",
+        "options": ["अंतिम पद", "प्रथम पद", "द्वितीय पद", "प्रथम और अंतिम पदों का योग"],
+        "answer": "प्रथम और अंतिम पदों का योग"
+    },
+    {
+        "question": "59. दो समांतर श्रेढ़ियों के n पदों का योग (3n+8) : (7n+15) के अनुपात में हैं, तो उनके 12वें पदों का अनुपात होगा –",
+        "options": ["3 : 7", "16: 7", "9 : 19", "19: 9"],
+        "answer": "9 : 19"
+    },
+    {
+        "question": "60. यदि तो n का मान होगा –",
+        "options": ["40", "30", "25", "35"],
+        "answer": "40"
+    }
+  
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz  chapter surface</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Surface Area MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. किसी घन का किनारा दुगुना कर दिया जाए तो उसका आयतन कितना गुना हो जाएगा ?",
+        "options": ["8 गुना", "2 गुना", "4 गुना", "16 गुना"],
+        "answer": "8 गुना"
+    },
+    {
+        "question": "2. किसी घन का किनारा दुगूना हो जाने पर कुल पृष्ठीय-क्षेत्रफल पहले के कुल पृष्ठीय-क्षेत्रफल का कितना गुना बन जाएगा ?",
+        "options": ["6 गुना", "12 गुना", "2 गुना", "4 गुना"],
+        "answer": "4 गुना"
+    },
+    {
+        "question": "3. किसी घन की प्रत्येक भुजा m गुना कर दिया जाए तो पुराने और नए घनों के पृष्ठीय-क्षेत्रफलों का अनुपात होगा-",
+        "options": ["m²  : 1", "m²  : 2", "1 : m²", "1 : m³"],
+        "answer": "m²  : 1"
+    },
+    {
+        "question": "4. यदि किसी घन की प्रत्येक भुजा को 100% बढ़ा दिया जाए तो आयतन में कितनी प्रतिशत की वृद्धि होगी ?",
+        "options": ["800%", "700%", "500%", "600%"],
+        "answer": "800%"
+    },
+    {
+        "question": "5. यदि किसी घन का कुल पृष्ठीय-क्षेत्रफल 150 m² है, तो उसका आयतन निम्न में से कौन है ?",
+        "options": ["225 m³", "125 m³", "115 m³", "152 m³"],
+        "answer": "225 m³"
+    },
+    {
+        "question": "6. एक घन का आयतन 125 m³ है, तो उसका कुल पृष्ठ-क्षेत्रफल होगा –",
+        "options": ["30 m²", "10 m²", "150 m²", "125 m²"],
+        "answer": "150 m²"
+    },
+    {
+        "question": "7. उस घन की भुजा क्या होगी जिसका आयतन और पूर्ण पृष्ठीय-क्षेत्रफल का संख्यात्मक मान समान है ?",
+        "options": ["3 मात्रक", "8 मात्रक", "6 मात्रक", "18 मात्रक"],
+        "answer": "6 मात्रक"
+    },
+    {
+        "question": "8. 8 cm किनारे वाले एक घन को 2 cm किनारे वाले कितने घनों में रूपांतरित किया जा सकता है ?",
+        "options": ["64", "32", "16", "8"],
+        "answer": "64"
+    },
+    {
+        "question": "9. 5 cm किनारे वाले एक घन को 1 cm किनारे वाले कितने घनों में विभक्त किया जा सकता है ?",
+        "options": ["625", "125", "5", "50"],
+        "answer": "125"
+    },
+    {
+        "question": "10. तीन घनाकार धातु पिंडों की भुजाएँ क्रमशः 3 cm, 4 cm और 5 cm हैं। तीनों को पिघलाकर एक घनाकार पिंड बनाया गया है, – तो इस नए घन की भुजा क्या होगी ?",
+        "options": ["4 cm", "5 cm", "6 cm", "36 cm"],
+        "answer": "6 cm"
+    },
+    {
+        "question": "11. किसी घन या घनाभ में विकर्णों की संख्या होती है –",
+        "options": ["1", "2", "6", "4"],
+        "answer": "2"
+    },
+    {
+        "question": "12. प्रत्येक घन या घनाभ में फलकों (सतहों) की संख्या होती है –",
+        "options": ["3", "4", "6", "8"],
+        "answer": "4"
+    },
+    {
+        "question": "13. किसी घन या घनाभ में किनारों (भुजाओं) की संख्या होती है –",
+        "options": ["12", "8", "9", "16"],
+        "answer": "12"
+    },
+    {
+        "question": "14. एक घनाभ के तीन संलग्न फलकों के क्षेत्रफल क्रमशः x², y² एवं z² हैं, तो उसका आयतन V बराबर होगा –",
+        "options": ["2xyz", "x²y²z²", "x² + y² +z²", "Xyz"],
+        "answer": "x²y²z²"
+    },
+    {
+        "question": "15. दो घनों जिनमें प्रत्येक की कोर 12 cm है, को एक-दूसरे से जोड़कर एक घनाभ बना दिया जाता है। इस घनाभ का संपूर्ण पृष्ठ-क्षेत्रफल होगा –",
+        "options": ["1440 cm²", "573 cm²", "1728 cm²", "3456 cm²"],
+        "answer": "1728 cm²"
+    },
+    {
+        "question": "16. तीन घनाकार जिनमें से प्रत्येक की भुजा 5 cm है, के संलग्न फलकों को मिलाकर एक घनाभ बनाया जाता है। इससे प्राप्त घनाभ का पृष्ठीय क्षेत्रफल होगा –",
+        "options": ["450 cm²", "350 cm²", "375 cm²", "इनमें से कोई नहीं"],
+        "answer": "375 cm²"
+    },
+    {
+        "question": "17. एक बेलन के आधार का व्यास 4 cm और इसकी ऊँचाई 14 cm है तो बेलन का आयतन है –",
+        "options": ["176 cm³", "196 cm³", "276 cm³", "352 cm³"],
+        "answer": "196 cm³"
+    },
+    {
+        "question": "18. एक बेलनाकार बर्तन की आंतरिक व्यास 10 cm और ऊँचाई 10.5 cm है। उसकी धारिता है।",
+        "options": ["825.35 cm³", "725 cm³", "825 cm³", "855 cm³"],
+        "answer": "825 cm³"
+    },
+    {
+        "question": "19. एक लंबवृत्तीय बेलन की ऊँचाई 13.5 cm और आधार की त्रिज्या 7 cm है, तो वक्र पृष्ठीय क्षेत्रफल होगा –",
+        "options": ["684 cm²", "694 cm²", "584 cm²", "594 cm²"],
+        "answer": "684 cm²"
+    },
+    {
+        "question": "20. लकड़ी के एक ठोस बेलन की ऊँचाई 10 cm और आधार की त्रिज्या 3.5 cm है, तो उसका कुल पृष्ठीय क्षेत्रफल है –",
+        "options": ["297 cm²", "298 cm²", "397 cm²", "297.5 cm²"],
+        "answer": "297 cm²"
+    },
+    {
+        "question": "21. एक ही ऊँचाई के दो बेलनों की त्रिज्याएँ 1 : 2 के अनुपात में . है, तो आयतनों का अनुपात है –",
+        "options": ["1 : 3", "1 : 2", "1 : 4", "1 : 8"],
+        "answer": "1 : 3"
+    },
+    {
+        "question": "22. दो बेलनों की त्रिज्याओं का अनुपात 2 : 3 और उनकी ऊँचाईयों का अनुपात 3 : 2 है। उनके आयतनों का अनुपात है",
+        "options": ["2 : 3", "3 : 2", "4 : 9", "9 : 4"],
+        "answer": "2 : 3"
+    },
+    {
+        "question": "23. समान ऊँचाई वाले दो समबेलनों के आयतनों का अनुपात 9 : 16 है, तो उनके वक्रपृष्ठों के क्षेत्रफलों का अनुपात है –",
+        "options": ["9 : 16", "3 : 4", "16 : 9", "4 : 3"],
+        "answer": "9 : 16"
+    },
+    {
+        "question": "24. 80 cm आधार की त्रिज्या और 20 cm ऊँचे बेलन का कुल पृष्ठीय क्षेत्रफल और पार्श्व पृष्ठीय क्षेत्रफल का अनुपात है-",
+        "options": ["5 : 1", "3 : 1", "4 : 1", "1 : 4"],
+        "answer": "3 : 1"
+    },
+    {
+        "question": "25: एक धातु के पाईप की बाह्य एवं आन्तरिक त्रिज्याएँ क्रमश: 4 cm एवं 3 cm है। यदि उसकी ऊँचाई 10 cm हो, तो धातु का आयतन होगा –",
+        "options": ["220 cm³", "440 cm³", "1540 cm³", "120 cm³"],
+        "answer": "440 cm³"
+    },
+    {
+        "question": "26. 3 m त्रिज्या तथा 7 m गहराई वाले कुआँ खोदने में 200 रूपये प्रति घन मीटर की दर से व्यय होगा –",
+        "options": ["36426 रूपये", "40215 रूपये", "39600 रूपये", "35400 रूपये"],
+        "answer": "40215 रूपये"
+    },
+    {
+        "question": "27. यदि किसी लम्बवृत्तीय ठोस बेलन की ऊँचाई उसके आधार की त्रिज्या की दुगूनी है और उसका वक्र पृष्ठीय क्षेत्रफल 616 cm है, तो आधार की त्रिज्या होगी –",
+        "options": ["7 cm", "6 cm", "8 cm", "9 cm"],
+        "answer": "8 cm"
+    },
+    {
+        "question": "28. किसी समबेलन की त्रिज्या और ऊँचाई दुगुना कर दिया जाए तो समबेलन का आयतन किना गुना हो जाएगा ?",
+        "options": ["4 गुना", "2 गुना", "8 गुना", "16 गुना"],
+        "answer": "8 गुना"
+    },
+    {
+        "question": "29. एक बेलन का वक्र पृष्ठीय क्षेत्रफल 1760 cm² है और इसके आधार की त्रिज्या 14 cm है, तो बेलन की ऊँचाई है –",
+        "options": ["15 cm", "20 cm", "10 cm", "40 cm"],
+        "answer": "20 cm"
+    },
+    {
+        "question": "30. एक बेलनाकार स्तम्भ का वक्र पृष्ठीय क्षेत्रफल 264 m² और . इसका आयतन 924 m³ है। स्तम्भ की ऊँचाई क्या है ?",
+        "options": ["6 m", "5 m", "4 m", "3 m"],
+        "answer": "6 m"
+    },
+    {
+        "question": "31. किसी लम्बवृत्तीय शंकु की ऊँचाई 15 cm और आधार का व्यास 16 cm है, वक्र पृष्ठीय क्षेत्रफल होगा –",
+        "options": ["60π cm²", "68π cm²", "120π cm²", "136π cm²"],
+        "answer": "60π cm²"
+    },
+    {
+        "question": "32. आधार की त्रिज्या 7 cm और तिर्यक ऊँचाई 10 cm वाले लम्बवृत्तीय शंकु का वक्र पृष्ठीय क्षेत्रफल होगा –",
+        "options": ["110 cm²", "210 cm²", "220 cm²", "200 cm²"],
+        "answer": "220 cm²"
+    },
+    {
+        "question": "33. शंकु के आधार का क्षेत्रफल होगा यदि उसके आधार की त्रिज्या r हो ?",
+        "options": ["πr²", "1/3πr²", "3πr²", "2πr²"],
+        "answer": "πr²"
+    },
+    {
+        "question": "34. यदि किसी शंकु के वक्र-पृष्ठ का क्षेत्रफल 880 cm² है और त्रिज्या 14 cm है, तो उसका आयतन होगा –",
+        "options": ["1848 cm³", "1868 cm³", "1862 cm³", "1858 cm³"],
+        "answer": "1862 cm³"
+    },
+    {
+        "question": "35. यदि किसी शंकु का आयतन V है और उसका क्षेत्रफल A है, तो उसकी उच्चायि h होगी –",
+        "options": ["3V/A", "A/3V", "V/3A", "3A/V"],
+        "answer": "3V/A"
+    },
+    {
+"question": "36. दो शंकुओं के आयतनों का अनुपात 4 : 5 है एवं उनकी आधार त्रिज्याओं का अनुपात 2 : 1 है। उनकी उदग्र ऊँचाईयों का अनुपात है –",
+"options": ["4 : 7", "1 : 5", "3 : 5", "2 : 3"],
+"answer": "4 : 7"
+},
+{
+"question": "37. एक शंकु का आयतन 1570 cm³ है। यदि उसके आधार का क्षेत्रफल 314 cm² है, तो इसकी ऊँचाई है –",
+"options": ["10 cm", "15 cm", "18 cm", "20 cm"],
+"answer": "10 cm"
+},
+{
+"question": "38. एक शंकु की तिरछी ऊँचाई क्या होगी जिसकी त्रिज्या 3 cm एवं ऊँचाई 4 cm है ?",
+"options": ["5 cm", "7 cm", "13 cm", "25 cm"],
+"answer": "5 cm"
+},
+{
+"question": "39. यदि किसी लम्बवृत्तीय शंकु के आधार की त्रिज्या r cm, ऊँचाई h cm एवं h = 3r हो, तो उसका आयतन होगा –",
+"options": ["3πr²h", "1/3πr²", "1/3πr²h", "πr²"],
+"answer": "1/3πr²h"
+},
+{
+"question": "40. एक लम्बवृत्तीय शंकु की त्रिज्या और ऊँचाई का अनुपात 5 : 12 है। यदि इसका आयतन 314 cm³ है, तो इसकी तिरछी ऊँचाई होगी –",
+"options": ["11 cm", "12 cm", "13 cm", "14 cm"],
+"answer": "11 cm"
+},
+{
+"question": "41. दो गोलों के आयतनों का अनुपात 64 : 27 है, तो उनके पृष्ठीय क्षेत्रफलों का अनुपात होगा –",
+"options": ["9 : 16", "16 : 9", "1 : 2", "2 : 1"],
+"answer": "9 : 16"
+},
+{
+"question": "42. दो गोले के आयतनों का अनुपात 216 : 125 है। उनके पृष्ठीय क्षेत्रफलों का अनुपात क्या होगा ?",
+"options": ["3 : 4", "4 : 3", "9 : 16", "36 : 25"],
+"answer": "3 : 4"
+},
+{
+"question": "43. एक गोले का पृष्ठीय क्षेत्रफल 154 cm²है, तो गोले का आयतन होगा –",
+"options": ["", "", "", "इनमें से कोई नहीं"],
+"answer": "इनमें से कोई नहीं"
+},
+{
+"question": "44. यदि किसी गोले की त्रिज्या आधी कर दी जाए तो मूल गोल के आयतन और नए गोले के आयतन का अनुपात होगा –",
+"options": ["1 : 8", "8 : 1", "1 : 4", "4 : 1"],
+"answer": "1 : 8"
+},
+{
+"question": "45. यदि किसी गोले की त्रिज्या आधी कर दी जाती है, तो नए गोला और मूल गोला के आयतनों का अनुपात होगा –",
+"options": ["8 : 1", "1 : 8", "4 : 1", "1 : 4"],
+"answer": "1 : 8"
+},
+{
+"question": "46. गोले की त्रिज्या 7 cm है, तो इसका आयतन होगा –",
+"options": ["1437 cm³", "1438 cm³", "1439 cm³", ""],
+"answer": ""
+},
+{
+"question": "47. खोखले गोले का आयतन होगा, यदि आंतरिक और बाह्य त्रिज्याएँ क्रमश: r और R है ?",
+"options": ["", "", "", ""],
+"answer": ""
+},
+{
+"question": "48. एक गोले का पृष्ठीय क्षेत्रफल 616 cm है, तो इसकी त्रिज्या होगी-",
+"options": ["5 cm", "6 cm", "7 cm", "4 cm"],
+"answer": "7 cm"
+},
+{
+"question": "49. एक गोले की त्रिज्या 8 cm है। इस गोले को पिघलाकर 1 cm त्रिज्या वाले कितनी गोलियाँ बन सकती हैं ?",
+"options": ["8", "64", "512", "16"],
+"answer": "64"
+},
+{
+"question": "50. एक गोले की त्रिज्या दो गुनी कर दी जाए, तब इसका आयतन कितनी गुनी हो जाएगी ?",
+"options": ["8 गुनी", "4 गुनी", "2 गुनी", "16 गुनी"],
+"answer": "8 गुनी"
+},
+{
+"question": "51. दो गोले के आयतनों का अनुपात 8 : 1 है। उनकी त्रिज्याओं का अनुपात क्या है ?",
+"options": ["1 : 4", "4 : 1", "1 : 2", "2 : 1"],
+"answer": "1 : 2"
+},
+{
+"question": "52. यदि एक गोले का पृष्ठीय क्षेत्रफल 47r cm हो, तो उसका व्यास होगा-",
+"options": ["1 cm", "2 cm", "4 cm", "5 cm"],
+"answer": "4 cm"
+},
+{
+"question": "53. यदि किसी अर्द्धगोलाकार पात्र की त्रिज्या k cm हो, तो उसका आयतन कितना होगा ?",
+"options": ["", "", "", ""],
+"answer": ""
+},
+{
+"question": "54. एक ही आधार त्रिज्या r वाले दो ठोस अर्द्धगोलों को उनके – आधारों के अनुदिश जोड़ दिया गया है। नए ठोस का वक्र पृष्ठीय क्षेत्रफल है –",
+"options": ["4πr²", "6πr²", "3πr²", "8πr²"],
+"answer": "4πr²"
+},
+{
+"question": "55. एक अर्द्धगोले का आयतन 19404 cm है, तो उसका वक्र पृष्ठीय क्षेत्रफल क्या होगा ?",
+"options": ["2772 cm²", "3696 cm²", "3632 cm²", "2316 cm²"],
+"answer": "2772 cm²"
+},
+{
+"question": "56. 7 cm त्रिज्या वाले एक अर्द्धगोले का कुल पृष्ठीय क्षेत्रफल क्या होगा ?",
+"options": ["642 cm²", "426 cm²", "462 cm²", "624 cm²"],
+"answer": "642 cm²"
+},
+{
+"question": "57. यदि किसी अर्द्धगोले का सम्पूर्ण पृष्ठीय क्षेत्रफल 462 cm² है, तो उसकी त्रिज्या का मान होगा-",
+"options": ["14 cm", "21 cm", "7 cm", "3 cm"],
+"answer": "14 cm"
+},
+{
+"question": "58. एक अर्द्धगोलाकार कटोरे की आन्तरिक एवं बाह्य त्रिज्याएँ क्रमशः r₁ एवं ,r₂ हैं, कटोरे के वक्रपृष्ठ का क्षेत्रफल होगा –",
+"options": ["π(r₁² + r₂²)", "2π(r₁² + r₂²)", "2π(r₁² -r₂²)", "π(r₁² -r₂²)"],
+"answer": "π(r₁² + r₂²)"
+},
+{
+"question": "59. एक अर्द्धगोले का आयतन 19404 cm है, तो अर्द्धगोले का कुल पृष्ठीय क्षेत्रफल होगा-",
+"options": ["4158 cm²", "16632 cm²", "8316 cm²", "3696 cm²"],
+"answer": "8316 cm²"
+},
+{
+"question": "60. यदि एक अर्द्धगोले का वक्रपृष्ठ 144π cm² है, तो उसकी त्रिज्या है –",
+"options": ["6 cm", "6√2 cm", "8 cm", "12 cm"],
+"answer": "6 cm"
+},
+{
+"question": "61. लोहे का एक टुकड़ा 49x33x24 आकार का है। इसे पिघलाकर एक गोला बनाया गया है। इस गोले की त्रिज्या होगी –",
+"options": ["21 cm", "28 cm", "35 cm", "40 cm"],
+"answer": "35 cm"
+},
+{
+"question": "62. समान आधार और समान ऊँचाई के लम्बवृत्तीय बेलन और लम्बवृत्तीय शंकु के आयतनों का अनुपात होगा –",
+"options": ["1 : 3", "3 : 1", "4 : 3", "3 : 4"],
+"answer": "3 : 4"
+},
+{
+"question": "63. त्रिज्या rcm और ऊँचाई h cm (h > 2r) वाले एक लम्बवृत्तीय बेलन में ठीक समावेशित होने वाले गोले का व्यास है –",
+"options": ["r cm", "2r cm", "h cm", "2h cm"],
+"answer": "2r cm"
+},
+{
+"question": "64. एक गोला जिसका आन्तरिक और बाह्य व्यास क्रमशः 4 cm और 8 cm है, को पिघलाकर 8 cm व्यास वाला शंकु बनाया गया है, तो शंकु की ऊँचाई होगी-",
+"options": ["12 cm", "14 cm", "15 cm", "18 cm"],
+"answer": "15 cm"
+},
+{
+"question": "65. आधार की त्रिज्या 8 cm और ऊँचाई 2 cm वाले बेलन को पिघलाकर एक 6 cm ऊँचाई वाला शंकु बनाया गया है। शंकु के आधार की त्रिज्या है –",
+"options": ["5 cm", "4 cm", "6 cm", "8 cm"],
+"answer": "8 cm"
+},
+{
+        "question": "66. एक 14 cm लम्बे वृत्ताकार समबेलन का आयतन 11 cm के किनारे वाले घन के आयतन के बराबर है, तो बेलन का व्यास है –",
+        "options": ["11 cm", "5.5 cm", "14 cm", "7 cm"],
+        "answer": "5.5 cm"
+    },
+    {
+        "question": "67. किसी गोले का व्यास 6 cm है। उसे पिघलाकर एक तार 0.2 cm व्यास वाला बनाया गया है। तार की लम्बाई क्या होगा ?",
+        "options": ["12 cm", "36 cm", "36 m", "1 m"],
+        "answer": "36 m"
+    },
+    {
+        "question": "68. क्रमशः 6 cm, 8 cm और 10 cm त्रिज्याओं वाले धातु के तीन ठोस गोलों को पिघलाकर एक बड़ा ठोस गोला बनाया जाता है।” इस गोले की त्रिज्या होगी –",
+        "options": ["15 cm", "10 cm", "9 cm", "12 cm"],
+        "answer": "15 cm"
+    },
+    {
+        "question": "69. एक धातुई शंकु जिसके आधार की त्रिज्या 2.1 cm और ऊँचाई 8.4 cm है को पिघलाया जाता है और उसे एक गोला में ढाला जाता है, तो गोले की त्रिज्या है –",
+        "options": ["2.1 cm", "1.05 cm", "1.5 cm", "2 cm"],
+        "answer": "1.05 cm"
+    },
+    {
+        "question": "70. 2 cm आधार की त्रिज्या एवं 45 cm ऊँचाई वाले एक ठोस बेलन को पिघलाकर 3 cm त्रिज्या वाले कितने ठोस गोले बनाए जा सकते हैं ?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5"
+    },
+    {
+        "question": "71. एक बाल्टी के वृत्ताकार सिरों की त्रिज्याएँ 35 cm और 14 cm हैं और ऊँचाई 40 cm है, तो इसका आयतन है –",
+        "options": ["60060 cm³", "80080 cm³", "70040 cm³", "80160 cm³"],
+        "answer": "80080 cm³"
+    },
+    {
+        "question": "72. एक लम्बवृत्तीय शंकु में उसके आधार के समांतर खींची गई तल द्वारा काटा गया अनुप्रस्थ काट होता है, एक –",
+        "options": ["वृत्त", "शंकु का छिन्नक", "गोला", "अर्द्धगोला"],
+        "answer": "गोला"
+    },
+    {
+        "question": "73. एक गिलास का आकार प्रायः निम्न रूप का होता है –",
+        "options": ["एक शंकु", "शंकु का छिन्नक", "एक बेलन", "एक गोला"],
+        "answer": "एक बेलन"
+    },
+    {
+        "question": "74. एक वर्ग के विकर्ण की लम्बाई 5 m है। इस वर्ग का क्षेत्रफल क्या है ?",
+        "options": ["25 m²", "12.5 m²", "50 m²", "6.25 m²"],
+        "answer": "25 m²"
+    },
+    {
+        "question": "75. एक वर्ग तथा उस वर्ग के विकर्ण पर खींचे गए वर्ग के क्षेत्रफलों – का अनुपात होगा –",
+        "options": ["1: √2", "1 : 2", "1 : 3", "1:4"],
+        "answer": "1:2"
+    },
+    {
+        "question": "76. 3 m भुजा के वर्गाकार फर्श पर 20 cmx30 cm साइज के कितने पत्थर लगेंगे ?",
+        "options": ["25", "100", "150", "225"],
+        "answer": "150"
+    },
+    {
+        "question": "77. यदि दो वर्गों के क्षेत्रफलों में 1: 2 का अनुपात हो, तो उनके परिमापों का अनुपात होगा –",
+        "options": ["1 : 2", "2 : 1", "1 : 4", "1 : 12"],
+        "answer": "1 : 2"
+    }
+            
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz  chapter quandrictic equesction</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th  Quandric Equaction  MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+            {
+                "question": "1. द्विघात समीकरण का व्यापक रूप या मूल रूप निम्नलिखित में से कौन है ?",
+                "options": ["x² + bx² = 0", "ax² – + bx + c = 0; a ≠ 0", "ax² = bx; a ≠ 0", "इनमें से कोई नहीं"],
+                "answer": "x² + bx² = 0"
+            },
+
+            {
+                "question": "2. एक द्विघात समीकरण का घात होता है –",
+                "options": ["0", "1", "2", "इनमें से कोई नहीं"],
+                "answer": "2"
+
+            },
+            {
+                "question": "3. किस भारतीय गणितज्ञ ने ax² + bx = c के रूप के द्विघात समीकरण को हल करने का एक स्पष्ट सूत्र दिया था ?",
+                "options": ["भास्कर द्वितीय", "ब्रह्मगुप्त", "श्रीधराचार", "आर्यभट्ट"],
+                "answer": "श्रीधराचार"
+            },
+            {
+                "question": "4. पुस्तक “लिबर इबाडोरम” किस गणितज्ञ द्वारा लिखी गई है ?",
+                 "options": ["अल-ख्वारिजमी", "श्रीधराचार्य", "अब्राहम बार हिय्या हा-नासी यूरो", "ब्रह्मगुप्त"],
+                "answer": "अल-ख्वारिजमी"
+            },
+            {
+                "question": "5. द्विघात समीकरण ax² + bx + c = 0 के मूलों की संख्या होती है ?",
+               "options": ["1", "2", "3", "0"],
+                "answer": "2"
+
+            },
+            {
+                "question": "निम्नलिखित में से कौन द्विघात समीकरण है ?",
+               "options": ["(x +2)³ = 2x(x² – 1)", "(x-2) (x+1) = (x-1) (x+3)", "x² + 2x = (-2) (3-x)", "x² +3x + 1 = (x -2)²"],
+                "answer": "x² + 2x = (-2) (3-x)"
+            },
+
+            {
+                "question": "निम्नलिखित में से कौन द्विघात समीकरण है ?",
+                "options": ["x² + 5√x + 4 = 0", "x² = x – 1/x", "2x² + 1/x² = 3", "(x + 1)² = 4"],
+                 "answer": "2x² + 1/x² = 3"
+            },
+            {
+                "question": "निम्नलिखित में से कौन द्विघात समीकरण है ?",
+                "options": ["(x + 1) (x + 3) = (x + 2) (x + 5)", "(x +1) (x² + 1) = x³", "3x² + 3x² + 4x + 2 = 0", "(x – 1) (-x² + x) = x3 + 3x"],
+                "answer": "(x + 1) (x + 3) = (x + 2) (x + 5)"
+            },
+            {
+                "question": "निम्नलिखित में से कौन द्विघात समीकरण नहीं है ?",
+                "options": ["(x+3)³ = x(x²-1)", "(x+1)² = 2(x -3)", "(x-2)(x+2) = 6", "x² + 1/x² = 2"],
+                "answer": "(x+1)² = 2(x -3)"
+            },{
+                "question": "10. निम्नलिखित में से कौन द्विघात समीकरण नहीं है ?",
+                "options": ["x – 3/x = 3", "3x – 5/x = x²", "x + 1/x = 3", "x² – 3 = 4x² – 4x"],
+                "answer": "x + 1/x = 3"
+            },
+
+            {
+        "question": "11. निम्नलिखित में से कौन द्विघात समीकरण नहीं है ?",
+        "options": ["(x +1)² = 2(x -3)", "(x + 3)³ = 2x(x² -1)", "x³ – 4x² – x + 1 = (x – 2)³", "3x² – 1 = (x + 1) (x -1)"],
+        "answer": "(x + 3)³ = 2x(x² -1)"
+    },
+    {
+        "question": "12. समीकरण px² + qx + r = 0 का विवेचक है –",
+        "options": ["q² – 4pr", "q² + 4pr", "b² – 4ac", "q² ± 4pr"],
+        "answer": "q² – 4pr"
+    },
+    {
+        "question": "13. निम्नलिखित में से कौन द्विघात समीकरण 4x² + 4x +1 = 0 के विविक्तकर हैं ?",
+        "options": ["4", "-8", "10", "0"],
+        "answer": "0"
+    },
+    {
+        "question": "14. द्विघात समीकरण 3x² – 2x + 1/3 = 0 के विविक्तकर का मान हैं –",
+        "options": ["0", "½", "1", "√3"],
+        "answer": "½"
+    },
+    {
+        "question": "15. यदि x² + 3x +12 = 0, तो x का मान है –",
+        "options": ["पूर्णाक संख्या", "भिन्न संख्या", "अपरिमेय संख्या", "वास्तविक संख्या नहीं"],
+        "answer": "अपरिमेय संख्या"
+    },
+    {
+        "question": "16. यदि x² – 5x + 4 = 0, तो x का मान होगा –",
+        "options": ["पूर्णाक संख्या", "भिन्न संख्या", "अपरिमेय संख्या", "वास्तविक संख्या"],
+        "answer": "पूर्णाक संख्या"
+    },
+    {
+        "question": "17. x² = 9 का हल समुच्चय होगा –",
+        "options": ["{9,-9}", "{3,-3}", "{3, 3}", "इनमें से कोई नहीं"],
+        "answer": "{3, -3}"
+    },
+    {
+        "question": "18. द्विघात समीकरण x² – 16 = 0 का हल समुच्चय निम्न में से कौन है ?",
+        "options": ["{4, 4}", "{4, -4}", "{16, -16}", "{16, 16}"],
+        "answer": "{4, -4}"
+    },
+    {
+        "question": "19. समीकरण 6x² – 11x +3 = 0 के मूलों की प्रकृति है –",
+        "options": ["वास्तविक और समान", "वास्तविक और असमान", "वास्तविक", "अवास्तविक"],
+        "answer": "वास्तविक और असमान"
+    },
+    {
+        "question": "20. द्विघात समीकरण x² + x + 5 = 0 के मूल की प्रकृति है –",
+        "options": ["वास्तविक और असमान", "वास्तविक और समान", "वास्तविक", "वास्तविक नहीं"],
+        "answer": "वास्तविक और असमान"
+    },
+
+    {
+        "question": "21. 2x² + 5x -12 = 0 का एक मूल निम्नलिखित में से कौन है ?",
+        "options": ["-2", "-4", "1", "0"],
+        "answer": "-4"
+    },
+    {
+        "question": "22. निम्न में से कौन द्विघात समीकरण 2x² + x – 6 = 0 का एक मूल हैं ?",
+        "options": ["2", "3/2", "-3", "3"],
+        "answer": "-3"
+    },
+    {
+        "question": "23. द्विघात समीकरण x² – 3x + 2 = 0 के मूल है –",
+        "options": ["2,1", "-2,1", "2,-1", "-2,-1"],
+        "answer": "2,1"
+    },
+    {
+        "question": "24. समीकरण 2√2y2 + 5y + √2 =0 के मूल हैं –",
+        "options": [],
+        "answer": "Maul missing"
+    },
+    {
+        "question": "25. यदि द्विघात समीकरण 9x² + 6x + 1 = 0 के मूल समान हो, तो मूल होंगे –",
+        "options": ["-1/3", "1/3", "±3", "±3/2"],
+        "answer": "1/3"
+    },
+    {
+        "question": "26. यदि समीकरण ax² + bx + c = 0 के मूल समान हों, तो मूल निम्न में से कौन होगा ?",
+        "options": ["-b/2a", "b/2a", "b/4a", "4ac"],
+        "answer": "-b/2a"
+    },
+    {
+        "question": "27. द्विघात समीकरण 4x² + 4x + 1 = 0 के मूलों का योग होगा –",
+        "options": ["1/4", "-1", "-1/8", "-3/4"],
+        "answer": "-1"
+    },
+    {
+        "question": "28. द्विघात समीकरण px² + q + r = 0 के मूलों का योग है –",
+        "options": ["-r/p", "-q/r", "-q/p", "p/r"],
+        "answer": "-q/p"
+    },
+    {
+        "question": "29. समीकरण 3√3x² + 10x + √3 = 0 के मूलों का गुणनफल निम्न में से कौन है ?",
+        "options": ["1/3", "√3", "10", "3√3"],
+        "answer": "1/3"
+    },
+    {
+        "question": "30. समीकरण √3x² – 2√2x – 2√3 = 0 के मूलों का गुणनफल है –",
+        "options": ["-2√2", "6", "–2√3", "-2"],
+        "answer": "-2√2"
+    },
+    {
+        "question": "31. यदि x = 1 समीकरण ax² + ax + 3 = 0 और समीकरण x² + x + b = 0 के मूल हों, तो ab = …..",
+        "options": ["3", "3.5", "6", "-3"],
+        "answer": "3"
+    },
+    {
+        "question": "32. यदि x = 1 दोनों समीकरणों x² + x + a = 0 और bx² + bx + 3 = 0 के मूल हों, तब ab = ……..",
+        "options": ["-3", "4", "3", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "33. यदि समीकरण 9x² + 8kx + 16 =0 के मूल समान हों, तो है का मान है –",
+        "options": ["केवल 3", "केवल -3", "±3", "9"],
+        "answer": "±3"
+    },
+    {
+        "question": "34. द्विघात समीकरण 2x² + kx + 3 = 0 के दो बराबर मूल हैं, तो k का मान होगा –",
+        "options": ["±√6", "±6√2", "±2√6", "±2√3"],
+        "answer": "±2√6"
+    },
+    {
+        "question": "35. समीकरण 9x² + 6ax +4 = 0 के मूल वास्तविक और समान है, तो a का मान होगा –",
+        "options": ["2", "-2", "±2", "4"],
+        "answer": "2"
+    },
+    {
+        "question": "36. a के किस मान के लिए ax² + 2x + c = 0 के मूल वास्तविक और समान होंगे ?",
+        "options": ["1/c", "-1/c", "2/a", "a/c"],
+        "answer": "1/c"
+    },
+    {
+        "question": "37. यदि समीकरण x² +4x + k = 0 के मूल वास्तविक और असमान हों, तो –",
+        "options": ["k > 4", "k < 4", "k ≥ 4", "k ≤ 4"],
+        "answer": "k > 4"
+    },
+    {
+        "question": "38. k के किस मान के लिए समीकरण x² + 6x + k = 0 के मूल । वास्तविक और भिन्न होंगे ?",
+        "options": ["k > 12", "k < 9", "k ≥ 10", "इनमें से कोई नहीं"],
+        "answer": "इनमें से कोई नहीं"
+    },
+    {
+        "question": "39. समीकरण x² + 4x + k = 0 के मूल वास्तविक होने पर निम्न में से कौन सत्य है ?",
+        "options": ["k < 4", "k > 4", "k ≤ 4", "k = 4"],
+        "answer": "k < 4"
+    },
+    {
+        "question": "40. p के किस मान के लिए द्विघात समीकरण px² – 2x + 3 = 0 के मूल वास्तविक होंगे ?",
+        "options": ["p ≥ 1/2", "p ≤ 1/3", "p > 1", "p < 0"],
+        "answer": "p ≥ 1/2"
+    },
+
+    {
+        "question": "41. यदि समीकरण 3x² + (k-1)x + 9 = 0 का एक मूल 3 है, तो k का मान होगा –",
+        "options": ["11", "12", "-11", "-12"],
+        "answer": "11"
+    },
+    {
+        "question": "42. यदि समीकरण 2x² + px -3 = 0 का एक मूल -3 हो, तो p का मान होगा-",
+        "options": ["4", "5", "3", "6"],
+        "answer": "4"
+    },
+    {
+        "question": "43. यदि समीकरण x² – bx +1=0 के मूल वास्तविक न हों, तो –",
+        "options": ["-3 < b < 3", "-2 < b < 2", "b > 2", "b < -2"],
+        "answer": "b > 2"
+    },
+    {
+        "question": "44. यदि समीकरण x² + kx + 4 = 0 के मूल वास्तविक न हों तो –",
+        "options": ["-4 < k < 4", "-2 < k < 2", "k > 4", "k < -4"],
+        "answer": "k < -4"
+    },
+    {
+        "question": "45. यदि द्विघात समीकरण के मूल 3, -3 हों, तो द्विघात समीकरण निम्नलिखित में से कौन होगा ?",
+        "options": ["x + 9 = 0", "x² – 9 = 0", "x² – 6x + 9 = 0", "x² + 6x – 9 = 0"],
+        "answer": "x² – 9 = 0"
+    },
+    {
+        "question": "46. यदि द्विघात समीकरण के मूल -√3, √3 हो, तो द्विघात समीकरण होगा –",
+        "options": ["x² – 3 = 0", "x² + 3 = 0", "x² – 9 = 0", "x² + 9 = 0"],
+        "answer": "x² – 3 = 0"
+    },
+    {
+        "question": "47. यदि x + 1/x = 2 हो, तो x² + 1/x² का मान क्या है ?",
+        "options": ["4", "8", "2", "6"],
+        "answer": "6"
+    },
+    {
+        "question": "48. यदि x² + 1 /x² = 14 हो, तो x + 1/x का मान होगा –",
+        "options": ["4", "5", "-2", "3"],
+        "answer": "5"
+    },
+    {
+        "question": "49. यदि x² – 1/x = 0 हो, तो x + 1 का मान होगा –",
+        "options": ["2", "0", "7", "6"],
+        "answer": "2"
+    },
+    {
+        "question": "50. यदि द्विघात समीकरण x² + kx + 12 = 0 के मूलों का अंतर 1 है, तो k का घनात्मक मान है-",
+        "options": ["-7", "7", "4", "8"],
+        "answer": "4"
+    },
+    {
+        "question": "51. यदि ax² + bx + c = 0 के मूल समान हों, तो c =…………",
+        "options": ["-b²/4a", "b²/4a", "-b/2a", "b/2a"],
+        "answer": "b²/4a"
+    },
+    {
+        "question": "52. यदि समीकरण rx² – 4x + p = 0 में D = 0 हो, तो मूल α का होगा –",
+        "options": ["q/2r", "p/r", "-q/4pr", "-q/2p"],
+        "answer": "-q/2p"
+    },
+    {
+        "question": "53. यदि x² + 3px + 2p² = 0 के मूल α,β  हो, तो α² + β² = 5 होने पर p का मान होगा –",
+        "options": ["±1", "±3", "2", "1/2"],
+        "answer": "±1"
+    },
+    {
+        "question": "54. यदि वर्ग का विकर्ण 16√2 cm है, तो वर्ग की भुजा की लम्बाई होगी –",
+        "options": ["16 cm", "4 cm", "4√2 cm", "8 cm"],
+        "answer": "4√2 cm"
+    },
+    {
+        "question": "55. यदि q² – 4pr > 0 तो px²- + qx + r = 0 के मूल होंगे –",
+        "options": ["वास्तविक और समान", "वास्तविक और असमान", "वास्तविक नहीं", "इनमें से कोई नहीं"],
+        "answer": "वास्तविक और असमान"
+    },
+    {
+        "question": "56. x + 1/x = 8 को द्विघात समीकरण के मानक रूप में बदलने पर होगा –",
+        "options": ["x² – 8x + 1 = 0", "x² + 8x + 1 = 0", "x² – 8x – 1 = 0", "इनमें से कोई नहीं"],
+        "answer": "x² – 8x + 1 = 0"
+    },
+    {
+        "question": "57. यदि a – 3 = 10/a, तो a का मान है –",
+        "options": ["5,0", "5, 2", "-5, 2", "5,-2"],
+        "answer": "5,-2"
+    },
+    {
+        "question": "58. x² – 5 = 0 के मूल हैं –",
+        "options": ["+5", "-5", "±√5", "√±5"],
+        "answer": "±√5"
+    },
+    {
+        "question": "59. यदि समीकरण ax²  + bx + c = 0 के मूल समान है, तो निम्नलिखित में कौन सत्य है ?",
+        "options": ["b² = ± 4ac", "b² = 4ac", "b² = 4c", "b² = 4a"],
+        "answer": "b² = 4ac"
+    },
+    {
+        "question": "60. यदि समीकरण ax²  + bx + c = 0 का एक मूल दूसरे का दुगुना हो, तो निम्नलिखित में से कौन सत्य है ?",
+        "options": ["b² = ac", "b² = 9ac", "2b² = ac", "2b² = 9ac"],
+        "answer": "b² = ac"
+    }
+
+    
+       
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

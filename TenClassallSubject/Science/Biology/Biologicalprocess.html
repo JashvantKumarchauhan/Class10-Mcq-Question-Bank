@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Real Number MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        
+    </div>
+    <div class="container">
+      <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Created By </h4>
+                </div>
+               <div>
+                <h4>Name Jashvant Kumar</h4>
+                  <h4>Mobile No. 7541975939</h4>
+
+               </div>
+               <div>
+                <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+              </div>
+              <div>
+              </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+              <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+         
+           
+
+              </div>
+                  
+                 
+               
+               
+                </div>
+              
+         
+              
+             
+        
+                
+              </div>
+                  
+            </div>
+        </div>
+    </footer>
+     
+    </div>
+    
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "पौधों में वाष्पोत्सर्जन किस भाग में होता है ?",
+        "options": ["जड़", "तना", "पत्ता", "फूल"],
+        "answer": "जड़"
+    },
+    {
+        "question": "मानव रक्त में उपस्थित यूरिया की सामान्य मात्रा होती है-",
+        "options": ["100 Mg", "20 Mg", "30 Mg", "40 Mg"],
+        "answer": "30 Mg"
+    },
+    {
+        "question": "श्वसन क्रिया के दौरान कितनी प्रतिशत ऊर्जा ताप के रूप में निष्काषित होती है ?",
+        "options": ["20%", "40%", "60%", "80%"],
+        "answer": "60%"
+    },
+    {
+        "question": "मनुष्य में वृक्क एक तंत्र का भाग है जो संबंधित है-",
+        "options": ["पोषण", "श्वसन", "उत्सर्जन", "परिवहन"],
+        "answer": "उत्सर्जन"
+    },
+    {
+        "question": "पौधों के वायवीय भागों से जल के निष्कर्ष की क्रिया कहलाती है-",
+        "options": ["परागण", "निषेचन", "विसरण", "वाष्पोत्सर्जन"],
+        "answer": "वाष्पोत्सर्जन"
+    },
+    {
+        "question": "वह प्रक्रम जिनके द्वारा शरीर में ऊर्जा का उत्पादन होता है। कहलाता है-",
+        "options": ["श्वसन", "पोषण", "उत्सर्जन", "उत्तेजनशीलता"],
+        "answer": "उत्तेजनशीलता"
+    },
+    {
+        "question": "कौन-सी क्रिया सभी जीव के लिए अनिवार्य है ?",
+        "options": ["प्रकाश संश्लेषण", "वाष्पोत्सर्जन", "श्वसन", "चलन"],
+        "answer": "श्वसन"
+    },
+    {
+        "question": "मैग्नीशियम पाया जाता है ?",
+        "options": ["क्लोरोफिल में", "लाल रक्त कण में", "वर्णी लवक में", "श्वेत रक्त कण में"],
+        "answer": "क्लोरोफिल में"
+    },
+    {
+        "question": "मानव हृदय में पाये जाते हैं ?",
+        "options": ["3 वेश्म", "2 वेश्म", "4 वेश्म", "5 वेश्म"],
+        "answer": "2 वेश्म"
+    },
+    {
+        "question": "प्रकाश संश्लेषण द्वारा किसकी प्राप्ति होती है ?",
+        "options": ["वसा", "प्रोटीन", "ग्लूकोज", "प्रकाश"],
+        "answer": "प्रकाश"
+    },
+    {
+        "question": "कोशिका झिल्ली किस प्रकार की झिल्ली है ?",
+        "options": ["पागरम्य", "अपारगम्य", "अर्द्धपारगम्य", "इनमें से कोई नहीं"],
+        "answer": "अपारगम्य"
+    },
+    {
+        "question": "दही के जमने में निम्नलिखित में कौन सी क्रिया होती है ?",
+        "options": ["अपघटन", "प्रकाश संश्लेषण", "किण्वन", "उत्सर्जन"],
+        "answer": "किण्वन"
+    },
+    {
+        "question": "जीवन की उपापचयी क्रियाओं के संचालन के लिए निम्नलिखित में कौन आवश्यक है?",
+        "options": ["निरंतर ऊर्जा की आपूर्ति", "शरीर की वृद्धि", "टूटे-फूटे ऊतकों की मरम्मत", "इनमें से सभी"],
+        "answer": "इनमें से सभी"
+    },
+    {
+        "question": "मानव में डायलिसिस थैली है ?",
+        "options": ["नेफ्रॉन", "न्यूरॉन", "माइटोकॉड्रिया", "इनमें से कोई नहीं"],
+        "answer": "नेफ्रॉन"
+    },
+    {
+        "question": "मत्स्य का मुख्य श्वसन अंग है-",
+        "options": ["किया", "फेफड़ा", "गिल्स", "नाक"],
+        "answer": "गिल्स"
+    },
+    {
+        "question": "पौधों में गैसों के निष्कासन के लिए किस क्रिया का उपयोग होता है ?",
+        "options": ["परासरण", "विसरण", "वाष्पोत्सर्जन", "परिवहन"],
+        "answer": "वाष्पोत्सर्जन"
+    },
+    {
+        "question": "क्लोरोफिल वर्णक का रंग है-",
+        "options": ["हरा", "नीला", "लाल", "सफेद"],
+        "answer": "हरा"
+    },
+    {
+        "question": "कवक में पोषण की कौन-सी विधि है?",
+        "options": ["स्वपोषी", "मृतजीवी", "समभोजी", "कोई नहीं"],
+        "answer": "मृतजीवी"
+    },
+    {
+        "question": "रेजिन एवं गोंद कहाँ संचित रहता है ?",
+        "options": ["फ्लोएम में", "कॉर्टेक्स में", "छाल में", "पुराने जाइलम में"],
+        "answer": "छाल में"
+    },
+    {
+        "question": "शरीर में भोजन को पचनाः किस प्रकार की अभिक्रिया है?",
+        "options": ["उपचयन", "संचयन", "विस्थापन", "अपचयन"],
+        "answer": "अपचयन"
+    },
+    {
+        "question": "रक्त क्या है ?",
+        "options": ["कोशिका", "उत्तक", "पदार्थ", "कोई नहीं"],
+        "answer": "कोशिका"
+    },
+    {
+        "question": "निम्नलिखित में कौन उत्सर्जी अंग है?",
+        "options": ["वृक्क", "अग्नाशय", "आँख", "कोई नहीं"],
+        "answer": "कोई नहीं"
+    },
+    {
+        "question": "रक्षी कोशिकाएँ पाई जाती है ?",
+        "options": ["जड़ में", "पत्तियों में", "फूलों में", "फलों में"],
+        "answer": "फूलों में"
+    },
+    {
+        "question": "इथाइल अल्कोहल किस प्रकार के श्वसन में बनता है ?",
+        "options": ["वायवीय", "अवायवीय", "दोनों", "कोई नहीं"],
+        "answer": "वायवीय"
+    },
+    {
+        "question": "मनुष्य के साँस लेने और छोड़ने की क्रिया को क्या कहते हैं?",
+        "options": ["श्वासोच्छवास", "श्वसन", "नि:श्वसन", "उत्सर्जन"],
+        "answer": "श्वसन"
+    },
+    {
+        "question": "रक्त में आयरन की कमी से होने वाला एक रोग है ?",
+        "options": ["टी० बी०", "मधुमेह", "एनीमिया", "उच्च रक्त चाप"],
+        "answer": "एनीमिया"
+    },
+    {
+        "question": "पादय में जाइलम उत्तरदायी है-",
+        "options": ["जल का वहन", "भोजन का वहन", "अमीनो अम्ल का वहन", "ऑक्सीजन का वहन"],
+        "answer": "जल का वहन"
+    },
+    {
+        "question": "कुटपाद किसमें पाया जाता है ?",
+        "options": ["पैरामिशियम में", "युगलिना में", "अमीबा में", "कोई नहीं"],
+        "answer": "कोई नहीं"
+    },
+    {
+        "question": "प्रकृति में ऑक्सीजन का संतुलन कैसे बना रहता है ?",
+        "options": ["संयोजन क्रिया", "प्रकाश संश्लेषण", "अपघटन", "कोई नहीं"],
+        "answer": "कोई नहीं"
+    },
+    {
+        "question": "स्टोमाटा पौधों के किस अंग में पाया जाता है ?",
+        "options": ["तना में", "पत्तियों में", "जड़ में", "कोई नहीं"],
+        "answer": "कोई नहीं"
+    },
+    {
+        "question": "मानव हृदय का औसत प्रकुंचन दाब है, लगभग-",
+        "options": ["120 mm Hg", "150 mm Hg", "90 mm Hg", "इनमें से कोई नहीं"],
+        "answer": "120 mm Hg"
+    },
+    {
+        "question": "इनमें कौन प्रकाश संश्लेषी अंग है ?",
+        "options": ["पत्ती", "स्ट्रोमा", "ग्राना", "हरित लवक"],
+        "answer": "हरित लवक"
+    },
+    {
+        "question": "वाष्पोत्सर्जन कैसी प्रक्रिया है ?",
+        "options": ["शारीरिक", "भौतिक", "रासायनिक", "प्राकृतिक"],
+        "answer": "भौतिक"
+    },
+    {
+        "question": "शरीर में भोजन का पचना किस प्रकार की अभिक्रिया हैं ?",
+        "options": ["अवकरण", "ऑक्सीकरण", "उदासीनीकरण", "वैद्युत अपघटन"],
+        "answer": "अपचयन"
+    },
+
+    {
+      "question": "[36] पायरुवेट के विखंडन से यह कार्बन डाइऑक्साइड, जल तथा ऊर्जा देता है और यह क्रिया होती है ?",
+      "options": ["कोशिका द्रव्य", "माइटोकॉन्ड्रिया", "हरित लवक", "केन्द्रक"],
+      "answer": "माइटोकॉन्ड्रिया"
+    },
+    {
+      "question": "[37] जठर ग्रंथियाँ कहाँ पायी जाती है ?",
+      "options": ["आँख में", "अग्नाशय में", "यकृत में", "अमाशय में"],
+      "answer": "अमाशय में"
+    },
+    {
+      "question": "[38] खुला परिसंचरण तंत्र किसमें पाया जाता है ?",
+      "options": ["मनुष्य में", "कॉकरोच में", "घोड़ा में", "ऊंट में"],
+      "answer": "कॉकरोच में"
+    },
+    {
+      "question": "[39] पौधों में पाया जानेवाला गाढ़ा एवं दुधिया उत्सर्जी तरल पदार्थ को क्या कहते हैं ?",
+      "options": ["लैटेक्स", "रेजिन", "गोंद", "टैनिन"],
+      "answer": "लैटेक्स"
+    },
+    {
+      "question": "[40] युरिया रक्त में कहाँ से प्रवेश करती है ?",
+      "options": ["फेफड़ा से", "यकृत से", "श्वास नलिका से", "वृक्क से"],
+      "answer": "श्वास नलिका से"
+    },
+    {
+      "question": "[41] प्रकाश संश्लेषण होता है –",
+      "options": ["रात में", "दिन में", "रात-दिन", "सुबह-शाम"],
+      "answer": "दिन में"
+    },
+    {
+      "question": "[42] पादप में फ्लोएम संवाहक होता है-",
+      "options": ["भोजन", "कार्बन डाइऑक्साइड", "जल", "अमिनो अम्ल"],
+      "answer": "भोजन"
+    },
+    {
+      "question": "[43] प्रकाश संश्लेषण क्रिया में ऑक्सीजन बाहर निकलता है-",
+      "options": ["जल से", "कार्बन डाइऑक्साइड से", "ग्लूकोज से", "डिक्टियोजोम से"],
+      "answer": "कार्बन डाइऑक्साइड से"
+    },
+    {
+      "question": "[44] रक्त में हल्के पीले रंग के चिपचिपे द्रव को कहते हैं-",
+      "options": ["प्लाज्मा", "सीरम", "लिंफ", "लसीका"],
+      "answer": "सीरम"
+    },
+    {
+      "question": "[45] प्रकाश संश्लेषी अंगक है ?",
+      "options": ["पत्ती", "हरित लवक", "क्लोरोफिल", "क्लोरोप्लास्ट"],
+      "answer": "क्लोरोफिल"
+    },
+    {
+      "question": "[46] वृक्क के संरचनात्मक एवं क्रियात्मक इकाई को कहते हैं –",
+      "options": ["नेफ्रॉन", "मूत्रवाहिनी", "ग्लोमेरूलस", "बोमेन संपुट"],
+      "answer": "नेफ्रॉन"
+    },
+    {
+      "question": "[47] मनुष्य के शरीर की सबसे बड़ी ग्रंथि है ?",
+      "options": ["लीवर", "अग्न्याशय", "अण्डाशय", "एड्रीनल"],
+      "answer": "लीवर"
+    },
+    {
+      "question": "[48] स्वपोषी पोषण के लिए आवश्यक नहीं है-",
+      "options": ["ऑक्सीजन", "क्लोरोफिल", "सौर प्रकाश", "जल"],
+      "answer": "सौर प्रकाश"
+    },
+    {
+      "question": "[49] इनमें किसके द्वारा अमीबा में भोजन अंतर्गहन होता है ?",
+      "options": ["कूटपाद", "परिवहन", "भोजन रसधानी", "केंद्रक"],
+      "answer": "केंद्रक"
+    },
+    {
+      "question": "[50] पौधों में श्वसन क्रिया के अन्तर्गत ADP के टूटने से कितनी ऊर्जा मुक्त होती है ?",
+      "options": ["30.5 kJ/mol", "305 kJ/mol", "3.5 kJ/mol", "इनमें से कोई नहीं"],
+      "answer": "30.5 kJ/mol"
+    },
+    {
+      "question": "[51] रक्त का थक्का बनाने में सहायक होता है ?",
+      "options": ["लाल रक्त कोशिका", "श्वेत रक्त कोशिका", "रक्त विंबाणु", "इनमें से कोई नहीं"],
+      "answer": "रक्त विंबाणु"
+    },
+    {
+      "question": "[52] पाचन क्रिया पूर्ण होती है ?",
+      "options": ["अग्न्याशय में", "बड़ी आंतें में", "छोटी आंत में", "ग्रासनली में"],
+      "answer": "छोटी आंत में"
+    },
+    {
+      "question": "[53] छोटी आंत की दीवार में पाई जानेवाली ग्रंथियों के स्राव को क्या कहते हैं ?",
+      "options": ["आंत रस", "सक्कस एंटीरिकस", "जठर रस", "(A) एवं (B) दोनों"],
+      "answer": "(A) एवं (B) दोनों"
+    },
+    {
+      "question": "[54] एक वयस्क मनुष्य के कितने दाँत होते हैं ?",
+      "options": ["28", "30", "32", "34"],
+      "answer": "32"
+    },
+    {
+      "question": "[55] मछली के हृदय में कोष्ठों की संख्या है ?",
+      "options": ["दो", "तीन", "चार", "केवल एक"],
+      "answer": "केवल एक"
+    },
+    {
+      "question": "[56] स्वाद कलियाँ पाई जाती हैं ?",
+      "options": ["अग्न्याशय की ऊपरी सतह पर", "जीभ के ऊपरी सतह पर", "अग्नचवर्णक पर", "ग्रसनी के भीतरी दीवार पर"],
+      "answer": "अग्नचवर्णक पर"
+    },
+    {
+      "question": "[57] आमाशय के अग्रभाग को कहते हैं।",
+      "options": ["पाइलोरिक", "फुण्डिक", "कार्डिएक", "एपिग्लौटिस"],
+      "answer": "पाइलोरिक"
+    },
+    {
+      "question": "[58] मुखगुहा का पिछला भाग कहलाता है ?",
+      "options": ["ग्रसनी", "ग्रासनली", "ग्रहणी", "अग्न्याशय"],
+      "answer": "ग्रासनली"
+    },
+    {
+      "question": "[59] निम्नलिखित में कौन सजीव के मुख्य लक्षण हैं ?",
+      "options": ["स्थानांतरण", "श्वसन", "प्रकाश संश्लेषण", "इनमें सभी"],
+      "answer": "इनमें सभी"
+    },
+    {
+      "question": "[60] छोटी आंत एवं बड़ी आंत के जोड़ पर पायी जानेवाली एक छोटी नलीनुमा रचना को क्या कहते हैं ?",
+      "options": ["सीकम", "रेक्टम", "कोलन", "एपेंडिक्स"],
+      "answer": "सीकम"
+    },
+    {
+      "question": "[61] अधिकांश फूल उत्तरी गोलाई में क्यों होते हैं ?",
+      "options": ["गर्मी के कारण", "पुर्वोत्तर में बारिश के कारण", "पश्चिमोत्तर में शीत के कारण", "अमेरिका में बारिश के कारण"],
+      "answer": "अमेरिका में बारिश के कारण"
+    },
+    {
+      "question": "[62] आंतरगत विशिष्ट क्षेत्र में पोषण का प्रक्रम किसे कहते हैं?",
+      "options": ["गर्भाशय", "व्योम", "उत्तेजन", "पराग"],
+      "answer": "गर्भाशय"
+    },
+    {
+      "question": "[63] रंगीन कैटिलिस्ट रासायनिक प्रतिक्रिया को क्या कहा जाता है ?",
+      "options": ["विधुत प्रतिक्रिया", "जैविक प्रतिक्रिया", "निष्क्रिय प्रतिक्रिया", "बिना प्रतिक्रिया"],
+      "answer": "विधुत प्रतिक्रिया"
+    },
+    {
+      "question": "[64] इसके सहायक संरचना को द्विज तकरारी कहा जाता है।",
+      "options": ["पायरमिड मॉजेक्यूल", "गोलक", "बायोट", "राइबोजोम"],
+      "answer": "राइबोजोम"
+    },
+    {
+      "question": "[65] कौन सी देह के भाग में मेटाबोलिक विषाणुओं की संख्या अधिक होती है ?",
+      "options": ["लीवर", "पेट", "गुर्दे", "बुखार"],
+      "answer": "लीवर"
+    },
+    {
+      "question": "[66] ध्वनि की गति किसके संचार संवेग से होती है ?",
+      "options": ["वायु", "जल", "धरती", "अग्नि"],
+      "answer": "वायु"
+    },
+    {
+      "question": "[67] पानी का पहला उपयोग क्या है?",
+      "options": ["पीना", "नहाना", "धोना", "कृत्रिम संरचनाएँ"],
+      "answer": "पीना"
+    },
+    {
+      "question": "[68] किसके निर्माण में सर्वाधिक प्रोटीन पाया जाता है ?",
+      "options": ["अंडा", "दूध", "मछली", "मीट"],
+      "answer": "अंडा"
+    },
+    {
+      "question": "[69] जीवाणु संश्लेषण द्वारा प्राप्त किया गया एनर्जी कैसे बनता है ?",
+      "options": ["पाचन", "श्वसन", "ऑक्सीडेशन", "प्रकाश संश्लेषण"],
+      "answer": "ऑक्सीडेशन"
+    },
+    {
+      "question": "[70] कार्बनिक उपाद्रव सामग्री को किसके जरिये संपादित किया जाता है?",
+      "options": ["जल", "गंदगी", "पानी", "ऊर्जा"],
+      "answer": "गंदगी"
+    },
+    {
+      "question": "[71] स्थूल विकास के समय में बढ़ोतरी क्या होती है?",
+      "options": ["सेल", "उपाद्रव", "ऊर्जा", "ऊर्जा और उपाद्रव"],
+      "answer": "ऊर्जा और उपाद्रव"
+    },
+    {
+      "question": "[72] जल के प्राकृतिक उपयोग क्या है?",
+      "options": ["ऊर्जा", "भोजन", "नहाना", "शराब बनाना"],
+      "answer": "नहाना"
+    },
+    {
+      "question": "[73] रक्त प्रवाह किसकी साहायता से होता है?",
+      "options": ["उच्च रक्त चाप", "उच्च रक्त दाब", "दिल की धड़कन", "स्नायु सम्पीडन"],
+      "answer": "दिल की धड़कन"
+    },
+    {
+      "question": "[74] अनुभूति का अर्थ है?",
+      "options": ["सुन्दरता", "प्राप्त", "अनुभव", "ब्रह्मास्त्र"],
+      "answer": "अनुभव"
+    },
+    {
+      "question": "[75] जल्दी कैसे भयानक हो सकती है?",
+      "options": ["अच्छी आहार", "व्यायाम", "व्यस्तता", "आदर्श"],
+      "answer": "व्यस्तता"
+    }
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

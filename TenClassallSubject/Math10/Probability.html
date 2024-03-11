@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz probability </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Probability MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+           
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. दो ऐसे घटनाएँ जो एक साथ नहीं घट सकती हैं, परस्पर क्या कहलाती हैं ?",
+        "options": ["असंभव घटनाएँ", "अपवर्जी घटनाएँ", "संभव घटनाएँ", "इनमें से कोई नहीं"],
+        "answer": "अपवर्जी घटनाएँ"
+    },
+    {
+        "question": "2 . किसी अवश्यंभावी या निश्चित घटना E की प्रायिकता P(E) होती है-",
+        "options": ["0", "1", "-1", "इनमें से कोई नहीं"],
+        "answer": "1"
+    },
+    {
+        "question": "3. किसी असंभव घटना की प्रायिकता होती है –",
+        "options": ["0", "1", "-1", "2"],
+        "answer": "0"
+    },
+    {
+        "question": "4. किसी घटना E के लिए P(E) + P(E’) का मान होता है –",
+        "options": ["0", "1", "-1", "इनमें से कोई नहीं"],
+        "answer": "1"
+    },
+    {
+        "question": "5. किसी घटना और उसके पूरक घटना की प्रायिकताओं का योग होता है-",
+        "options": ["1", "0", "2", "3"],
+        "answer": "1"
+    },
+    {
+        "question": "6. किसी प्रयोग के सभी प्रारंभिक घटनाओं की प्रायिकताओं का योग होता है –",
+        "options": ["0", "-1", "1", "2"],
+        "answer": "1"
+    },
+    {
+        "question": "7. किसी घटना ‘E’ की प्रायिकता P(E) के लिए –",
+        "options": ["0 ≤ P(E) ≤ 1", "0 ≥ P(E) ≥ 1", "P(E) ≤ 1 ≤ 0", "1 ≤ P(E) ≤ 0"],
+        "answer": "0 ≤ P(E) ≤ 1"
+    },
+    {
+        "question": "8. किसी घटना की प्रायिकता का अधिकतम मान निम्नलिखित में से कौन है ?",
+        "options": ["1", "-1", "0", "2"],
+        "answer": "1"
+    },
+    {
+        "question": "9. किसी घटना की प्रायिकता का न्यूनतम मान निम्नलिखित में से कौन है ?",
+        "options": ["1", "-1", "2", "0"],
+        "answer": "0"
+    },
+    {
+        "question": "10. किसी घटना ‘E’ के लिए निम्न में से कौन सही है ?",
+        "options": ["P(E) > 1", "P(E) < 0", "P(E) = 0", "P(E) = -1"],
+        "answer": "P(E) < 0"
+    },
+    {
+        "question": "11. निम्न में से कौन-सी संख्या किसी घटना की प्रायिकता नहीं हो सकती है ?",
+        "options": ["2/3", "-1.5", "15%", "0.7"],
+        "answer": "-1.5"
+    },
+    {
+        "question": "12. निम्न में से कौन-सी संख्या किसी घटना की प्रायिकता नहीं हो सकती है ?",
+        "options": ["0", "1", "0.2", "-1"],
+        "answer": "-1"
+    },
+    {
+        "question": "13. यदि P(E) = 0.05, तो ‘E नहीं’ की प्रायिकता या P(E’) = …….",
+        "options": ["0.5", "0.59", "0.95", "0.05"],
+        "answer": "0.95"
+    },
+    {
+        "question": "14. किसी घटना A के घटने की प्रायिकता 0.35 है, तो A के नहीं घटने की प्रायिकता है-",
+        "options": ["0.65", "0.76", "0.75", "0.1"],
+        "answer": "0.65"
+    },
+    {
+        "question": "15. यदि P(E नहीं) = 0.07 हो, तो P(E) बराबर होगा –",
+        "options": ["0.73", "0.83", "0.93", "0.63"],
+        "answer": "0.93"
+    },
+    {
+        "question": "16. किसी खेल को जीतने की प्रायिकता 0.52 है, तो उसके हारने की प्रायिकता होगी –",
+        "options": ["0.52", "0.58", "0.38", "0.48"],
+        "answer": "0.48"
+    },
+    {
+        "question": "17. किसी सिक्के को एक बार उछालने पर शीर्ष आने की प्रायिकता या पट आने की प्रायिकता होती है –",
+        "options": ["1/2", "1", "1/3", "2"],
+        "answer": "1/2"
+    },
+    {
+        "question": "18. दो सिक्कों को उछालने पर संभव परिणामों की संख्या होती है –",
+        "options": ["2", "4", "9", "इनमें से कोई नहीं"],
+        "answer": "4"
+    },
+    {
+        "question": "19. दो सिक्के उछालने में दो पट पाने की प्रायिकता होती है- या दो चित पाने की प्रायिकता है –",
+        "options": ["1/3", "1/2", "1/4", "1/8"],
+        "answer": "1/4"
+    },
+    {
+        "question": "20. दो सिक्कों को एक बार उछाला जाता है। कम से कम एक चित आने की प्रायिकता क्या है ?",
+        "options": ["2/4", "1/4", "3/4", "1/2"],
+        "answer": "1/2"
+    },
+    {
+        "question": "21. दो सिक्कों को एक बार उछालने पर केवल एक चित्त आने की प्रायिकता है –",
+        "options": ["1/2", "1/3", "2/2", "1/4"],
+        "answer": "1/2"
+    },
+    {
+        "question": "22. दो सिक्कों को एक बार उछालने पर केवल एक पट आने की प्रायिकता है –",
+        "options": ["1/2", "1/3", "1/4", "1/3"],
+        "answer": "1/2"
+    },
+    {
+        "question": "23. दो सिक्कों की उछाल में दोनों पर शीर्ष (चित्त) आने की प्रायिकता है –",
+        "options": ["1/2", "1/3", "1/4", "इनमें से कोई नहीं"],
+        "answer": "1/4"
+    },
+    {
+        "question": "24. दो सिक्कों की उछाल में एक भी शीर्ष नहीं आने की प्रायिकता है –",
+        "options": ["1", "1/2", "1/3", "1/4"],
+        "answer": "1/3"
+    },
+    {
+        "question": "25. एक पासा को एक बार उछालने पर संख्या 1 आने की प्रायिकता है –",
+        "options": ["1/3", "1/2", "1/6", "5/6"],
+        "answer": "1/6"
+    },
+    {
+        "question": "26. एक पासा को एक बार फेंकने पर एक अभाज्य संख्या आने की प्रायिकता है –",
+        "options": ["1/3", "1/2", "2/3", "6"],
+        "answer": "1/2"
+    },
+    {
+        "question": "27. एक पासे को एक बार फेंकने पर एक भाज्य संख्या आने की प्रायिकता है –",
+        "options": ["1/2", "2/3", "1/3", "2"],
+        "answer": "1/3"
+    },
+    {
+        "question": "28. एक पासे को एक बार उछाला जाता है। इसकी क्या प्रायिकता है कि प्राप्त संख्या एक विषम संख्या है ?",
+        "options": ["1/2", "1/6", "1/3", "5/6"],
+        "answer": "1/2"
+    },
+    {
+        "question": "29. एक पासे को एक बार उछालने पर एक सम संख्या आने की प्रायिकता क्या है ?",
+        "options": ["1/3", "1", "1/2", "1/6"],
+        "answer": "1/6"
+    },
+    {
+        "question": "30. जब एक पासे को फेंका जाता है, तो तीन से छोटी एक विषम संख्या आने की प्रायिकता है –",
+        "options": ["1/6", "1/3", "1/2", "0"],
+        "answer": "1/2"
+    },
+    {
+        "question": "31. किसी पासे को एक बार उछालने पर 4 से बड़ी संख्या प्राप्त होने की प्रायिकता है –",
+        "options": ["2/3", "2/5", "1/3", "1/2"],
+        "answer": "1/3"
+    },
+    {
+        "question": "32. एक पासे की एक फेंक में एक विषम संख्या नहीं आने की प्रायिकता है –",
+        "options": ["0", "1", "1/3", "1/2"],
+        "answer": "1/2"
+    },
+    {
+        "question": "33. यदि दो भिन्न-भिन्न पासों को एक साथ उछाला जाए, तो दोनों पासों पर सम संख्या के आने की प्रायिक है –",
+        "options": ["1/36", "1/2", "1/6", "1/4"],
+        "answer": "1/36"
+    },
+    {
+        "question": "34. यदि दो भिन्न-भिन्न पासों को एक साथ उछाला जाए, तो दोनों पासों पर विषम संख्या आने की प्रायिकता है –",
+        "options": ["1/36", "1/2", "1/6", "1/4"],
+        "answer": "1/2"
+    },
+    {
+        "question": "35. दो पासों को एक साथ फेंका जाता है। दोनों पर 6 आने की प्रायिकता है –",
+        "options": ["1/36", "1/6", "25/36", "1/4"],
+        "answer": "1/6"
+    },{
+    "question": "36. दो पासों को एक साथ फेंकने पर दोनों पर समान संख्या आने की प्रायिकता क्या है ?",
+"options": ["1/6", "1/3", "1/3", "5/12"],
+"answer": "1/3"
+},
+{
+"question": "37. दो पासों को एक बार फेंकने पर उन पर आई संख्याओं का योग 10 होने की प्रायिकता है –",
+"options": ["1/3", "1/6", "1/12", "1/4"],
+"answer": "1/3"
+},
+{
+"question": "38. दो पासों को एक बार फेंकने पर उन पर आई संख्याओं का योग 8 होने की प्रायिकता है –",
+"options": ["5/36", "1/12", "1/8", "1/6"],
+"answer": "1/8"
+},
+{
+"question": "39. एक पासे को दो बार फेंका जाता है। कम से कम एक बार 3 आने की क्या प्रायिकता है ?",
+"options": ["1/4", "25/36", "11/36", "इनमें से कोई नहीं"],
+"answer": "11/36"
+},
+{
+"question": "40. ताश के पत्तों की एक गड्डी को अच्छी तरह से फेंटा एक पत्ती यादृच्छया निकाली जाती है, तो इसके इक्का होने की संभावना (प्रायिकता) है –",
+"options": ["1/4", "1/26", "1/13", "4/13"],
+"answer": "1/13"
+},
+{
+"question": "41. 52 पत्तों की ताश की एक गड्डी में से यादृच्छया एक पत्ता निकाला गया। निकाले गए पत्ते के इक्का न होने की प्रायिकता है –",
+"options": ["1/13", "9/13", "4/13", "12/13"],
+"answer": "12/13"
+},
+{
+"question": "42. ताश की एक गड्डी में से एक निकाले गए कार्ड की फेस कार्ड होने की प्रायिकता है –",
+"options": ["3/13", "1/52", "3/52", "इनमें से कोई नहीं"],
+"answer": "3/52"
+},
+{
+"question": "43. 52 पत्तों की अच्छी प्रकार से फेंटी गई एक गड्डी में से एक पत्ता निकाला जाता है। हुकुम का पत्ता आने की प्रायिकता है –",
+"options": ["1/4", "1/52", "1/26", "3/13"],
+"answer": "1/13"
+},
+{
+"question": "44. ताश की एक गड्डी में से यादृच्छया एक पत्ता निकाला जाता है। इसके चिड़िया का पत्ता होने की प्रायिकता है –",
+"options": ["1/13", "1/26", "1/52", "1/4"],
+"answer": "1/4"
+},
+{
+"question": "45. ताश की एक गड्डी में से यादृच्छया एक पत्ता निकाला जाता है। इसके पान का पत्ता होने की प्रायिकता है –",
+"options": ["1/13", "1/4", "1/26", "1/52"],
+"answer": "1/13"
+},
+{
+"question": "46. ताश की एक गड्डी में से यादृच्छया एक पत्ता निकाला जाता है। इसके लाल रंग या काला रंग का पत्ता होने की प्रायिकता है –",
+"options": ["1", "1/4", "1/2", "2/3"],
+"answer": "1/2"
+},
+{
+"question": "47. बादशाह, गुलाम और बेगम को किस प्रकार के कार्ड कहे जाते है –",
+"options": ["फेस कार्ड", "अंक वाले कार्ड", "हुकुम का पत्ता", "पान का पत्ता"],
+"answer": "हुकुम का पत्ता"
+},
+{
+"question": "48. ताश के पत्तों में से एक पत्ता यादृच्छया निकाला जाता है। इस पत्ते को बादशाह या गुलाम होने की क्या प्रायिकता है ?",
+"options": ["8/13", "7/52", "1/13", "2/13"],
+"answer": "2/13"
+},
+{
+"question": "49. ताश की एक गड्डी में से यादच्छया एक कार्ड निकाला जाता है। इसके बेगम होने की प्रायिकता है –",
+"options": ["1/13", "2/13", "1/52", "13/52"],
+"answer": "1/13"
+},
+{
+"question": "50. ताश की एक गड्डी में से यादच्छया एक कार्ड निकाला जाता है। इसके काले रंग का पत्ता होने की प्रायिकता है-",
+"options": ["1/4", "2/3", "1/2", "1/3"],
+"answer": "1/3"
+},
+{
+"question": "51. अच्छी तरह फेंटे गए ताश की एक गड्डी से एक पत्ता खींचा गया इसके एक काला चित्र वाला पत्ता (फेस कार्ड) होने की क्या प्रायिकता है ?",
+"options": ["1/13", "1/26", "3/36", "1/52"],
+"answer": "1/52"
+},
+{
+"question": "52. सामान्य वर्ष में 53 सोमवार होने की प्रायिकता है –",
+"options": ["2/7", "1/7", "7/52", "इनमें से कोई नहीं"],
+"answer": "2/7"
+},
+{
+"question": "53. किसी non-leap year में 53 रविवार होने की प्रायिकता है –",
+"options": ["2/7", "5/7", "6/7", "1/7"],
+"answer": "5/7"
+},
+{
+"question": "54. TELEPHONE शब्द में एक अक्षर यादृच्छया चुना जाता है। इसकी प्रायिकता क्या है कि चुना गया अक्षर VOWEL है ?",
+"options": ["4/9", "3/9", "1/9", "2/7"],
+"answer": "3/9"
+},
+{
+"question": "55. किसी वर्ष के महीने में एक माह यादृच्छया चुना जाता है। चुने गए माह के फरवरी या अप्रैल होने की प्रायिकता है-",
+"options": ["3/4", "1/6", "1/12", "इनमें से कोई नहीं"],
+"answer": "1/12"
+},
+{
+"question": "56. तीन बच्चों के परिवार में कम से कम एक लड़का होने की प्रायिकता है –",
+"options": ["7/8", "1/8", "5/8", "3/4"],
+"answer": "7/8"
+},
+{
+"question": "57: सविता और हामिद दो मित्र हैं। इसकी क्या प्रायिकता है कि दानों का जन्म दिन एक ही हो ?",
+"options": ["2/365", "1", "1/365", "364/365"],
+"answer": "1/365"
+},
+{
+"question": "58. संख्याओं 1 से 25 तक भाज्य संख्याओं की प्रायिकता होगी –",
+"options": ["1/6", "2/3", "5/6", "3/5"],
+"answer": "1/6"
+},
+{
+"question": "59. अंकों 1, 2, 3, 4, 5, 6, 7, 8, 9 में 3 के गुणज की प्रायिकता है?",
+"options": ["1/9", "2/9", "2/3", "1/3"],
+"answer": "2/9"
+},
+{
+"question": "60. संख्याओं 1, 2, 3, ……, 15 में से यादृच्छया एक संख्या चुनी गई संख्या के 4 का गुणज होने की प्रायिकता है?",
+"options": ["4/15", "2/15", "1/5", "1/3"],
+"answer": "1/5"
+},
+{
+"question": "61. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 में सम संख्या की प्रायिकता है?",
+"options": ["4/9", "2/9", "1/10", "1/2"],
+"answer": "1/10"
+},
+{
+"question": "62. एक क्रिकेट मैच में एक महिला गेंदबाज खेली गई 30 गेंदों में 6 बार चौका मारती है, तो चौका न मारे जाने की प्रायिकता है?",
+"options": ["4/2", "3/5", "5/4", "4/6"],
+"answer": "3/5"
+},
+{
+"question": "63. किसी दिन बारिश होने की प्रायिकता 0.75 है, तो इसे नहीं होने की प्रायिकता क्या है?",
+"options": ["0.25", "0.15", "1", "10.25"],
+"answer": "0.25"
+},
+{
+"question": "64. 400 अण्डों के एक संग्रह में से एक खराब अंडा प्राप्त करने की प्रायिकता 0.035 है। इस संग्रह में खराब अंडों की संख्या क्या है?",
+"options": ["7", "14", "21", "28"],
+"answer": "14"
+},
+{
+"question": "65. दो खिलाड़ी संगीता और रेशमा टेनिस का एक मैच खेलते हैं। यह ज्ञात है कि संगीता द्वारा मैच जीतने की प्रायिकता 0.62 है, तो रेशमा के जीतने की प्रायिकता क्या है?",
+"options": ["0.62", "0.38", "1.00", "इनमें से कोई नहीं"],
+"answer": "0.38"
+},
+{
+"question": "66. एक लॉटरी में 8 पुरस्कार हैं और 16 खाली हैं। एक पुरस्कार पाने की प्रायिकता क्या है?",
+"options": ["2/3", "1/3", "1/2", "1/4"],
+"answer": "1/3"
+},
+{
+"question": "67. एक थैले में 3 लाल और 5 काली गेंदे हैं। इस थैले में से एक गेंद यादृच्छया निकाली जाती है। इसकी क्या प्रायिकता है कि गेंद लाल होगा?",
+"options": ["0", "1", "5/8", "3/8"],
+"answer": "3/8"
+},
+{
+"question": "68. एक बक्से में 3 नीले, 2 सफेद और 4 लाल कंचे हैं। यदि इस बक्से में से एक कंचा यादृच्छया निकाला जाता है, तो इसकी क्या प्रायिकता है कि यह कंचा लाल है?",
+"options": ["7/9", "5/9", "6/9", "4/9"],
+"answer": "4/9"
+}
+            
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eyes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Human Eyes MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+      <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Created By </h4>
+                </div>
+               <div>
+                <h4>Name Jashvant Kumar</h4>
+                  <h4>Mobile No. 7541975939</h4>
+
+               </div>
+               <div>
+                <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+              </div>
+              <div>
+              </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+              <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+         
+           
+
+              </div>
+                  
+                 
+               
+               
+                </div>
+              
+         
+              
+             
+        
+                
+              </div>
+                  
+            </div>
+        </div>
+    </footer>
+     
+    </div>
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        
+    {
+      "question": "1. विभिन्न दूरियों पर की वस्तुओं के प्रतिबिम्ब को फोकस करने के लिए आँख के लेंस की फोकस-दुरी परिवर्तित होती है।",
+      "options": ["पुतली द्वारा", "रेटिना द्वारा", "सिलियरी पेशियों द्वारा", "आइरिस द्वारा"],
+      "answer": "पुतली द्वारा"
+    },
+    {
+      "question": "2. जरा-दूरदर्शिता से पीड़ित व्यक्तिं का उपचार किस प्रकार के लेंस से किया जाता है?",
+      "options": ["अवतल", "बाइफोकल", "अपसारी", "अभिसारी"],
+      "answer": "अपसारी"
+    },
+    {
+      "question": "3. कॉर्निया के पीछे एक संरचना होती है उसे—",
+      "options": ["पुतली कहते हैं", "नेत्र पटल कहते हैं", "रेटिना कहते हैं", "परितारिका कहते हैं"],
+      "answer": "नेत्र पटल कहते हैं"
+    },
+    {
+      "question": "4. आँख की पुतली किस प्रकार कार्य करती है ?",
+      "options": ["दृक तंत्रिका की भाँति", "पुतली की भाँति", "परितारिका की भाँति", "परिवर्ती द्वारक की भाँति"],
+      "answer": "पुतली की भाँति"
+    },
+    {
+      "question": "5. पुतली के साइज को नियंत्रित करने वाला गहरा पेशीय डायफ्राम क्या कहलाता है ?",
+      "options": ["परितारिका", "अभिनेत्र लेंस", "नेत्र पटल", "रेटिना"],
+      "answer": "परितारिका"
+    },
+    {
+      "question": "6. मानव नेत्र में किस प्रकार का लेंस पाया जाता है ?",
+      "options": ["उत्तल", "अवतल", "बलयाकार", "इनमें से कोई नहीं"],
+      "answer": "अवतल"
+    },
+    {
+      "question": "7. तारों के टीमटीमाने की व्याख्या किस सिद्धांत पर आधारित है ?",
+      "options": ["अपवर्तन के सिद्धांत", "प्रकीर्णन के सिद्धांत", "वर्ण विक्षेपण का सिद्धांत", "इनमें कोई नहीं"],
+      "answer": "प्रकीर्णन के सिद्धांत"
+    },
+    {
+      "question": "9. नेत्र-लेंस की फोकस-दूरी अधिक हो जाने से कौन-सा दृष्टि दोष होता है ?",
+      "options": ["निकट-दृष्टि दोष", "दूर-दृष्टि दोष", "जरा-दूरदर्शिता", "इनमें कोई नहीं"],
+      "answer": "जरा-दूरदर्शिता"
+    },
+    {
+      "question": "10. सिग्नलो की व्याख्या कहां होती है –",
+      "options": ["मस्तिष्क में", "पुतली में", "रेटिना में", "कॉर्निया में"],
+      "answer": "रेटिना में"
+    },
+    {
+      "question": "11. दृश्य प्रकाश में किस वर्ण का तरंगदैर्घ्य अधिकतम होता है?",
+      "options": ["बैंगनी", "लाल", "नीला", "पीला"],
+      "answer": "बैंगनी"
+    },
+    {
+      "question": "12. नेत्र में किसी वस्तु का बना प्रतिबिम्ब जरा-दूरदर्शिता क्यों अच्छी दिखता है ?",
+      "options": ["क्योंकि रेटिना में अधिक दृश्य रेखाएँ नहीं होती हैं", "क्योंकि प्रकाश उनके प्रतिबिम्ब को सही स्थान पर फोकस करता है", "क्योंकि नेत्र-लेंस की फोकस-दूरी कम होती है", "क्योंकि इस परिमाण में दृश्य उत्तेजित होता है"],
+      "answer": "क्योंकि रेटिना में अधिक दृश्य रेखाएँ नहीं होती हैं"
+    },
+    {
+      "question": "13. नेत्र की किस कोषिका का कार्य है प्रकाश को नेत्र में प्रवेश करने का संचार करना ?",
+      "options": ["कॉर्निया", "सिलियरी पेशियाँ", "परितारिका", "पुतली"],
+      "answer": "कॉर्निया"
+    },
+    {
+      "question": "14. नेत्र-लेंस किस तरह के लेंस को कहते हैं ?",
+      "options": ["बाइफोकल", "अपसारी", "अवतल", "अभिसारी"],
+      "answer": "अभिसारी"
+    },
+    {
+      "question": "15. आँख की किस कोषिका का कार्य बौने फोटों को परिवर्तित करके प्रकाश के सिद्धांत को बदलना होता है?",
+      "options": ["सिलियरी पेशियाँ", "कॉर्निया", "परितारिका", "पुतली"],
+      "answer": "सिलियरी पेशियाँ"
+    },
+    {
+      "question": "16. विभिन्न दृष्टि दोषों का उपचार किस प्रकार के लेंस की सहायता से किया जाता है ?",
+      "options": ["अभिसारी", "अवतल", "बाइफोकल", "पारदर्शी"],
+      "answer": "अवतल"
+    },
+    {
+      "question": "17. एक नेत्र की बीमारी है मोतियाबिंद. इसमें कौन-सा लेंस अधिक दिखाई देता है?",
+      "options": ["पुतली", "बाइफोकल", "अवतल", "अपसारी"],
+      "answer": "अपसारी"
+    },
+    {
+      "question": "18. आँख के नेत्र विज्ञान में लैसर किस तरह का इस्तेमाल होता है?",
+      "options": ["रंगीन दीपकों की रोशनी की वृद्धि", "व्यक्तित्व में परिवर्तन", "रोशनी की ऊर्जा को एकत्रित करना", "ज्यादा उत्तेजित प्रकाश के निर्माण"],
+      "answer": "रोशनी की ऊर्जा को एकत्रित करना"
+    },
+    {
+      "question": "19. संज्ञान ग्रंथियों का क्या कार्य होता है ?",
+      "options": ["संवेदन कार्य", "दृश्य कार्य", "द्रव्य कार्य", "दृश्य को रोशन करना"],
+      "answer": "संवेदन कार्य"
+    },
+    {
+      "question": "20. कॉर्निया किसे कहते हैं?",
+      "options": ["दृक तंत्रिका को", "अध्यापक को", "सिलियरी पेशियों को", "नेत्र पटल को"],
+      "answer": "नेत्र पटल को"
+    },
+    {
+      "question": "21. आँख का संरचना कैसा होता है ?",
+      "options": ["बाइफोकल", "समग्र", "सिरियरी", "अभिसारी"],
+      "answer": "अभिसारी"
+    },
+    {
+      "question": "22. नेत्र-लेंस की फोकस-दूरी को किस संरचना में संशोधित किया जाता है ?",
+      "options": ["कॉर्निया", "सिलियरी पेशियाँ", "परितारिका", "पुतली"],
+      "answer": "सिलियरी पेशियाँ"
+    },
+    {
+      "question": "23. नेत्र-कोशिका किसके विज्ञान से सम्बद्ध होते हैं ?",
+      "options": ["विद्युत विज्ञान", "रसायन विज्ञान", "भौतिक विज्ञान", "जीव विज्ञान"],
+      "answer": "भौतिक विज्ञान"
+    },
+    {
+      "question": "24. नेत्र-लेंस किस प्रकार की रचना को कहते हैं ?",
+      "options": ["अवतल", "अपसारी", "अभिसारी", "बाइफोकल"],
+      "answer": "अभिसारी"
+    },
+    {
+      "question": "25. संवेदनाशील कोण क्या है ?",
+      "options": ["80", "60", "45", "90"],
+      "answer": "90"
+    },
+    {
+      "question": "26. पुतली और पुतली-दल के बीच में कौन सी तंत्रिका स्थित है ?",
+      "options": ["आँख में", "नेत्र-विज्ञान में", "ब्रेन में", "कॉर्निया में"],
+      "answer": "आँख में"
+    },
+    {
+      "question": "27. परितारिका द्वारा कौन-सी कोशिका शांतिमय रूप से रहती है ?",
+      "options": ["रेटिना", "कॉर्निया", "नेत्र पटल", "पुतली"],
+      "answer": "रेटिना"
+    },
+    {
+      "question": "28. आँख का पीछा भाग शांतिमय रूप से किस तंत्रिका द्वारा भरा होता है ?",
+      "options": ["परितारिका", "कॉर्निया", "नेत्र पटल", "पुतली"],
+      "answer": "परितारिका"
+    },
+    {
+      "question": "29. नेत्र-लेंस किस प्रकार की रचना को कहते हैं ?",
+      "options": ["बाइफोकल", "अभिसारी", "अवतल", "अपसारी"],
+      "answer": "अभिसारी"
+    },
+    {
+      "question": "30. आँख की पुतली किस रंग में होती है ?",
+      "options": ["काला", "नीला", "लाल", "सफेद"],
+      "answer": "काला"
+    },
+    {
+      "question": "31. नेत्र की परितारिका का पाठन शांतिमय रूप से किस तंत्रिका द्वारा भरा होता है ?",
+      "options": ["परितारिका", "कॉर्निया", "नेत्र पटल", "पुतली"],
+      "answer": "परितारिका"
+    },
+    {
+      "question": "32. आँख के किस भाग को ‘जादू की ज्योति’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "परितारिका"
+    },
+    {
+      "question": "33. आँख के किस भाग को ‘नेत्र-पटल’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "पुतली"
+    },
+    {
+      "question": "34. नेत्र-लेंस के रंग क्या होते हैं ?",
+      "options": ["काले", "हरे", "भूरे", "सफेद"],
+      "answer": "सफेद"
+    },
+    {
+      "question": "35. आँख के किस भाग को ‘कॉर्निया’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "कॉर्निया"
+    },
+    {
+      "question": "36. नेत्र-लेंस का कार्य क्या होता है ?",
+      "options": ["प्रकाश की रफ्तार को घटाना", "प्रकाश की रफ्तार को बढ़ाना", "प्रकाश को विस्तारित करना", "प्रकाश को टुकड़ों में विभाजित करना"],
+      "answer": "प्रकाश की रफ्तार को बढ़ाना"
+    },
+    {
+      "question": "37. आँख के किस भाग को ‘पुतली’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "पुतली"
+    },
+    {
+      "question": "38. आँख के किस भाग को ‘परितारिका’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "परितारिका"
+    },
+    {
+      "question": "39. आँख के किस भाग को ‘नेत्र-पटल’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "नेत्र पटल"
+    },
+    {
+      "question": "40. आँख के किस भाग को ‘नेत्र’ कहते हैं ?",
+      "options": ["पुतली", "परितारिका", "नेत्र पटल", "कॉर्निया"],
+      "answer": "नेत्र पटल"
+    },
+    {
+            "question": "40.समीकरण युग्म 2x + 3y = 11 और 2x – 4y = -24 के हल हैं –",
+            "options": ["x = -3, y = 1", "x = 2, y = 4", "x = -2, y = -5", "x = -2, y = 5"],
+            "answer": "x = -2, y = 5"
+        },
+        {
+            "question": "41. विद्युत सिग्नल कौन उत्पन्न करता है",
+            "options": ["परितारिका", "प्रकाश सुग्राही", "पुतली", "इनमें सभी"],
+            "answer": "इनमें सभी"
+        },
+        {
+            "question": "42. नेत्र में प्रवेश करने वाले प्रकाश किरणों का अधिकांश अपवर्तन होता है-",
+            "options": ["नेत्रोद अंतर पृष्ठ पर", "अभिनेत्र के अंतरपृष्ठ पर", "कॉर्निया के बाहरी पृष्ठ पर", "इनमें से कोई नहीं"],
+            "answer": "नेत्रोद अंतर पृष्ठ पर"
+        },
+        {
+            "question": "43. नेत्र गोलक के गोल होने पर देख पाते हैं",
+            "options": ["निकट की वस्तुओं को", "दूर की वस्तुओं को", "25 cm की दूरी पर की वस्तुओं को", "इनमें से कोई नहीं"],
+            "answer": "25 cm की दूरी पर की वस्तुओं को"
+        },
+        {
+            "question": "44. निकट दृष्टिदोष उत्पन्न होने का क्या कारण है ?",
+            "options": ["अभिनेत्र लेंस की वक्रता बढ़ जाना", "अभिनेत्र लेंस की वक्रता का घट जाना", "नेत्र गोलक की लम्बाई घट जाना", "सभी कथन सत्य हैं"],
+            "answer": "सभी कथन सत्य हैं"
+        },
+        {
+            "question": "46. नेत्र-लेंस की फोकस-दूरी अधिक हो जाने से कौन-सा दृष्टि दोष ” होता है ?",
+            "options": ["निकट-दृष्टि दोष", "दूर-दृष्टि दोष", "जरा-दूरदर्शिता", "इनमें कोई नहीं"],
+            "answer": "दूर-दृष्टि दोष"
+        },
+        {
+            "question": "Manav Netra Tatha Rang Biranga Sansar ke prshn uttr 46. आयु में वृद्धि होने पर मानव नेत्र में समंजन क्षमता घट जाती है यह दोष कहलाती है-",
+            "options": ["अबिंदुकता", "दीर्घ दृष्टि दोष", "लघु दृष्टि दोष", "जरा दृष्टि दोष"],
+            "answer": "लघु दृष्टि दोष"
+        },
+        {
+            "question": "47. रेटिना प्रकाश को परिवर्तित करता है-",
+            "options": ["विद्युत ऊर्जा में", "विद्युत सिगनल में", "वास्तविक प्रतिबिम्ब में", "इनमें से कोई नहीं"],
+            "answer": "वास्तविक प्रतिबिम्ब में"
+        },
+        {
+            "question": "48. इनमें से कौन व्यक्ति नेत्र दान कर सकता है ?",
+            "options": ["संक्रामक रोग से पीडित", "मधुमेह का रोगी", "दमे का रोगी", "बी एवं सी दोनों"],
+            "answer": "बी एवं सी दोनों"
+        },
+        {
+            "question": "49. अभिनेत्र लेंस की फोकस दूरी में परिवर्तन किया जाता है",
+            "options": ["पुतली द्वारा", "दृष्टिपटल द्वारा", "पक्ष्माभी द्वारा", "परितारिका द्वारा"],
+            "answer": "पक्ष्माभी द्वारा"
+        },
+        {
+            "question": "50. दूर-दृष्टिवाली आँखें साफ-साफ देख सकती",
+            "options": ["दूर की वस्तुओं को", "निकट की वस्तुओं को", "बड़ी वस्तुओं को", "इनमें से कोई नहीं"],
+            "answer": "दूर की वस्तुओं को"
+        },
+        {
+            "question": "Manav Netra Tatha Rang Biranga Sansar Objective Question Answer 2023 51. निकट दृष्टि दोष दूर करने के लिए किस लेंस का व्यवहार होता है ?",
+            "options": ["उत्तल", "अवतल", "समतल", "सभी"],
+            "answer": "सभी"
+        },
+        {
+            "question": "52. आँख में प्रवेश करने वाले प्रकाश की मात्रा को नियंत्रित करता है-",
+            "options": ["परितारिका", "पक्ष्माभी पेशियाँ", "पुतली", "लेंस"],
+            "answer": "पुतली"
+        },
+        {
+            "question": "53. वस्तु को हटा लेने के बाद भी नेत्र पटल पर प्रतिबिम्ब कितने सेकेण्ड तक रहता है ?",
+            "options": ["1/10s", "1/20s", "1/16s", "1/5s"],
+            "answer": "1/10s"
+        },
+        {
+            "question": "54. मृत्यु के पश्चात् कितने घंटे के अंदर नेत्र निकाल लेना चाहिए ?",
+            "options": ["2 से 3 घंटे के भीतर", "4 से 6 घंटे के भीतर", "8 से 10 घंटे के भीतर", "10 से 12 घंटे के भीतर"],
+            "answer": "2 से 3 घंटे के भीतर"
+        },
+        {
+            "question": "55. मंद प्रकाश में किसकी शिथिलता से पुतली पूर्ण रूप से फैल जाती है।",
+            "options": ["कॉर्निया", "परितारिका", "एरिस", "इनमें से कोई नहीं"],
+            "answer": "एरिस"
+        },
+        {
+            "question": "कक्षा-10 विज्ञान (भौतिकी विज्ञान) पाठ-01 प्रकाश के परावर्तन तथा अपवर्तन ऑब्जेक्टिव क्वेश्चन आंसर 2023 56. दृष्टि निर्बंध सिद्धांत का उपयोग कहाँ किया जाता है ?",
+            "options": ["चलचित्र प्रक्षेपन में", "फोटोग्राफी कैमरे में", "सूक्ष्मदर्शी में", "इनमें से कोई नहीं"],
+            "answer": "सूक्ष्मदर्शी में"
+        },
+        {
+            "question": "57. कॉर्निया में दोष अर्थात् उसके पूर्णतः गोलीय न होने के कारण किस प्रकार का नेत्र दोष होता है ?",
+            "options": ["अबिंदुकता", "दीर्घ दृष्टि दोष", "जरा दृष्टि दोष", "लघु दृष्टि दोष"],
+            "answer": "अबिंदुकता"
+        }
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

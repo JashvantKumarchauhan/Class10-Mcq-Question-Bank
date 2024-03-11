@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oureniroment</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger"> Oureniroment</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        
+    </div>
+
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. निम्न में कौन जैव अनिम्नीकरणीय पदार्थ है –",
+        "options": ["डी० डी०टी०", "कागज", "वाहित मल", "इनमें से कोई नहीं"],
+        "answer": "वाहित मल"
+    },
+    {
+        "question": "2. ओजोन परत पायी जाती है –",
+        "options": ["स्ट्रेटोस्फियर में", "एक्सोस्फियर में", "आयनास्फियर में", "ट्रोपोस्फियर में"],
+        "answer": "स्ट्रेटोस्फियर में"
+    },
+    {
+        "question": "3. निम्न में से कौन एक जलीय आहार श्रृंखला है ?",
+        "options": ["घास → बकरी → शेर", "शैवाल → जलीय कीट → मछली", "घास → जलीय कीट → मछली → मनुष्य", "घास → मछली → मनुष्य"],
+        "answer": "शैवाल → जलीय कीट → मछली"
+    },
+    {
+        "question": "4. निम्नांकित में से किसे आप ‘उपभोक्ता’ की श्रेणी में रखेंगे ?",
+        "options": ["हरे पौधे", "नील हरित शैवाल", "जंगली जानवर", "फूल और पत्ते"],
+        "answer": "फूल और पत्ते"
+    },
+    {
+        "question": "5. निम्न में कौन एक जैविक प्रक्रम द्वारा अपघटित होने वाला पदार्थ है –",
+        "options": ["सूखे घास-पत्ते", "पॉलीथीन गैस", "रबड़", "प्लास्टिक की बोतले"],
+        "answer": "रबड़"
+    },
+    {
+        "question": "6. हरे पौधे कहलाते है-",
+        "options": ["उत्पादक", "अपघटक", "उपभोक्ता", "आहार-शृंखला"],
+        "answer": "उत्पादक"
+    },
+    {
+        "question": "7. इनमें मुर्दाखोर है –",
+        "options": ["चील", "सियार", "कौआ", "सभी"],
+        "answer": "सभी"
+    },
+    {
+        "question": "8. निम्नलिखित में कौन अजैव निम्नीकरण है ?",
+        "options": ["कागज", "लकड़ी", "कपड़ा", "प्लास्टिक"],
+        "answer": "प्लास्टिक"
+    },
+    {
+        "question": "9. निम्न में से कौन-से पर्यावरण के जैविक घटक नहीं है ?",
+        "options": ["पौधे", "वायु", "जन्तु", "मनुष्य"],
+        "answer": "मनुष्य"
+    },
+    {
+        "question": "10. निम्न में से कौन-सा जैव अनिम्नीकरणीय प्रदूषक है ?",
+        "options": ["गोबर गैस", "प्लास्टिक", "पानी", "कागज"],
+        "answer": "प्लास्टिक"
+    },
+    {
+        "question": "11. प्रकृति में ऊर्जा का मुख्य स्रोत है –",
+        "options": ["कोयला", "सूर्य", "पानी", "कागज"],
+        "answer": "सूर्य"
+    },
+    {
+        "question": "12. निम्नलिखित में से कौन स्थलीय परितंत्र नहीं है ?",
+        "options": ["जंगल", "एक्वेरियम", "घास के मैदान", "मरुस्थल"],
+        "answer": "एक्वेरियम"
+    },
+    {
+        "question": "13. CFC है –",
+        "options": ["क्लोरोफ्लोरो कार्बन", "कार्बन फ्लोरो कार्बन", "कार्बनफ्लोरो कार्बन", "कार्बन फ्लोरो क्लोरो"],
+        "answer": "क्लोरोफ्लोरो कार्बन"
+    },
+    {
+        "question": "14. मृत शरीर को पचाने वाले जीवों को –",
+        "options": ["उत्पादक कहते हैं", "अपघटक जीव कहते हैं", "स्वपोषी कहते हैं", "परभोक्ता कहते हैं"],
+        "answer": "स्वपोषी कहते हैं"
+    },
+    {
+        "question": "15. वनों की अधिक कटाई का परिणाम होगा –",
+        "options": ["कम वर्षा", "भूस्खलन", "भूमि अपरदन तथा बाढ़", "उपरोक्त सभी"],
+        "answer": "उपरोक्त सभी"
+    },
+    {
+        "question": "16. जैव वातावरण में शामिल हैं –",
+        "options": ["मृदा, जल तथा वायु", "जन्तु, पौधे तथा मनुष्य", "सूर्य का प्रकाश, वायु, वर्षा", "इनमें से कोई नहीं"],
+        "answer": "मृदा, जल तथा वायु"
+    },
+    {
+        "question": "17. वैसे जीव जो पौधे एवं जन्तु दोनों का भक्षण करते हैं, कहलाते हैं –",
+        "options": ["मांसाहारी", "शाकाहारी", "सर्वभक्षी", "उभयचर"],
+        "answer": "सर्वभक्षी"
+    },
+    {
+        "question": "18. जीवाणु एवं कवक कहलाते हैं –",
+        "options": ["उत्पादक", "अपघटक", "उपभोक्ता", "आहार-शृंखला"],
+        "answer": "अपघटक"
+    },
+    {
+        "question": "19. सौर ऊर्जा जीवमंडल में निम्न में से किसके द्वारा प्रवेश करती है ?",
+        "options": ["हरे पौधे", "जन्तु", "कवक", "बैक्टीरिया"],
+        "answer": "हरे पौधे"
+    },
+    {
+        "question": "20. ओजोन परत महत्त्वपूर्ण है, क्योंकि वह अवशोषित करती है –",
+        "options": ["ऊष्मा को", "पराबैंगनी किरणों को", "सूर्य की ऊष्मा को", "अवरक्त किरणों को"],
+        "answer": "पराबैंगनी किरणों को"
+    },
+    {
+        "question": "21. प्रत्येक पारितंत्र होता है –",
+        "options": ["गतिशील तंत्र", "प्रगतिशील तंत्र", "अस्थायी तंत्र", "गत्यात्मक तंत्र"],
+        "answer": "गतिशील तंत्र"
+    },
+    {
+        "question": "22. पर्यावरण मुख्य रूप से कितने घटकों का बना होता है ?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "4"
+    },
+    {
+        "question": "23. पारितंत्र के जैविक घटकों की श्रेणियाँ निम्न में से कौन हैं ?",
+        "options": ["उत्पादक", "उपभोक्ता", "अपघटक", "ये सभी"],
+        "answer": "ये सभी"
+    },
+    {
+        "question": "24. ऑक्सीजन सभी प्रकार के वायवीय जीवों के लिए आवश्यक है जबकि ओजोन एक-",
+        "options": ["द्रव है.", "घातक विष है", "अक्रिय धातु है", "सभी गलत है"],
+        "answer": "सभी गलत है"
+    },
+    {
+        "question": "25. कृत्रिम पारितंत्र का उदाहरण है –",
+        "options": ["वन, तालाब", "झील, तालाब", "बगीचा, खेत", "सभी सही हैं"],
+        "answer": "सभी सही हैं"
+    },
+    {
+        "question": "26. ओजोन परत पाया जाता है –",
+        "options": ["वायुमण्डल के नीचले सतह में", "वायुमण्डल के ऊपरी सतह में", "वायुमण्डल के मध्य सतह में", "इनमें से कोई नहीं"],
+        "answer": "वायुमण्डल के ऊपरी सतह में"
+    },
+    {
+        "question": "27. निम्न में से कौन-से समूहों में केवल जैव निम्नीकरणीय पदार्थ हैं ?",
+        "options": ["घास, पुष्प तथा चमड़ा", "घास, लकड़ी तथा प्लास्टिक", "फलों के छिलके, केक एवं नींबू का रस", "केक, लकड़ी एवं घास"],
+        "answer": "फलों के छिलके, केक एवं नींबू का रस"
+    },
+    {
+        "question": "28. निम्न में कौन आहार श्रृंखला का निर्माण करते हैं ?",
+        "options": ["घास, गेहूँ तथा आम", "घास, बकरी तथा मानव", "बकरी, गाय तथा हाथी", "घास, मछली तथा बकरी"],
+        "answer": "घास, गेहूँ तथा आम"
+    },
+    {
+        "question": "29. वन-पारिस्थतिक तंत्र में हिरण होते हैं ।",
+        "options": ["उत्पादक", "प्राथमिक उपभोक्ता", "द्वितीयक उपभोक्ता", "तृतीयक उपभोक्ता"],
+        "answer": "तृतीयक उपभोक्ता"
+    },
+    {
+        "question": "30. जीवमंडल में ऊर्जा का एकमात्र स्रोत है –",
+        "options": ["अणु", "सूर्य का प्रकाश", "रासायनिक ऊर्जा", "विद्युत"],
+        "answer": "सूर्य का प्रकाश"
+    },
+    {
+        "question": "31. घासस्थली पारितंत्र में उत्पादक हैं –",
+        "options": ["घास", "कीड़े", "हिरण", "जंगल"],
+        "answer": "घास"
+    },
+    {
+        "question": "32. ओजोन के अणु में ऑक्सीजन के कितने परमाणु हैं ?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+    },
+    {
+        "question": "33. पारितंत्र के उपभोक्ता हैं –",
+        "options": ["मनुष्य", "पक्षी", "मधुमक्खी", "ऊर्जा वाणिज्य"],
+        "answer": "मनुष्य"
+    },
+    {
+        "question": "34. निम्नलिखित में कौन सा निकटवर्ती पर्यावरणीय परितंत्र है ?",
+        "options": ["नदी", "कृषि", "कृत्रिम बागवानी", "सभी"],
+        "answer": "सभी"
+    },
+    {
+        "question": "35. जीव जगत में जानवर होते हैं ।",
+        "options": ["उत्पादक", "प्राथमिक उपभोक्ता", "द्वितीयक उपभोक्ता", "तृतीयक उपभोक्ता"],
+        "answer": "प्राथमिक उपभोक्ता"
+    },
+    {
+        "question": "36. जैवघटक के उदाहरण है ।",
+        "options": ["पौधे", "मनुष्य", "[ A ] एवं [ B ] दोनों", "इनमें कोई नहीं"],
+        "answer": "[ A ] एवं [ B ] दोनों"
+    },
+    {
+        "question": "37. उत्पादकों पर निर्भर रहने वाले जीव कहलाते है ।",
+        "options": ["उपभोक्ता", "अपघटन कर्ता", "[ A ] एवं [ B ] दोनों", "इनमें कोई नहीं"],
+        "answer": "[ A ] एवं [ B ] दोनों"
+    },
+    {
+        "question": "38. उपभोक्ताओं को कितने श्रेणियों में बाँटा गया है।",
+        "options": ["दो", "चार", "तीन", "पाँच"],
+        "answer": "चार"
+    },
+    {
+        "question": "39. इनमें से कौन सर्वाहारी जीव है ?",
+        "options": ["हिरण", "मनुष्य", "तिलचट्टा", "[ B ] एवं [ C ] दोनों"],
+        "answer": "[ B ] एवं [ C ] दोनों"
+    },
+    {
+        "question": "40. सूक्ष्म उपभोक्ता जीव कहलाते है।",
+        "options": ["जीवाणु", "कवक", "[ A ] एवं [ B ] दोनों", "गिद्ध"],
+        "answer": "[ A ] एवं [ B ] दोनों"
+    },
+    {
+        "question": "41. इनमें से कौन वन आहार श्रृंखला बनाता है ?",
+        "options": ["बाघ, घास, हिरण", "घास, हिरण, बाघ", "हिरण, बाघ, घास", "घास, बाघ, हिरण"],
+        "answer": "हिरण, बाघ, घास"
+    },
+    {
+        "question": "42. सूर्य के द्वारा निकला हुआ पराबैंगनी किरण कहाँ अवशोषित होता है ?",
+        "options": ["क्षोभ परत में", "आयन परत में", "ओजोन परत में", "बर्हि परत में"],
+        "answer": "ओजोन परत में"
+    },
+    {
+        "question": "43. पराबैंगनी किरण के कारण मनुष्य में कौन-सा रोग उत्पन्न होता है ।",
+        "options": ["त्वचा कैंसर", "एड्स", "टॉयफाइड", "मलेरिया"],
+        "answer": "त्वचा कैंसर"
+    },
+    {
+        "question": "44. वायुमण्डल कितने परतों में बँटा हुआ है ?",
+        "options": ["चार", "पाँच", "तीन", "छ।"],
+        "answer": "तीन"
+    },
+    {
+        "question": "45. पादप खाने वाले जीव को कहते है ।",
+        "options": ["शाकाहारी", "मांसाहारी", "सर्वाहारी", "इनमें सभी"],
+        "answer": "सर्वाहारी"
+    },
+    {
+        "question": "46. इनमें से कौन मानव-निर्मित जैव निम्नीकरण है ।",
+        "options": ["आक्सीजन", "बायोगैस", "मिथेन", "CFC"],
+        "answer": "CFC"
+    },
+    {
+        "question": "47. हमारे द्वारा उत्पादित अजैव निम्नीकरणीय कचरे से कौन-सी समस्या उत्पन्न होती है ?",
+        "options": ["नाले-नालियों में अवरोध", "मृदा-प्रदूषण", "मानव शरीर में जैव आवर्धन", "इनमें सभी"],
+        "answer": "इनमें सभी"
+    },
+    {
+        "question": "48. निम्न में से कौन आहार श्रृंखला सही है ।-",
+        "options": ["चूहे, घास, मोर, सर्प", "घास, चूहे, सर्प, मोर", "सर्प, घास, चूहे, मोर", "मोर, सर्प, घास, चूहे"],
+        "answer": "सर्प, घास, चूहे, मोर"
+    },
+    {
+        "question": "49. किसी पारिस्थितिक तंत्र में ग्रहण करनेवाले होते हैं ।",
+        "options": ["उत्पादक", "उपभोक्ता", "अपघटनकर्ता", "सूक्ष्मजीव"],
+        "answer": "उपभोक्ता"
+    },
+    {
+        "question": "50. निम्नलिखित में कौन उत्पादक है ?",
+        "options": ["सर्प", "मेढ़क", "ग्रासहॉपर", "घास"],
+        "answer": "घास"
+    },
+    {
+        "question": "51. मैदानी पारिस्थितिक तत्र में तृतीयक उपभोक्ता है ।",
+        "options": ["हरा पौधा", "मेढ़क", "ग्रासहॉपर", "सर्प"],
+        "answer": "ग्रासहॉपर"
+    }
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>

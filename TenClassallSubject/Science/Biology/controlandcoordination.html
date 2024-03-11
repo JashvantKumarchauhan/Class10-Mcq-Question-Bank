@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control and coordination </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Control and coordination</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        
+    </div>
+    <div class="container">
+      <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Created By </h4>
+                </div>
+               <div>
+                <h4>Name Jashvant Kumar</h4>
+                  <h4>Mobile No. 7541975939</h4>
+
+               </div>
+               <div>
+                <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+              </div>
+              <div>
+              </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+              <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+              <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+         
+           
+
+              </div>
+                  
+                 
+               
+               
+                </div>
+              
+         
+              
+             
+        
+                
+              </div>
+                  
+            </div>
+        </div>
+    </footer>
+     
+    </div>
+    
+    
+      
+
+    
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+      "question": "1. हॉर्मोन स्रावित होता है:",
+      "options": ["अंत: स्रावी ग्रंथि से", "बहिस्रावी ग्रंथि से", "नलिका ग्रंथि से", "इनमें से कोई नहीं"],
+      "answer": "बहिस्रावी ग्रंथि से"
+    },
+    {
+      "question": "2. ग्वाइटर अथवा घेघा पनपता है-",
+      "options": ["चीनी की कमी से", "आयोडीन की कमी से", "रक्त की कमी से", "मोटापा से"],
+      "answer": "आयोडीन की कमी से"
+    },
+    {
+      "question": "3. ‘थॉयरॉक्सिन’ का स्रवण कहाँ होता है?",
+      "options": ["थॉयराइड", "यकृत", "वृक्क", "वृषण"],
+      "answer": "थॉयराइड"
+    },
+    {
+      "question": "4. मानव में डायलिसिस थैली है-",
+      "options": ["नेफ्रॉन", "न्यूरॉन", "माइटोकॉन्ड्रिया", "कोई नहीं"],
+      "answer": "नेफ्रॉन"
+    },
+    {
+      "question": "5. भोजन का पचना किस प्रकार की अभिक्रिया है?",
+      "options": ["उपचयन", "संयोजन", "अपचयन", "विस्थापन"],
+      "answer": "अपचयन"
+    },
+    {
+      "question": "6. कौन-सा पादप नियंत्रक फल बेचने वालों द्वारा उपयोग किया जाता है?",
+      "options": ["ऐब्सिसिस अम्ल", "जिबरेलिन", "इथाइलीन", "ऑक्सिन"],
+      "answer": "इथाइलीन"
+    },
+    {
+      "question": "7. वह संरचना जो उद्दीपन की पहचान कराती है, कहलाती है-",
+      "options": ["ग्राही", "प्रभावक", "उत्तरदायित्व", "बेचैनी"],
+      "answer": "प्रभावक"
+    },
+    {
+      "question": "8. निम्नलिखित में से कौन-सी एक अंतःस्रावी और बाह्य स्रावी ग्रंथि दो प्रकार की होती है?",
+      "options": ["अग्नाशय", "थायराइड", "पैराथायराइड", "पिट्यूटरी"],
+      "answer": "पैराथायराइड"
+    },
+    {
+      "question": "9. कौन-सी अंत:स्रावी ग्रंथि वृक्क के दोनों ओर ऊपर स्थित होती है?",
+      "options": ["गोनेड्स", "पिट्यूटरी", "अग्नाशय", "एड्रीनल"],
+      "answer": "एड्रीनल"
+    },
+    {
+      "question": "10. जीवों में ध्वनि ग्रहण करने के लिए संवेदी अंग है-",
+      "options": ["प्रकाशग्राही", "ध्रणग्राही", "श्रवणग्राही", "स्पर्शग्राही"],
+      "answer": "श्रवणग्राही"
+    },
+    {
+      "question": "11. वृक्क के ऊपर स्थित अंत:स्रावी ग्रंथि है-",
+      "options": ["पीयूष ग्रंथि", "पिनियल ग्रंथि", "अधिवृक्क ग्रंथि", "None of these"],
+      "answer": "पिनियल ग्रंथि"
+    },
+    {
+      "question": "13. अधिकतर पादप नियंत्रक उत्पन्न होते हैं-",
+      "options": ["बढ़ते तने के अग्र भाग पर", "बढ़ती जड़ के अग्र भाग पर", "फ्लोएम की संवहनी नलियों पर", "a और b दोनों पर"],
+      "answer": "a और b दोनों पर"
+    },
+    {
+      "question": "14. बीजरहित फलों के बनने को कहते हैं-",
+      "options": ["अनिषेक फलन", "अनिषेक अण्डपी", "अग्र प्रभाविकता", "इनमें कोई नहीं"],
+      "answer": "अनिषेक अण्डपी"
+    },
+    {
+      "question": "15. निम्नलिखित में से कौन-सा पादप हॉर्मोन है?",
+      "options": ["इंसुलिन", "थायरॉक्सिन", "एस्ट्रोजन", "साइटोकाइनिन"],
+      "answer": "साइटोकाइनिन"
+    },
+    {
+      "question": "17. दो तंत्रिका कोशिका के मध्य खाली स्थान को कहते हैं-",
+      "options": ["दुमिका", "सिनेटिक दरार (सिनेप्स)", "एक्सॉन", "आवेग"],
+      "answer": "सिनेटिक दरार (सिनेप्स)"
+    },
+    {
+      "question": "18. मस्तिष्क उत्तरदायी है-",
+      "options": ["सोचने के लिए", "हृदय स्पंदन के लिए", "शरीर का संतुलन बनाने के लिए", "उपरोक्त सभी"],
+      "answer": "उपरोक्त सभी"
+    },
+    {
+      "question": "19. बहुकोशिकीय जीवों में निम्न में से किस प्रकार का समन्वय पाया जाता है?",
+      "options": ["रासायनिक समन्वय", "तंत्रिका समन्वय", "उपर्युक्त दोनों", "इनमें से कोई नहीं"],
+      "answer": "तंत्रिका समन्वय"
+    },
+    {
+      "question": "20. तंत्रिका कोशिकाएँ कितने प्रकार की होती हैं?",
+      "options": ["1", "2", "3", "4"],
+      "answer": "2"
+    },
+    {
+      "question": "21. प्रतिवर्ती चाप कहाँ बनते हैं?",
+      "options": ["मेरुरज्जु", "मस्तिष्क", "पेशी ऊतक", "इनमें से कोई नहीं"],
+      "answer": "मेरुरज्जु"
+    },
+    {
+      "question": "22. शरीर की प्रधान नियंत्रक ग्रंथि किसे कहा जाता है?",
+      "options": ["जनन ग्रंथि", "पीयूष ग्रंथि", "थाइरॉयड ग्रंथि", "इनमें से कोई नहीं"],
+      "answer": "थाइरॉयड ग्रंथि"
+    },
+    {
+      "question": "23. अंत:स्रावी ग्रंथियाँ होती हैं-",
+      "options": ["नलिकाविहीन", "नलिकायुक्त", "दोनों", "इनमें से कोई नहीं"],
+      "answer": "दोनों"
+    },
+    {
+      "question": "25. थाइरॉयड ग्रंथि की अल्पक्रियता के कारण कौन-सा रोग उत्पन्न होता है –",
+      "options": ["अवटुवामनता", "अवटुअल्पक्रियता", "मिक्सिडीमा", "ये सभी"],
+      "answer": "अवटुअल्पक्रियता"
+    },
+    {
+      "question": "26. अग्न्याशय द्वारा निम्न में से कौन-सा हॉर्मोन स्रावित होता है?",
+      "options": ["इंसुलिन", "ग्लूकोगॉन", "दोनों", "इनमें से कोई नहीं"],
+      "answer": "दोनों"
+    },
+    {
+      "question": "27. पत्तियों का मुरझाना किस पादप हार्मोन के कारण सम्भव हो पाता है ?",
+      "options": ["जिबरेलिन", "साइटोकाइनिन", "एब्सिसिक अम्ल", "सभी सही है"],
+      "answer": "सभी सही है"
+    },
+    {
+      "question": "28. सावित होने वाले हार्मोन का समय और मात्रा किस क्रियाविधि द्वारा नियंत्रित की जाती है?",
+      "options": ["स्रावण", "परिशुद्धन", "अनुक्रिया", "पुनर्भरण"],
+      "answer": "परिशुद्धन"
+    },
+    {
+      "question": "29. जड़ का अधोगामी वृद्धि है:",
+      "options": ["प्रकाशानुवर्तन", "गुरुत्वानुवर्तन", "जलानुवर्तन", "रसायनानुवर्तन"],
+      "answer": "जलानुवर्तन"
+    },
+    {
+      "question": "30. पॉन्स, मेडुला और अनुमस्तिष्क :",
+      "options": ["अग्रमस्तिष्क का हिस्सा है", "मध्य मस्तिष्क का हिस्सा है।", "पश्च मस्तिष्क का हिस्सा है", "प्रमस्तिष्क का हिस्सा है।"],
+      "answer": "पश्च मस्तिष्क का हिस्सा है"
+    },
+    {
+      "question": "31. निम्नलिखित में कौन-सी अनैच्छिक क्रिया नहीं है ?",
+      "options": ["वमन", "चबाना", "लार आना", "हृदय का धड़कना"],
+      "answer": "हृदय का धड़कना"
+    },
+    {
+      "question": "32. अवटुग्रंथि को थायरॉक्सिन हॉर्मोन बनाने के लिए क्या आवश्यक है ?",
+      "options": ["सोडियम", "क्लोरिन", "फॉस्फोरस", "इनमें से सभी"],
+      "answer": "इनमें से सभी"
+    },
+    {
+      "question": "33. मस्तिष्क का कौन-सा भाग शरीर की स्थिति तथा संतुलन का अनुरक्षण करता है?",
+      "options": ["अग्र मस्तिष्क", "मध्य मस्तिष्क", "अनुमस्तिष्क", "इनमें से सभी"],
+      "answer": "इनमें से सभी"
+    },
+    {
+      "question": "34. पादप हार्मोन ‘साइटोकिनिन’ सहायक है:",
+      "options": ["प्ररोह के अग्रभाग की लम्बाई में वृद्धि के लिए", "तने के वृद्धि के लिए", "पादप का प्रकाश की ओर मुड़ने के लिए", "इनमें से सभी"],
+      "answer": "इनमें से सभी"
+    },
+    {
+      "question": "niyantran evam samanvay class 10th",
+      "options": [],
+      "answer": null
+    },
+    {
+      "question": "35. अनुकुंचन गति किस पौधे पर प्रमाणित की जाती है ?",
+      "options": ["छुई-मुई पर", "घृत कुमारी पर", "कैण्डुला पर", "कैक्टस पर"],
+      "answer": "कैक्टस पर"
+    },
+    {
+      "question": "36. वृक्क किस तंत्र का भाग है ?",
+      "options": ["पाचन तंत्र का", "परिसंचरण तंत्र का", "उत्सर्जन तंत्र का", "श्वसन तंत्र का"],
+      "answer": "उत्सर्जन तंत्र का"
+    },
+    {
+      "question": "37. इन्सुलिन की कमी के कारण कौन-सा रोग होता है ?",
+      "options": ["एड्स", "बेरी-बेरी", "घेघा", "मधुमेह"],
+      "answer": "मधुमेह"
+    },
+    {
+      "question": "38. पित्त बहने का नाम क्या है ?",
+      "options": ["याकृत", "गुर्दा", "पेचिश", "गलब्लैडर"],
+      "answer": "पेचिश"
+    },
+    {
+      "question": "39. स्तन के अंडकोष का अन्य नाम है-",
+      "options": ["ग्रांथियाँ", "लोब्यों", "वृद्धि", "गोलियाँ"],
+      "answer": "लोब्यों"
+    },
+    {
+      "question": "40. श्वेत रक्त को क्या कहते हैं ?",
+      "options": ["धमनी विशेष", "धमनी साधारण", "धमनी श्वेत", "कोई नहीं"],
+      "answer": "धमनी श्वेत"
+    },
+    {
+      "question": "41. ऑक्सिन पादप हॉर्मोन पौधों के किस क्रिया में सहायता करता है?",
+      "options": ["वृद्धि में", "श्वसन में", "भोजन में", "जनन में"],
+      "answer": "वृद्धि में"
+    },
+    {
+      "question": "42. तंत्रिका तंत्र का भाग है :",
+      "options": ["मस्तिष्क", "रीढ़", "रज्जु", "इनमें सभी"],
+      "answer": "इनमें सभी"
+    },
+    {
+      "question": "43. एस्ट्रोजन, प्रोजेस्टेरोन एवं रिलैक्सिन हॉर्मोन्स स्रावित होते है ?",
+      "options": ["अण्डाशय से", "वृषण से", "एड्रीनल ग्रन्थि से", "अग्नाशय से"],
+      "answer": "अण्डाशय से"
+    },
+    {
+      "question": "44. इनमें से कौन मादा जनन हॉर्मोन है ?",
+      "options": ["प्रोजेस्टेरॉन", "एस्ट्रोजन", "ऐस्टडियॉल", "इनमें सभी"],
+      "answer": "इनमें सभी"
+    },
+    {
+      "question": "45. कुछ जानवर जुगाली करते है ?",
+      "options": ["स्वास्थ्य के लिए", "भोजन के पाचन के लिए", "दूध बनाने के लिए", "इनमें से कोई नहीं"],
+      "answer": "इनमें से कोई नहीं"
+    },
+    {
+      "question": "46. रूधिर दाब तथा हृदय स्पंदन किस हॉर्मोन के द्वारा बढ़ता है ?",
+      "options": ["प्रोजेस्टेरॉन", "ऐस्टडियॉल", "एड्रीनलिन", "रिलैक्सिन"],
+      "answer": "रिलैक्सिन"
+    },
+    {
+      "question": "47. हमारे शरीर में विभिन्न जैविक कार्यों का नियंत्रण होता है :",
+      "options": ["तंत्रिका द्वारा", "रसायनों द्वारा", "तंत्रिक एवं रसायनों द्वारा", "इनमें से कोई नहीं"],
+      "answer": "तंत्रिक एवं रसायनों द्वारा"
+    },
+    {
+      "question": "48. ऐबसिसिक एसिड किस तरह का रसायन है ?",
+      "options": ["ऑक्जिन की तरह", "जिबरेलिन्स की तरह", "साइटोकाइनिन की तरह", "वृद्धिरोधक की तरह"],
+      "answer": "वृद्धिरोधक की तरह"
+    },
+    {
+      "question": "49. बीजरहित पौधों के उत्पादन में ये सहायक होते हैं –",
+      "options": ["सॉइटोकाइनिन", "ऑविजन", "जिबरेलिन्स", "ऑक्जिन एवं जिबरेलिन्स दोनों"],
+      "answer": "ऑक्जिन एवं जिबरेलिन्स दोनों"
+    },
+    {
+      "question": "50. इनमें कौन फल पकाने के लिए प्रयुक्त होते है ?",
+      "options": ["ऑक्जिन", "जिबरेलिन्स", "एथिलीन", "साइटोकाइनिन"],
+      "answer": "एथिलीन"
+    }
+
+
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+
+        
+    </script>
+</body>
+</html>

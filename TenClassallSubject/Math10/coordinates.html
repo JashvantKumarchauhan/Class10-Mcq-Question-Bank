@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objective Question Quiz chapter Coordinate </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-danger">Class 10th Coordinate MCQ.</h1>
+        <div id="quiz"></div>
+        <button id="submitBtn" class="btn btn-primary">Submit</button>
+        <div id="result"></div>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="container">
+        <footer class="bg-dark text-white">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <h4>Created By </h4>
+                  </div>
+                 <div>
+                  <h4>Name Jashvant Kumar</h4>
+                    <h4>Mobile No. 7541975939</h4>
+  
+                 </div>
+                 <div>
+                    <a href="/HomePage/Home.html" class="text-white mx-2 ">Homepage<i class="fa-solid fa-house"></a></i>
+                    <a href="/HomePage/about.html" class="text-white mx-2">About<i class="fa-solid fa-address-card"></a></i>
+                    <a href="/HomePage/index.html" class="text-white mx-2">Subject<i class="fa-solid fa-book"></a></i>
+                  </div>
+                <div>
+                </i><a href="https://www.facebook.com/jashvant.jashvant.161009"  target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/jashvant-kumar-078440261/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="75417975939" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jashvant_kumar0/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCu6xxliqsvDOYDpW16r_Muw" target="_blank" class="text-white mx-2"><i class="fa-brands fa-youtube"></i>
+                <a href="https://github.com/JashvantKumarchauhan" target="_blank" class="text-white mx-2"><i class="fa-brands fa-github"></i>
+           
+             
+  
+                </div>
+                    
+                   
+                 
+                 
+                  </div>
+                
+           
+                
+               
+          
+                  
+                </div>
+                    
+              </div>
+          </div>
+      </footer>
+       
+      </div>
+  
+
+    <script>
+        // Define questions and answers
+        const questions = [
+
+        {
+        "question": "1. x-अक्ष पर स्थित किसी बिंदु का y-नियामक (निर्देशांक) होता है-",
+        "options": ["0", "x", "y", "1"],
+        "answer": "0"
+    },
+    {
+        "question": "2. y-अक्ष पर स्थित किसी बिंदु का x-नियामक होता है –",
+        "options": ["0", "y", "x", "-1"],
+        "answer": "0"
+    },
+    {
+        "question": "3. किसी बिंदु की x-अक्ष से दूरी उस बिंदु का कहलाती है –",
+        "options": ["कोटि", "भुज", "आलेख", "अक्ष"],
+        "answer": "आलेख"
+    },
+    {
+        "question": "4. किसी बिंदु की y-अक्ष से दूरी उस बिंदु का कहलाती है –",
+        "options": ["कोटि", "भुज", "आलेख", "अक्ष"],
+        "answer": "कोटि"
+    },
+    {
+        "question": "5. x-अक्ष का दूसरा नाम निम्नलिखित में कौन है ?",
+        "options": ["कोटि-अक्ष", "भुज-अक्ष", "चतुर्थाश", "निर्देशांक-अक्ष"],
+        "answer": "निर्देशांक-अक्ष"
+    },
+    {
+        "question": "6. y-अक्ष का दूसरा नाम निम्नलिखित में कौन है ?",
+        "options": ["कोटि-अक्ष", "भुज-अक्ष", "निर्देशांक-अक्ष", "चतुर्थांश"],
+        "answer": "निर्देशांक-अक्ष"
+    },
+    {
+        "question": "7. x-अक्ष के किसी बिंदु के निर्देशांक का कोटि होता है –",
+        "options": ["0", "x", "y", "इनमें से कोई नहीं"],
+        "answer": "0"
+    },
+    {
+        "question": "8. y-अक्ष के किसी बिंदु के निर्देशांक का भुज होता है –",
+        "options": ["1", "x", "0", "y"],
+        "answer": "0"
+    },
+    {
+        "question": "9. x-अक्ष पर के किसी बिंदु के निर्देशांक किस रूप में होते हैं ?",
+        "options": ["(x,0)", "(0,x)", "(y,0)", "(0,y)"],
+        "answer": "(x,0)"
+    },
+    {
+        "question": "10. y-अक्ष पर के किसी बिंदु के निर्देशांक निम्न में किस रूप के होते हैं ?",
+        "options": ["(x,0)", "(0,y)", "(0,x)", "(y,0)"],
+        "answer": "(0,y)"
+    },
+    {
+        "question": "11. यदि किसी बिंदु p का निर्देशांक (2,-5) हो, तो –5 को क्या कहते हैं ?",
+        "options": ["p का भुज", "p का x-नियामक", "p की कोटि", "इनमें से कोई नहीं"],
+        "answer": "p की कोटि"
+    },
+    {
+        "question": "12. यदि किसी बिंदु p का निर्देशांक (-1, 2) हो, तो -1 को क्या . कहते हैं ?",
+        "options": ["p की कोटि", "p का भुज", "p का y-नियामक", "इनमें से कोई नहीं"],
+        "answer": "p की कोटि"
+    },
+    {
+        "question": "13. बिंदु A से y-अक्ष पर डाले गए लम्ब की लम्बाई यदि 4 मात्रक हो, तो A का x-निर्देशांक होगा –",
+        "options": ["0", "4", "-4", "इनमें से कोई नहीं"],
+        "answer": "4"
+    },
+    {
+        "question": "14. बिन्दु p से x-अक्ष पर डाले गए लम्ब की लम्बाई यदि 5 मात्रक हो, तो p का y-निर्देशांक होगा –",
+        "options": ["0", "5", "-5", "इनमें से कोई नहीं"],
+        "answer": "-5"
+    },
+    {
+        "question": "15. y-अक्ष से 5 इकाई दायीं और x-अक्ष पर एक बिंदु p स्थित है। p के निर्देशांक है –",
+        "options": ["(0, 5)", "(5, 0)", "(-5,5)", "(5,-5)"],
+        "answer": "(5,5)"
+    },
+    {
+        "question": "16. y-अक्ष से 3 इकाई बायीं और x-अक्ष पर एक बिंदु B स्थित है। B के निर्देशांक हैं –",
+        "options": ["(-3, 0)", "(3, 0)", "(0, -3)", "(0, 3)"],
+        "answer": "(3, -3)"
+    },
+    {
+        "question": "17. y-अक्ष पर x-अक्ष से 4 इकाई की दूरी पर x-अक्ष के नीचे एक बिंदु A, स्थित है। A के निर्देशांक है –",
+        "options": ["(4, 0)", "(0, 4)", "(-4,0)", "(0,-4)"],
+        "answer": "(4, 0)"
+    },
+    {
+        "question": "18. मूल बिंदु के निर्देशांक हैं –",
+        "options": ["(0, 1)", "(0, 0)", "(1, 0)", "(1, 1)"],
+        "answer": "(0, 0)"
+    },
+    {
+        "question": "19. प्रथम चतुर्थाश के किसी बिंदु के निर्देशांक के भुज-कोटि का । चिंह होता है –",
+        "options": ["(+, -)", "(+, +)", "(- -)", "(-, +)"],
+        "answer": "(+, +)"
+    },
+    {
+        "question": "20. द्वितीय चतुर्थांश के किसी बिंदु के निर्देशांक के भुज-कोटि का चिंह होता है –",
+        "options": ["(-,+)", "(+,-)", "(- -)", "(+,+)"],
+        "answer": "(-,+)"
+    },
+    {
+        "question": "21. बिंदु (2, 2) किस पद (चतुर्थाश) में है –",
+        "options": ["प्रथम", "द्वितीय", "तृतीय", "चतुर्थ"],
+        "answer": "चतुर्थ"
+    },
+    {
+        "question": "22. बिंदु (-3; 2) किस पाद में है –",
+        "options": ["प्रथम", "द्वितीय", "तृतीय", "चतुर्थ"],
+        "answer": "तृतीय"
+    },
+    {
+        "question": "23. बिंदु (4, -7) किस चतुर्थांश में है –",
+        "options": ["प्रथम", "द्वितीय", "तृतीय", "चतुर्थ"],
+        "answer": "प्रथम"
+    },
+    {
+        "question": "24. बिंदु (-3,-3) किस चतुर्थांश में है-",
+        "options": ["प्रथम", "द्वितीय", "तृतीय", "चतुर्थ"],
+        "answer": "तृतीय"
+    },
+    {
+        "question": "25. बिंदुएँ (3, 2) और (-3, 2) दोनों अवस्थित हैं –",
+        "options": ["y-अक्ष पर", "x-अक्ष पर", "x-अक्ष के दोनों ओर", "x-अक्ष के एक ओर"],
+        "answer": "y-अक्ष पर"
+    },
+    {
+        "question": "26. बिंदुएँ (2, 3) और (2,-3) दोनों अवस्थित हैं –",
+        "options": ["x-अक्ष पर", "y-अक्ष पर", "x-अक्ष के एक ओर", "y-अक्ष के एक ओर"],
+        "answer": "x-अक्ष पर"
+    },
+    {
+        "question": "27. बिंदुओं (0, 3) और (0, -3) दोनों अवस्थित हैं –",
+        "options": ["y-अक्ष पर", "x-अक्ष पर", "मूल बिंदु पर", "y-अक्ष के एक ओर"],
+        "answer": "y-अक्ष पर"
+    },
+    {
+        "question": "28.बिंदुओं (4,0) और (-4,0) दोनों अवस्थित हैं –",
+        "options": ["y – अक्ष पर", "x – अक्ष पर", "x-अक्ष पर -अक्ष के विपरीत ओर", "x-अक्ष के ऊपर"],
+        "answer": "x – अक्ष पर"
+    },
+    {
+        "question": "29. कार्तीय तल में स्थित किसी बिंदु (-4, 5) में कोटि का मान हैं –",
+        "options": ["-4", "5", "1", "0"],
+        "answer": "5"
+    },
+    {
+        "question": "30. कार्तीय तल में स्थित किसी बिंदु p(3, -4) के भुज का मान हैं –",
+        "options": ["3", "-3", "4", "-4"],
+        "answer": "3"
+    },
+    {
+        "question": "31. मूल बिंदु से बिंदु p(-x, y) की दूरी है –",
+        "options": [],
+        "answer": "x"
+    },
+    {
+        "question": "32. मूल बिंदु से बिंदु (acosθ, asinθ) की दूरी है –",
+        "options": ["a मात्रक", "b मात्रक", "1", "2sin²θ"],
+        "answer": "a मात्रक"
+    },
+    {
+        "question": "33. मूल बिंदु से बिंदु p(-6, 8) के बीच की दूरी है –",
+        "options": ["8 मात्रक", "2√7 मात्रक", "10 मात्रक", "6 मात्रक"],
+        "answer": "10 मात्रक"
+    },
+    {
+        "question": "41. बिंदु A(0, 6) और B(0, -2) के बीच की दूरी है –",
+        "options": ["6 मात्रक", "8 मात्रक", "4 मात्रक", "2 मात्रक"],
+        "answer": "6 मात्रक"
+    },
+    {
+        "question": "42. दो बिंदुओं P(x, 2) और Q(3,-6) के बीच की दूरी यदि 10 इकाई हो, तो x का मान होगा –",
+        "options": ["+3", "0", "-9", "+9"],
+        "answer": "+3"
+    },
+    {
+        "question": "43. यदि बिंदुओं (a, 2) और (3, 4) के बीच की दूरी 8 मात्रक हो, तो a का मान होगा –",
+        "options": ["3 ±2√15", "3√15", "2√15", "3"],
+        "answer": "3 ±2√15"
+    },
+    {
+        "question": "44. दो बिंदुओं A(4, p) और B(1, 0) के बीच की दूरी यदि 5 मात्रक हो, तो p का मान होगा –",
+        "options": ["±4", "-4", "±4", "0"],
+        "answer": "±4"
+    },
+    {
+        "question": "-y-अक्ष पर का वह बिंदु कौन है जिसकी बिंदु (4, 2) से दूरी 5 मात्रक है ?",
+        "options": ["(8, 5)", "(-1,0)", "(0,-5)", "(0, -1)"],
+        "answer": "(0,-5)"
+    },
+    {
+        "question": "46. यदि बिंदुओं (-3, 4) और (3, 6) से बिंदु (x, y) की दूरियाँ समान हों, तो x और y में सम्बन्ध है –",
+        "options": ["3x + y = 5", "3x – y = 5", "3y + x = 5", "3y – x = 5"],
+        "answer": "3x – y = 5"
+    },
+    {
+        "question": "47. x-अक्ष पर किस बिंदु की दूरी बिंदुओं A(7,6) और B(-3, 4) से समान है ?",
+        "options": ["(0, 3)", "(3, 0)", "(0, 4)", "(-4,0)"],
+        "answer": "(0, 3)"
+    },
+    {
+        "question": "48. -अक्ष पर बिंदुओं (5,-2) और (-3, 2) से समदूरस्थ बिंदु है –",
+        "options": ["(0, -2)", "(-2, 0)", "(0, 2)", "(2, 0)"],
+        "answer": "(0, 2)"
+    },
+    {
+        "question": "49. y-अक्ष पर x-अक्ष से 4 इकाई की दूरी पर x-अक्ष के नीचे एक बिन्दु A के निर्देशांक निम्नलिखित में कौन है ?",
+        "options": ["(0, 4)", "(4, 0)", "(0, -4)", "(-4, 0)"],
+        "answer": "(0, -4)"
+    },
+    {
+        "question": "50. y-अक्ष पर x-अक्ष से 4 मात्रक दूरी पर x-अक्ष के ऊपर एक बिंदु A का निर्देशांक होगा –",
+        "options": ["(0, 4)", "(4, 0)", "(0, -4)", "(-4, 0)"],
+        "answer": "(0, 4)"
+    },
+    {
+        "question": "51. बिंदुओं A(2,-4) और B(4,-2) को मिलाने वाली रेखाखंड के मध्य-बिंदु का निर्देशांक है –",
+        "options": ["(6, – 6)", "(-1,- 2)", "(3, – 3)", "(-3, 3)"],
+        "answer": "(3, – 3)"
+    },
+    {
+        "question": "52. यदि बिंदुएँ (3, 4) और (x, 1) मूलबिंदु से समदूरस्थ हैं, तो x का मान है –",
+        "options": ["±√5", "±3", "±2√6", "4"],
+        "answer": "±√5"
+    },
+
+    {
+        "question": "55. यदि p(-1, 1) उस रेखाखण्ड का जो A(-3,6) और B(1, b+4) को मिलाने से बनता है, मध्य-बिंदु है, तो b का मान है –",
+        "options": ["2", "0", "1", "-1"],
+        "answer": "2"
+    },
+    {
+        "question": "56. दिए गए तीन बिंदुएँ संरेखी होंगे यदि उसने बने त्रिभुज का क्षेत्रफल हो –",
+        "options": ["1", "0", "2", "-1"],
+        "answer": "0"
+    },
+    {
+        "question": "57. यदि बिंदुएँ (1, 2), (-5, 6) और (a, -2) संरेखी हों, तो a का मान होगा-",
+        "options": ["7", "-3", "2", "-2"],
+        "answer": "2"
+    },
+    {
+        "question": "58. यदि बिंदुएँ A(1, 2), B(0, 0) और C(a, b) सरेखी हों, तो –",
+        "options": ["a = b", "a = 2b", "2a = b", "a= – b"],
+        "answer": "a = 2b"
+    },
+    {
+        "question": "(59. (3,6) और (12, 3) को जोड़ने वाली रेखाखंड x-अक्ष को किस अनुपात में विभाजित करती है ?",
+        "options": ["1 : 2", "2 : 1", "-2 : 1", "1 :-2"],
+        "answer": "1 : 2"
+    },
+    {
+        "question": "60. बिंदुओं (-3,-4) और (1,-2) को जोड़ने वाली रेखाखण्ड y-अक्ष को किस अनुपात में विभाजित करती है ?",
+        "options": ["2 : 3", "1 : 3", "3 : 2", "3 : 1"],
+        "answer": "3 : 2"
+    },
+    {
+        "question": "61. रेखाखंड AB का मध्य-बिंदु P(2, 4) है। यदि B के नियामक (6, 8) हैं, तो A का नियामक होगा –",
+        "options": ["(2, 0)", "(-2,0)", "(0, 2)", "(0, -2)"],
+        "answer": "(-2,0)"
+    },
+    {
+        "question": "62. रेखाखंड AB का मध्य-बिंदु P(2, 4) है। यदि A के निया (5, 7) हैं, तो B के नियामक होंगे –",
+        "options": ["(1, -1)", "(-1, 1)", "(2,-2)", "(-2, -2)"],
+        "answer": "(-2, -2)"
+    },
+    {
+        "question": "63. यदि किसी समबाहु त्रिभुज के अन्तः केन्द्र के निर्देशांक (2 ,3) हैं, तो उसके गुरूत्व केन्द्र के निर्देशांक होंगे-",
+        "options": ["(3, 2)", "(2, 3)", "(2, 2)", "(3, 3)"],
+        "answer": "(3, 3)"
+    },
+    {
+        "question": "64. यदि बिंदु (k, -4) से गुजरने वाली कोई रेखा x-अक्ष और । अक्ष को क्रमशः (1,0) और (0, 2) पर काटे तो k का मान है –",
+        "options": ["3", "-4", "½", "इनमें से कोई नहीं"],
+        "answer": "3"
+    },
+    {
+        "question": "65. बिंदुओं (2, 3) और (5, 6) को मिलाने वाली रेखाखंड को x : अक्ष 1 : k के अनुपात में बाँटता है, तो k का मान होगा –",
+        "options": ["1", "-2", "3", "1/2"],
+        "answer": "1/2"
+    },
+           
+
+            
+            // Add more questions here...
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const resultContainer = document.getElementById('result');
+        const submitButton = document.getElementById('submitBtn');
+
+        // Function to generate quiz HTML
+        function generateQuiz() {
+            questions.forEach((question, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.classList.add('card', 'mb-4');
+
+                questionCard.innerHTML = `
+                    <div class="card-header">
+                        <h5 class="card-title">${question.question}</h5>
+                    </div>
+                    <div class="card-body">
+                        ${generateOptions(question.options, index)}
+                        <div id="status${index}" class="mt-2"></div>
+                    </div>
+                `;
+
+                quizContainer.appendChild(questionCard);
+            });
+        }
+
+        // Function to generate options HTML
+        function generateOptions(options, questionIndex) {
+            let optionsHTML = '';
+
+            options.forEach((option, index) => {
+                optionsHTML += `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question${questionIndex}" id="q${questionIndex}_option${index}" value="${option}">
+                        <label class="form-check-label" for="q${questionIndex}_option${index}">${option}</label>
+                    </div>
+                `;
+            });
+
+            return optionsHTML;
+        }
+
+        // Function to calculate and display result
+        function showResult() {
+            let score = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name=question${index}]:checked`);
+                const statusElement = document.getElementById(`status${index}`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === question.answer) {
+                        score++;
+                        statusElement.innerHTML = '<span style="color: green;">&#10004; Correct</span>';
+                    } else {
+                        statusElement.innerHTML = '<span style="color: red;">&#10008; Incorrect</span>';
+                    }
+                } else {
+                    statusElement.innerHTML = '<span style="color: red;">&#10008; Not attempted</span>';
+                }
+            });
+
+            resultContainer.textContent = `Your score: ${score} / ${questions.length}`;
+        }
+
+        // Generate quiz when the page loads
+        generateQuiz();
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', showResult);
+    </script>
+</body>
+</html>
